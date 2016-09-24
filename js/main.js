@@ -45,6 +45,7 @@ jQuery(document).ready(function($) {
         $(".sort").html(a);
     })
 
+
     $(".profile-user").click(function(){ //Show profile of user when click on arrow button on header
         $(".user-info").toggle();
     })
@@ -127,6 +128,9 @@ jQuery(document).ready(function($) {
     $(".has-answer").click(function(){
       $(this).parents(".number-answer").find(".detail-answer-question").slideToggle();
     });
+    $(".total-answer i").click(function(){
+        $(".sort-answer").slideToggle()
+    })
 
     // Slide for student Mentor page
     $('#studentCarousel[data-type="multi"] .item').each(function(){
