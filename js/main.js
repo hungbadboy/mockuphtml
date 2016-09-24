@@ -95,12 +95,12 @@ jQuery(document).ready(function($) {
     //     $(".unsubcrib-hover").toggle();
     //     $(".unsubcrib").toggle();
     // })
-    $(window).on("load",function(){
-      $(".content-question-wrapper").mCustomScrollbar({ //Scroll for content of question
-          theme:"dark",
-          autoHideScrollbar: "boolean",
-      });
-    })
+    // $(window).on("load",function(){
+    //   $(".content-question-wrapper").mCustomScrollbar({ //Scroll for content of question
+    //       theme:"dark",
+    //       autoHideScrollbar: "boolean",
+    //   });
+    // })
     $(window).on("load",function(){
       $(".series-video-list").mCustomScrollbar({
           theme:"light"
@@ -125,6 +125,7 @@ jQuery(document).ready(function($) {
     })
 
     $('[data-toggle="popover"]').popover();
+
     $(".has-answer").click(function(){
       $(this).parents(".number-answer").find(".detail-answer-question").slideToggle();
     });
@@ -157,7 +158,8 @@ jQuery(document).ready(function($) {
     $(".navbar-header button").on( "click",function(){
         $(".mentor-left-header, #sidebar-menu, .mentor-center-header, .center-content").toggleClass("in");
     })
-
+   
+    $(".top-mentors-videos").stick_in_parent();
     //Bxslider - Slider images of ask a question page
 
         var $j = jQuery.noConflict();
