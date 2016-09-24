@@ -298,19 +298,21 @@ p.answered-time {
 .total-answer p {
     padding: 5px 15px;
     margin-bottom: 0;
-    width: 105px;    
+    width: 93px;
     color: #fff;
     border-radius: 4px;
+    font-size: 12px;
 }
-.total-answer.has-answer p {
+.total-answer p:hover {
     background: #505050;
 }
-.total-answer.no-answer p {
+.total-answer p {
     background: #979797;
 }
 .question {
     overflow: hidden;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
 }
 .top-mentors-info {
     position: relative;
@@ -562,4 +564,8 @@ button.cancel:hover {
     border: none;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+.total-answer.no-answer p:hover {
+    cursor: default;
+    background: #979797;
 }

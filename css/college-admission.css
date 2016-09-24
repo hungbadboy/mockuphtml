@@ -12,6 +12,8 @@
     border: 1px solid #e8e8e8;
     margin-top: 35px;
     padding-bottom: 30px;
+    margin: 35px 0 0 15px;
+    width: calc(66.6666% - 15px);
 }
 .step-essay .step {
     overflow: hidden;
@@ -117,8 +119,8 @@
     margin-left: 15px;  
 }
 #college-admission .video-list-content li {
-    margin-right: 0px; 
-     width: 242px;
+    margin-right: 0px;
+    width: 236px;
 }
 #college-admission .video-list-content li img {
     height: auto;
@@ -212,7 +214,7 @@
 .your-essay {
     border: 1px solid #e8e8e8;
     margin-bottom: 30px;
-    padding: 15px;
+    padding: 30px 15px;
 }
 .your-essay-content span.essay-reviewing, 
 .your-essay-content span.essay-wait-review, 
