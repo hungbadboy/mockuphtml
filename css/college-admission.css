@@ -195,13 +195,13 @@
 .your-essay-content ul {
     position: relative;
 }
-.your-essay-content li.essay-01:before {
+.your-essay-content li.essay:before {
     content: "";
     position: absolute;
-    height: 64%;
+    height: 100%;
     border-left: 1px solid #eef1f6;
     left: 10px;
-    top: 46px;
+    top: 15px;
 }
 .your-essay-content .essay-time {
     color: #909090;
@@ -220,7 +220,8 @@
     font-size: 12px;
 }
 .your-essay-content li.essay {
-    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
 }
 .college-admission-content-sidebar .top-mentors-list ul {
     position: relative;
@@ -468,4 +469,49 @@ button.share:hover {
     position: absolute;
     bottom: 26px;
     height: 20px;
+}
+.college-laststep {
+    width: 100%;
+    float: left;
+}
+.college-form-header {
+    margin-bottom: 20px;
+}
+.college-laststep form {
+    padding: 20px;
+}
+
+.college-laststep form h5 {
+    margin-bottom: 0;
+}
+.college-form-body input, .college-form-body textarea {
+    color: #505050;
+    border: 1px solid #cECecd;
+    padding: 10px 10px;
+}
+.college-form-body input {
+    width: 50%;
+    margin-bottom: 7px;
+}
+.college-form-body label {
+    padding: 10px;
+    border: 1px solid #cECecd;
+    width: 50%;
+    color: #505050;
+}
+
+.college-form-body .upload-file input {
+    display: none;
+}
+
+.college-form-body .upload-file span {
+    color: #505050;
+    font-weight: 400;
+    font-size: 13px;
+}
+.college-form-body .upload-file span>i {
+    color: #505050;
+}
+.your-essay-content li.last-essay:before {
+    height: 0;
 }

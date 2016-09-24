@@ -822,9 +822,9 @@ li .video-mentor-information {
 .unlogin .video-list {
     width: 100%;
 }
-.unlogin .video-list-content li {
+/*.unlogin .video-list-content li {
     width: 25%;
-}
+}*/
 .unlogin .video-iframe {
     width: 100%; 
 }

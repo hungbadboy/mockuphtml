@@ -401,6 +401,8 @@ span.essay-answers {
 span.essay-wait-review {
     background: #ff5a5a;
     color: #fff;
+    position: relative;
+    top: -5px;
 }
 #essay .question:before {
     content: "";
@@ -539,8 +541,8 @@ button.cancel:hover {
     border-bottom: 1px solid #ececed;
 }
 .top-videos-wrapper .top-videos-list li {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .top-videos-wrapper .top-videos-list {
     padding: 15px 5px
@@ -556,20 +558,8 @@ button.cancel:hover {
     font-size: 12px;
     margin-bottom: 5px;
 }
-
-/*span.changeCover {
-    position: absolute;
-    top: 15px;
-    z-index: 3;
-    right: 15px;
-
+.first-ask-content .top-videos-wrapper .top-videos-list li:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
-
-span.changeCover label {
-    background: #fff;
-    padding: 5px;
-    font-size: 12px;
-    border-radius: 4px;
-    font-weight: 500;
-    cursor: pointer;
-}*/
