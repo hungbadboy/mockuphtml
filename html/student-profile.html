@@ -1,0 +1,830 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" content="text/html" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Home" name="HongTTT"/>
+        <title>
+            SibLinks
+        </title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="../css/jquery.bxslider.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <!-- <link rel="stylesheet" href="../css/bootstrap-datepicker.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    <body class="home">
+        <!-- Header -->
+        <header id="header">
+            <div class="module-navigation">
+                <div class="container clearfix">
+                    <!-- logo -->
+                    <div class="main-logo col-xs-3">
+                        <a href="/">
+                            <img src="../images/logo.png" alt="" class="hidden-pc">
+                        </a>
+                    </div><!-- /logo -->
+
+                    <!-- Menu navigation -->
+                    <div class="navigation col-xs-9 "> 
+                        <nav class="navbar navbar-default">
+
+                            <!-- menu on mobile -->
+                            <div class="navbar-header"> 
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <!-- Menu on desktop -->
+                            <div class="navbar-collapse"> 
+                                <ul class="mobimenu nav navbar-nav">
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="ask-a-question.html">Ask a Question</a></li>
+                                    <li><a href="videos.html">Videos</a></li>
+                                    <li><a href="college-admission.html">College Admission</a></li>
+                                    <li class="active"><a href="broswer-mentors.html">Our Team</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <!-- nofitication of user -->
+                        <div class="user-nofitication">
+                            <div class="logined "> 
+                                <div class="notification">
+                                    <img src="../images/bell.png"><span>2</span>
+                                </div>
+                                <div class="user-login">
+                                    <div class="user-img">
+                                        <span><img src="../images/user.jpg"></span>
+                                    </div>
+                                    <div class="profile-user"><img src="../images/arrow.png"></div>
+                                    <div class="user-info inactive">
+                                        <ul>
+                                            <li class="profile"><a href="profile.html"><span data-icon="&#xe08a;"></span>Profile</a></li>
+                                            <li class="setting"><a href="setting.html"><span data-icon="&#xe037;"></span>Setting</a></li>
+                                            <li class="logout"><a href="/"><span class="fa fa-power-off"></span>Logout</a></li>
+                                        </ul>
+                                    </div>                   
+                                </div>
+                            </div>
+                            <div class="no-login inactive">
+                                <div class="register">
+                                    <a href="register.html">Register</a>
+                                </div>
+                                <div class="login">
+                                    <a href="login.html">Login</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                    
+            </div><!-- /module-navigation -->
+            <div class="background-color">
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- main start -->
+        <main id="main">
+            <div class="content ask-a-question" id="student-profile">
+                <!-- Breadcrum -->
+                <div class="breadcrum">
+                    <div class="container">
+                        <h5>Siblinks <span>/ My Profile</span></h5>
+                    </div>
+                </div><!-- /End Breadcrum -->
+                <!-- Container -->
+                <div class="container">                
+                    <!-- Content -->
+                    <section class="content student-profile-content">
+                        <div class="top-mentors-videos col-lg-4" id="student-profile-information">
+                            <div class="student-profile">
+                                <div class="student-header-detail">
+                                    <div class="student-img">
+                                        <img src="../images/user.jpg">
+                                        <h3 class="student-name">Quan Dinh</h3>
+                                        <p>freshman</p>                                        
+                                        <span class="changeImg">
+                                            <input type="file" id="changeImg" name="changeImg[]">
+                                            <label for="changeImg"><span data-icon="&#xe075;"></span></label>
+                                        </span>
+                                        <!-- <span class="changeCover">
+                                            <input type="file" id="changeCover" name="changeCover[]">
+                                            <label for="changeCover">Change cover</label>
+                                        </span> -->
+                                    </div>
+                                    <div class="student-joined">
+                                        <ul>
+                                            <li class="student-question">
+                                                <h3>03</h3>
+                                                <span>questions</span>
+                                            </li>
+                                            <li class="student-question">
+                                                <h3>08</h3>
+                                                <span>essay</span>
+                                            </li>
+                                            <li class="student-question">
+                                                <h3>12</h3>
+                                                <span>subcribed</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="student-info-detail">
+                                    <div class="student-edu">
+                                        <strong>High School</strong><br>
+                                        <span>Hardford Public High School</span>
+                                    </div>
+                                    <div class="student-info">
+                                        <strong>About me</strong><br>
+                                        <span>Honestly, I don't know anyone who enjoys this process.Even if you're comfortable writing about yourself, it's hard...</span>
+                                    </div>
+                                    <div class="student-sex">
+                                        <strong>Sex:</strong>
+                                        <span> Male</span>
+                                    </div>
+                                    <div class="student-bio">
+                                        <strong>BIO:</strong>
+                                        <span> 01 Nov, 2016</span>
+                                    </div>
+                                    <div class="student-sex">
+                                        <strong>Since:</strong>
+                                        <span> Jan, 2015</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Top mentor -->
+                            <div class="top-mentors" id="subcribles">
+                                <div class="top-mentor-wrapper col-xs-12" id="subcribles_wrapper">
+                                    <!-- top-mentor-header -->
+                                    <div class="top-mentor-header" id="subcribles_header">
+                                        <div class="top-mentor-header-title">
+                                            <span><img src="../images/ask question/top-mentor.png"></span><h4>Subcrible</h4>
+                                        </div>
+                                        <div class="see-more">
+                                            <p><a href="">See More</a></p>
+                                        </div>
+                                    </div><!-- /End top-mentor-header -->
+                                    <!-- List of top mentors -->
+                                    <div class="top-mentors-list">
+                                        <ul>
+                                            <li>
+                                                <div class="top-mentors-img online">
+                                                    <a href="#"><img src="../images/user.jpg">
+                                                    <span class="offline"><img src="../images/ask question/online.png"></span></a>
+                                                </div>
+                                                <div class="top-mentors-info">
+                                                    <p class="top-mentors-name">
+                                                        <a href="#"><strong>Brian M.Scott</strong></a>
+                                                    </p>
+                                                    <p class="top-mentors-essay">
+                                                        <a href="/">Financial Aid, </a>Essay
+                                                    </p>
+                                                    <p class="top-mentors-answed">
+                                                        500 subcrible, 5765 answed
+                                                    </p>
+                                                    <p class="subcribe" title="unsubcribe">
+                                                        <span data-icon="&#x4b;"></span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top-mentors-img">
+                                                    <a href="#"><img src="../images/user.jpg">
+                                                    <span class="offline"><img src="../images/ask question/offline.png"></span></a>
+                                                </div>
+                                                <div class="top-mentors-info">
+                                                    <p class="top-mentors-name">
+                                                        <a href="#"><strong>Brian M.Scott</strong></a>
+                                                    </p>
+                                                    <p class="top-mentors-essay">
+                                                        <a href="/">Financial Aid, </a>Essay
+                                                    </p>
+                                                    <p class="top-mentors-answed">
+                                                        500 subcrible, 5765 answed
+                                                    </p>
+                                                    <p class="subcribe" title="unsubcribe">
+                                                        <span data-icon="&#x4b;"></span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top-mentors-img">
+                                                    <a href="#"><img src="../images/ask question/mentor-02.png"><span class="offline"><img src="../images/ask question/offline.png"></span></a>
+                                                </div>
+                                                <div class="top-mentors-info">
+                                                    <p class="top-mentors-name">
+                                                        <a href="#"><strong>Brian M.Scott</strong></a>
+                                                    </p>
+                                                    <p class="top-mentors-essay">
+                                                        <a href="/">Financial Aid, </a>Essay
+                                                    </p>
+                                                    <p class="top-mentors-answed">
+                                                        500 subcrible, 5765 answed
+                                                    </p>
+                                                    <p class="subcribe" title="unsubcribe">
+                                                        <span data-icon="&#x4b;"></span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /End list of top mentors -->
+                                </div>        
+                            </div><!-- /End top memtor -->
+
+
+                        </div>
+                        <!-- Question of user -->
+                        <div class="questions col-lg-8">
+                            <div class="questions-wrapper col-md-12">
+                                <!-- head of question -->
+                                <div class="head-question">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a data-toggle="tab" href="#my-questions">
+                                                <h5><span data-icon="&#x74;"></span>My questions</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="tab" href="#essay">
+                                                <h5><span data-icon="&#xe101;"></span>Essay</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="tab" href="#setting">
+                                                <h5><span data-icon="&#xe037;"></span>Setting</h5>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- /End head of question -->
+
+                                <!-- Content of question -->
+                                <div class="tab-content">
+                                    <!-- Content Of My Question -->
+                                    <div class="content-question col-md-12 tab-pane active" id="my-questions">
+                                        <div class="content-question-block">
+                                            <div class="content-question-wrapper">
+                                                <!-- Question 01 -->
+                                                <div class="question question_01">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>1</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12"> 
+                                                            <span>asked 5 mins ago </span><br>
+                                                            <p>in 
+                                                                <a href="#">Applications Finacial Aid</a>
+                                                            </p>
+                                                        </div>
+                                                        <!-- Detail Content of Question -->
+                                                        <div class="detail-content-question col-xs-12">
+                                                            <p>Ask anythink and your Siblinks from Havard, Stanford and MIT will give informative and definitely non-parental answers</p>
+                                                        </div><!-- /End Detail Content of Question -->
+
+                                                        <!-- Images of question -->
+                                                        <div class="images-question">
+                                                            <ul>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_04.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>                           
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_03.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li> 
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_02.png">
+                                                                        <div class="item-hover">
+                                                                            <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_01.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_01.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div><!-- /End Images of question -->
+
+
+                                                        <!-- Answer of question -->
+                                                        <div class="answer-question col-xs-12">
+                                                            <div class="number-answer">
+                                                                <div class="total-number-answer">
+                                                                    <div class="total-answer has-answer"><p>15 answer</p></div>
+                                                                    <div class="total-view">
+                                                                        12 <span data-icon="&#xe089;" id="heart"></span>&nbsp;&nbsp;&nbsp; 68 views
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Detail-answer-question -->
+                                                                <div class="detail-answer-question">
+                                                                    <div class="mentor-answer">
+                                                                        <div class="image-mentor">
+                                                                            <a href="#"><img src="../images/user.jpg"></a>
+                                                                        </div>
+                                                                        <div class="detail-mentor-answer">
+                                                                            <div class="mentor-name">
+                                                                                <a href="#"><strong>Mentor name</strong></a>&nbsp;&nbsp;&nbsp;<span>asked 2 mins ago</span>&nbsp;&nbsp;&nbsp;
+                                                                                <span>6 <span data-icon="&#xe089;" id="heart"></span></span>
+                                                                            </div>
+                                                                            <div class="mentor-answer">
+                                                                                <p>Ask anythink and your Siblinks from Havard, Stanford and MIT will give informative and definitely non-parental answers</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="mentor-answer">
+                                                                        <div class="image-mentor">
+                                                                            <a href="#"><img src="../images/user.jpg"></a>
+                                                                        </div>
+                                                                        <div class="detail-mentor-answer">
+                                                                            <div class="mentor-name">
+                                                                                <a href="#"><strong>Mentor name</strong></a>&nbsp;&nbsp;&nbsp;<span>asked 2 mins ago</span>&nbsp;&nbsp;&nbsp;<span>6 <span data-icon="&#xe089;" id="heart"></span></span>
+                                                                            </div>
+                                                                            <div class="mentor-answer">
+                                                                                <p>Ask anythink and your Siblinks from Havard, Stanford and MIT will give informative and definitely non-parental answers</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="mentor-answer">
+                                                                        <div class="image-mentor">
+                                                                            <a href="#"><img src="../images/ask question/mentor-02.png"></a>
+                                                                        </div>
+                                                                        <div class="detail-mentor-answer">
+                                                                            <div class="mentor-name">
+                                                                                <a href="#"><strong>Mentor name</strong></a>&nbsp;&nbsp;&nbsp;<span>asked 2 mins ago</span>&nbsp;&nbsp;&nbsp;<span>6 <span data-icon="&#xe089;" id="heart"></span></span>
+                                                                            </div>
+                                                                            <div class="mentor-answer">
+                                                                                <p>Ask anythink and your Siblinks from Havard, Stanford and MIT will give informative and definitely non-parental answers</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="mentor-answer">
+                                                                        <div class="image-mentor">
+                                                                            <a href="#"><img src="../images/ask question/mentor-02.png"></a>
+                                                                        </div>
+                                                                        <div class="detail-mentor-answer">
+                                                                            <div class="mentor-name">
+                                                                                <a href="#"><strong>Mentor name</strong></a>&nbsp;&nbsp;&nbsp;<span>asked 2 mins ago</span>&nbsp;&nbsp;&nbsp;<span>6 <span data-icon="&#xe089;" id="heart"></span></span>
+                                                                            </div>
+                                                                            <div class="mentor-answer">
+                                                                                <p>Ask anythink and your Siblinks from Havard, Stanford and MIT will give informative and definitely non-parental answers</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><!-- /End Detail-answer-question -->
+                                                                <!-- <div class="load-more">
+                                                                    <p>Load more comments</p>
+                                                                </div> -->
+                                                            </div>
+                                                        </div><!-- /End answer of question -->
+                                                    </div>
+                                                </div><!-- End question 01 -->
+
+                                                <!-- Question 02 -->
+                                                <div class="question question_02">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>2</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <span>asked 5 mins ago </span><br>
+                                                            <p>in <a href="/">Applications Finacial Aid</a></p>
+                                                        </div>
+                                                        <!-- Detail Content of Question -->
+                                                        <div class="detail-content-question col-xs-12">
+                                                            <p>Ask anythink and your Siblinks from Havard, Stanford and MIT will give informative and definitely non-parental answers</p>
+                                                        </div><!-- /End Detail Content of Question -->
+
+                                                        <!-- Answer of question -->
+                                                        <div class="answer-question col-xs-12">
+                                                            <div class="number-answer">
+                                                                <div class="total-number-answer">
+                                                                    <div class="total-answer no-answer"><p>No answer</p></div>
+                                                                    <div class="total-view">
+                                                                        12 <span data-icon="&#xe089;" id="heart"></span>&nbsp;&nbsp;&nbsp; 68 views
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div><!-- /End answer of question -->
+                                                    </div>
+                                                </div><!-- End question 02 -->
+
+                                                <!-- Question 03 -->
+                                                <div class="question question_03">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>3</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12"> 
+                                                            <span>asked 5 mins ago </span><br>
+                                                            <p>in <a href="/">Applications Finacial Aid</a></p>
+                                                        </div>
+                                                        <!-- Detail Content of Question -->
+                                                        <div class="detail-content-question col-xs-12">
+                                                            <p>Ask anythink and your Siblinks from Havard, Stanford and MIT will give informative and definitely non-parental answers</p>
+                                                        </div><!-- /End Detail Content of Question -->
+
+                                                        <!-- Images of question -->
+                                                        <div class="images-question">
+                                                            <ul>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_04.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>                           
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_03.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li> 
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_02.png">
+                                                                        <div class="item-hover">
+                                                                            <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_01.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_01.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div><!-- /End Images of question -->                                                
+
+                                                        <!-- Answer of question -->
+                                                        <div class="answer-question col-xs-12">
+                                                            <div class="number-answer">
+                                                                <div class="total-number-answer">
+                                                                    <div class="total-answer has-answer"><p>2 answer</p></div>
+                                                                    <div class="total-view">
+                                                                        12 <span data-icon="&#xe089;" id="heart"></span>&nbsp;&nbsp;&nbsp; 68 views
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Detail-answer-question -->
+                                                                <div class="detail-answer-question">
+                                                                    <div class="mentor-answer">
+                                                                        <div class="image-mentor">
+                                                                            <a href="#"><img src="../images/ask question/mentor-02.png"></a>
+                                                                        </div>
+                                                                        <div class="detail-mentor-answer">
+                                                                            <div class="mentor-name">
+                                                                                <a href="#"><strong>Mentor name</strong></a>&nbsp;&nbsp;&nbsp;<span>asked 2 mins ago</span>&nbsp;&nbsp;&nbsp;<span>6 <span data-icon="&#xe089;" id="heart"></span></span>
+                                                                            </div>
+                                                                            <div class="mentor-answer">
+                                                                                <p>Ask anythink and your Siblinks from Havard, Stanford and MIT will give informative and definitely non-parental answers</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="mentor-answer">
+                                                                        <div class="image-mentor">
+                                                                            <a href="#"><img src="../images/ask question/mentor-02.png"></a>
+                                                                        </div>
+                                                                        <div class="detail-mentor-answer">
+                                                                            <div class="mentor-name">
+                                                                                <a href="#"><strong>Mentor name</strong></a>&nbsp;&nbsp;&nbsp;<span>asked 2 mins ago</span>&nbsp;&nbsp;&nbsp;<span>6 <span data-icon="&#xe089;" id="heart"></span></span>
+                                                                            </div>
+                                                                            <div class="mentor-answer">
+                                                                                <p>Ask anythink and your Siblinks from Havard, Stanford and MIT will give informative and definitely non-parental answers</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><!-- /End Detail-answer-question -->
+                                                            </div>
+                                                        </div><!-- /End answer of question -->
+                                                    </div>
+                                                </div><!-- End question 03 -->
+
+                                            </div>
+                                            <div class="scroll-load-more col-md-12">
+                                                <p>Scroll to load more</p>
+                                            </div>
+                                        </div>
+                                        <!-- POPUP of images's question -->
+                                        <div class="popup-images">
+                                            <div class="popup-images-wrapper">
+                                                <ul id="bxslider">
+                                                    <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                                                    <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                                                    <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                                                    <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                                                    <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                                                    <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                                                    <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                                                    <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                                                </ul>
+                                                <!-- The thumbnails -->
+                                                <ul id="bxslider-pager">
+                                                    <li data-slideIndex="0"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                                                    <li data-slideIndex="1"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                                                    <li data-slideIndex="2"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                                                    <li data-slideIndex="3"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                                                    <li data-slideIndex="4"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                                                    <li data-slideIndex="5"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                                                    <li data-slideIndex="5"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                                                    <li data-slideIndex="5"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="close-popup-images">
+                                            </div>
+                                        </div><!-- /End POPUP of images's question -->
+
+                                        
+
+                                    </div><!-- /End content of My Question -->
+
+                                    <!-- Content Of Essay -->        
+                                    <div class="content-question col-md-12 tab-pane" id="essay">
+                                        <div class="content-essay-block">
+                                            <div class="content-question-wrapper">
+                                                <!-- Essay 01 -->
+                                                <div class="question essay_01">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>1</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <a href="#"><h5 class="essay-title">How to save children from violencek</h5></a>
+                                                            <p><span>uploaded 5 mins ago </span></p>
+                                                            <p><span class="essay-reviewing">Reviewing</span><span>by mentor: </span><a href="#"><span class="mentor-review">Milo Brandt</span></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End Essay 01 -->
+                                                <!-- Essay 02 -->
+                                                <div class="question essay_02">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>2</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <a href="#"><h5 class="essay-title">How to save children from violencek</h5> </a>
+                                                            <p><span>uploaded 5 mins ago </span></p>
+                                                            <p><span class="essay-wait-review">Waiting for review</span><span>by mentor: </span><a href="#"><span class="mentor-review">Milo Brandt</span></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End Essay 02 -->
+                                                <!-- Essay 03 -->
+                                                <div class="question essay_03">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>3</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <a href="#"><h5 class="essay-title">How to save children from violencek</h5> </a>
+                                                            <p><span>uploaded 5 mins ago </span></p>
+                                                            <p><span class="essay-answers">Answered</span><span>by mentor: </span><a href="#"><span class="mentor-review">Milo Brandt</span></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End Essay 03 -->
+                                                <!-- Essay 04 -->
+                                                <div class="question essay_04">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>4</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <a href="#"><h5 class="essay-title">How to save children from violencek</h5> </a>
+                                                            <p><span>uploaded 5 mins ago </span></p>
+                                                            <p><span class="essay-reviewing">Reviewing</span><span>by mentor: </span><a href="#"><span class="mentor-review">Milo Brandt</span></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End Essay 04 -->
+                                                <!-- Essay 05 -->
+                                                <div class="question essay_05">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>5</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <a href="#"><h5 class="essay-title">How to save children from violencek</h5> </a>
+                                                            <p><span>uploaded 5 mins ago </span></p>
+                                                            <p><span class="essay-wait-review">Waiting for review</span><span>by mentor: </span><a href="#"><span class="mentor-review">Milo Brandt</span></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End Essay 05 -->
+                                                <!-- Essay 06 -->
+                                                <div class="question essay_06">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>6</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <a href="#"><h5 class="essay-title">How to save children from violencek</h5> </a>
+                                                            <p><span>uploaded 5 mins ago </span></p>
+                                                            <p><span class="essay-answers">Answered</span><span>by mentor: </span><a href="#"><span class="mentor-review">Milo Brandt</span></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End Essay 06 -->
+                                               <!-- Essay 07 -->
+                                                <div class="question essay_07">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>7</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <a href="#"><h5 class="essay-title">How to save children from violencek</h5> </a>
+                                                            <p><span>uploaded 5 mins ago </span></p>
+                                                            <p><span class="essay-reviewing">Reviewing</span><span>by mentor: </span><a href="#"><span class="mentor-review">Milo Brandt</span></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End Essay 07 -->
+                                                <!-- Essay 08 -->
+                                                <div class="question essay_08">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>8</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <a href="#"><h5 class="essay-title">How to save children from violencek</h5> </a>
+                                                            <p><span>uploaded 5 mins ago </span></p>
+                                                            <p><span class="essay-wait-review">Waiting for review</span><span>by mentor: </span><a href="#"><span class="mentor-review">Milo Brandt</span></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End Essay 08 -->
+                                                <!-- Essay 09 -->
+                                                <div class="question essay_09">
+                                                    <div class="number-question col-xs-1">
+                                                        <h4>9</h4>
+                                                    </div>
+                                                    <div class="detail-question col-xs-offset-1">
+                                                        <div class="infor-of-question col-xs-12">
+                                                            <a href="#"><h5 class="essay-title">How to save children from violencek</h5> </a>
+                                                            <p><span>uploaded 5 mins ago </span></p>
+                                                            <p><span class="essay-answers">Answered</span><span>by mentor: </span><a href="#"><span class="mentor-review">Milo Brandt</span></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End Essay 09 -->
+
+                                            </div>
+                                            <div class="scroll-load-more col-md-12">
+                                                <p>Scroll to load more</p>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- /End content of Essay -->
+                                    <!-- Content Of Setting -->
+
+                                    <div class="content-question col-md-12 tab-pane" id="setting">
+                                        <div class="user-profile-setting">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active">
+                                                    <a data-toggle="tab" href="#perInfor">
+                                                        Personal Information
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#changPass">
+                                                        Change password
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="content-question tab-pane active" id="perInfor">
+                                                    <form action="" method="">
+                                                        <div class="personal-information">
+                                                            <div class="left-form">
+                                                                <p><input type="text" placeholder="Firstname" name="firstname"></p>
+                                                                <p><input type="text" placeholder="Lastname" name="lastname"></p>
+                                                                <p><input type="email" placeholder="Email" name="email"></p>
+                                                                <p><input type="text" placeholder="High School" name="school"></p>
+                                                                <p class="favorite field">
+                                                                    <p>Favourite field</p>
+                                                                    <input type="checkbox" value="Music" name="music"><label>Music</label>
+                                                                    <input type="checkbox" value="Art" name="art"><label>Art</label>
+                                                                    <input type="checkbox" value="Sport" name="sport"><label>Sport</label>
+                                                                </p>
+                                                            </div>
+                                                            <div class="right-form">
+                                                                <p class="sex">
+                                                                    <input type="radio" name="gender" value="male" checked><label>Male</label>
+                                                                    <input type="radio" name="gender" value="female"><label> Female</label>
+                                                                    <input type="radio" name="gender" value="other"><label> Other</label>
+                                                                </p>
+                                                                
+                                                                <p><input type="text" placeholder="BIO" name="bio"></p>
+                                                                <p><textarea placeholder="About me..." name="aboutme"></textarea></p>
+                                                            </div>
+                                                            
+                                                            <div class="submit col-md-12">
+                                                                <button type="button" id="reset">Reset</button>
+                                                                <button type="button" id="update">Update</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="content-question tab-pane" id="changPass">
+                                                    <form acition="" method="">
+                                                        <div class="change-password">
+                                                            <p><input type="password" placeholder="Current password" name="currentpassword" id="password"></p>
+                                                            <p><input type="password" id="pass" placeholder="New password" name="newpassword" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Change must be at least 8 characters"></p>
+                                                            <p><input type="password" placeholder="Confirm password" name="confirmpassword"></p>
+                                                        </div>
+                                                        <div class="submit col-md-12">
+                                                            <button type="button" id="reset">Reset</button>
+                                                            <button type="button" id="update">Update</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /End Content Of Setting -->  
+                                </div>
+
+                                
+                            </div>
+
+                        </div><!-- /End question of user -->
+                        
+                    </section><!-- /End content -->
+                </div><!-- End container -->
+
+        	</div>
+        </main>
+        <!--  end main -->
+
+        <!-- footer area -->
+        <footer id="footer">
+            <div class="container">
+            	<div class="row box-ft">
+	            	<div class="footer-logo col-md-6"> <!-- footer logo -->
+	            		<div><img src="../images/logo-footer.png" alt="">&nbsp;&nbsp;&nbsp;
+	            		<span>Copyright 2016 <a href="/">siblinks.com</a>, made with <span data-icon="&#xe089;" id="heart"></span></i></span></div>
+	            	</div>
+            		<div class="col-md-6 footer-menu"> <!-- Footer menu -->
+            			<a href="#">About us /</a>  
+            			<a href="#">Contact Us /</a>  
+            			<a href="#">Privacy Policy /</a>  
+            			<a href="#">Terms of Service</a>
+            		</div>
+            	</div>
+            </div>
+        </footer>
+        <!--end footer-->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+        <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+        
+        <!-- <script type="text/javascript" src="../js/bootstrap-datepicker.js"></script> -->
+        <script type="text/javascript">
+        </script>
+    </body> <!-- /end body -->
+</html> <!-- /end html -->

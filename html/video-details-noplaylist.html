@@ -1,0 +1,511 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" content="text/html" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Home" name="HongTTT"/>
+        <title>
+            SibLinks
+        </title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="../css/jquery.bxslider.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <!-- <link rel="stylesheet" href="../css/bootstrap-datepicker.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    <body class="home">
+        <!-- Header -->
+        <header id="header">
+            <div class="module-navigation">
+                <div class="container clearfix">
+                    <!-- logo -->
+                    <div class="main-logo col-xs-3">
+                        <a href="/">
+                            <img src="../images/logo.png" alt="" class="hidden-pc">
+                        </a>
+                    </div><!-- /logo -->
+
+                    <!-- Menu navigation -->
+                    <div class="navigation col-xs-9 "> 
+                        <nav class="navbar navbar-default">
+
+                            <!-- menu on mobile -->
+                            <div class="navbar-header"> 
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <!-- Menu on desktop -->
+                            <div class="navbar-collapse"> 
+                                <ul class="mobimenu nav navbar-nav">
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="ask-a-question.html">Ask a Question</a></li>
+                                    <li class="active"><a href="videos.html">Videos</a></li>
+                                    <li><a href="college-admission.html">College Admission</a></li>
+                                    <li><a href="broswer-mentors.html">Our Team</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <!-- nofitication of user -->
+                        <div class="user-nofitication">
+                            <div class="logined "> 
+                                <div class="notification">
+                                    <img src="../images/bell.png"><span>2</span>
+                                </div>
+                                <div class="user-login">
+                                    <div class="user-img">
+                                        <span><img src="../images/user.jpg"></span>
+                                    </div>
+                                    <div class="profile-user"><img src="../images/arrow.png"></div>
+                                    <div class="user-info inactive">
+                                        <ul>
+                                            <li class="profile"><a href="profile.html"><span data-icon="&#xe08a;"></span>Profile</a></li>
+                                            <li class="setting"><a href="setting.html"><span data-icon="&#xe037;"></span>Setting</a></li>
+                                            <li class="logout"><a href="/"><span class="fa fa-power-off"></span>Logout</a></li>
+                                        </ul>
+                                    </div>                   
+                                </div>
+                            </div>
+                            <div class="no-login inactive">
+                                <div class="register">
+                                    <a href="register.html">Register</a>
+                                </div>
+                                <div class="login">
+                                    <a href="login.html">Login</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                    
+            </div><!-- /module-navigation -->
+            <div class="background-color">
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- main start -->
+        <main id="main">
+            <div class="content ask-a-question no-playlist" id="videos-details">
+                <!-- Breadcrum -->
+                <div class="breadcrum">
+                    <div class="container">
+                        <h5>Siblinks / Videos <span>/ Brian Scott</span></h5>
+                        <!-- Search form -->
+                        <div class="search">
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><span data-icon="&#x55;"></span></button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                                    
+                                </div>
+                            </form>
+                        </div><!-- /End Search form -->
+                    </div>
+                    
+                </div><!-- /End Breadcrum -->
+                <!-- Container -->
+                <div class="body">                
+                    <!-- Content -->
+                    <section class="content videos-details-content">
+
+                        <!-- Video details playlist -->
+                        <div class="video-details-playlist">
+                            <div class="video-details-playlist-wrapper container">
+                            <!-- 16:9 aspect ratio -->
+                                <div class="video-iframe col-md-8">                                 
+                                    <iframe width="100%" height="430px" src="https://www.youtube.com/embed/B7wkzmZ4GBw?enablejsapi=1" frameborder="0"></iframe>
+                                </div>
+                                <div class="series-video col-md-4">
+                                    <div class="related-video">
+                                        <h5>Learn Elgebra Series</h5>
+                                        <p class="owner-sum-vidoe">
+                                            <span class="owner-video">Brian Scott</span>
+                                            <span class="video-count">4 of 14 videos</span>
+                                        </p>
+                                        <ul class="series-video-list" id="series-video-list">
+                                            <li class="video-list-item">
+                                                <div class="content-warpper">
+                                                    <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                        <div class="thumb-video">
+                                                            <img src="../images/feature.png">
+                                                        </div>
+                                                        <div class="detail-video">
+                                                            <p class="title-video">
+                                                                Trigonometic tutorial 1
+                                                            </p>
+                                                            <span class="owner-video">
+                                                                from<span class="own-video"> Brian Scott</span>
+                                                            </span><br>
+                                                            <span class="view-count">
+                                                                view: <span>5560</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="video-list-item active">
+                                                <div class="content-warpper">
+                                                    <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                        <div class="thumb-video">
+                                                            <img src="../images/feature.png">
+                                                        </div>
+                                                        <div class="detail-video">
+                                                            <p class="title-video">
+                                                                Trigonometic tutorial 1
+                                                            </p>
+                                                            <span class="owner-video">
+                                                                from<span class="own-video"> Brian Scott</span>
+                                                            </span><br>
+                                                            <span class="view-count">
+                                                                view: <span>5560</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="video-list-item">
+                                                <div class="content-warpper">
+                                                    <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                        <div class="thumb-video">
+                                                            <img src="../images/feature.png">
+                                                        </div>
+                                                        <div class="detail-video">
+                                                            <p class="title-video">
+                                                                Trigonometic tutorial 1
+                                                            </p>
+                                                            <span class="owner-video">
+                                                                from<span class="own-video"> Brian Scott</span>
+                                                            </span><br>
+                                                            <span class="view-count">
+                                                                view: <span>5560</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="video-list-item">
+                                                <div class="content-warpper">
+                                                    <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                        <div class="thumb-video">
+                                                            <img src="../images/feature.png">
+                                                        </div>
+                                                        <div class="detail-video">
+                                                            <p class="title-video">
+                                                                Trigonometic tutorial 1
+                                                            </p>
+                                                            <span class="owner-video">
+                                                                from<span class="own-video"> Brian Scott</span>
+                                                            </span><br>
+                                                            <span class="view-count">
+                                                                view: <span>5560</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="video-list-item">
+                                                <div class="content-warpper">
+                                                    <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                        <div class="thumb-video">
+                                                            <img src="../images/feature.png">
+                                                        </div>
+                                                        <div class="detail-video">
+                                                            <p class="title-video">
+                                                                Trigonometic tutorial 1
+                                                            </p>
+                                                            <span class="owner-video">
+                                                                from<span class="own-video"> Brian Scott</span>
+                                                            </span><br>
+                                                            <span class="view-count">
+                                                                view: <span>5560</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="video-list-item">
+                                                <div class="content-warpper">
+                                                    <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                        <div class="thumb-video">
+                                                            <img src="../images/feature.png">
+                                                        </div>
+                                                        <div class="detail-video">
+                                                            <p class="title-video">
+                                                                Trigonometic tutorial 1
+                                                            </p>
+                                                            <span class="owner-video">
+                                                                from<span class="own-video"> Brian Scott</span>
+                                                            </span><br>
+                                                            <span class="view-count">
+                                                                view: <span>5560</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="video-list-item">
+                                                <div class="content-warpper">
+                                                    <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                        <div class="thumb-video">
+                                                            <img src="../images/feature.png">
+                                                        </div>
+                                                        <div class="detail-video">
+                                                            <p class="title-video">
+                                                                Trigonometic tutorial 1
+                                                            </p>
+                                                            <span class="owner-video">
+                                                                from<span class="own-video"> Brian Scott</span>
+                                                            </span><br>
+                                                            <span class="view-count">
+                                                                view: <span>5560</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                                <div class="control-video">
+                                    <a href="#series-video-list" class="left"><span data-icon="&#x34;"></span></a>
+                                    <a href="#series-video-list" class="right"><span data-icon="&#x35;"></span></a>
+                                </div>
+
+                            <!-- 4:3 aspect ratio -->
+                                <!-- <div class="embed-responsive embed-responsive-4by3">
+                                  <iframe class="embed-responsive-item" src="..."></iframe>
+                                </div> -->
+                            </div>
+                        </div><!-- /End Video details playlist -->
+
+                        <!-- Video details content -->
+                        <div class="video-details-content container">
+                            <!-- Left side -->
+                            <div class="post-comment col-md-8">
+                                <div class="post-comment-wrapper">
+                                    <div class="video-details-description">
+                                        <h3>How to learn Physics effectively</h3>
+                                        <span>form</span><span class="own-video"> Brian Scott</span><span class="video-time-add"> 8 months ago</span>
+                                        <div class="video-mentor-details">
+                                            <div class="videos-rate">
+                                                <div class="video-details-sub">
+                                                    <img src="../images/user.jpg">
+                                                    <div class="video-member-subcriber">
+                                                        <p>
+                                                            <button><span data-icon="&#x4c;">subscrible</span>
+                                                            <span class="number-subscribers">456</span></button>
+                                                        </p>
+                                                    </div>
+                                                    <button class="share">Share</button>
+                                                </div>
+                                                <p class="videos-rate-infor">
+                                                    <span data-icon="&#x49;">324</span>
+                                                    <span data-icon="&#xe089;">12</span>
+                                                    <span data-icon="&#xe066;">16</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="videos-start">
+                                            <span>Rate <span class="votes">5.0(4 votes)</span>
+                                            <span data-icon="&#xe033;&#xe033;&#xe033;&#xe033;&#xe033;"></span>
+                                        </div>
+                                        <div class="video-detaile-script">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                            <button class="read-more">Read more <span data-icon="&#x33;"></span></button>
+                                        </div>                                
+                                    </div>
+                                    <div class="video-comment post">
+                                        <div class="video-comment-sum">
+                                            <h3>16 Comments</h3>
+                                        </div>
+                                        <div class="post-footer">
+                                            <div class="input-group">
+                                                <img class="avatar" src="http://bootdey.com/img/Content/user_1.jpg" alt="avatar"> 
+                                                <input class="form-control" placeholder="Add a comment" type="text" id="add-comment">
+                                            </div>
+                                            <ul class="comments-list">
+                                                <li class="comment">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="avatar" src="http://bootdey.com/img/Content/user_1.jpg" alt="avatar">
+                                                    </a>
+                                                    <div class="comment-body">
+                                                        <div class="comment-heading">
+                                                            <h4 class="user">Gavino Free</h4>
+                                                            <h5 class="time">5 minutes ago</h5>
+                                                        </div>
+                                                        <p>Sure, oooooooooooooooohhhhhhhhhhhhhhhh</p>
+                                                    </div>
+                                                    <ul class="comments-list">
+                                                        <li class="comment">
+                                                            <a class="pull-left" href="#">
+                                                                <img class="avatar" src="http://bootdey.com/img/Content/user_3.jpg" alt="avatar">
+                                                            </a>
+                                                            <div class="comment-body">
+                                                                <div class="comment-heading">
+                                                                    <h4 class="user">Ryan Haywood</h4>
+                                                                    <h5 class="time">3 minutes ago</h5>
+                                                                    <span class="heart"> 6 <span data-icon="&#xe089;"></span>
+                                                                    </span>
+                                                                </div>
+                                                                <p>Relax my friend</p>
+                                                            </div>
+                                                        </li> 
+                                                        <li class="comment">
+                                                            <a class="pull-left" href="#">
+                                                                <img class="avatar" src="http://bootdey.com/img/Content/user_2.jpg" alt="avatar">
+                                                            </a>
+                                                            <div class="comment-body">
+                                                                <div class="comment-heading">
+                                                                    <h4 class="user">Gavino Free</h4>
+                                                                    <h5 class="time">3 minutes ago</h5>
+                                                                </div>
+                                                                <p>Ok, cool.</p>
+                                                            </div>
+                                                        </li> 
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /End Left side --> 
+
+                            <!-- Right side -->
+                            <div class="related-video col-md-4">
+                                <h3>Related videos</h3>
+                                <ul class="related-video-list">
+                                    <li class="video-list-item">
+                                        <div class="content-warpper">
+                                            <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                <div class="thumb-video">
+                                                    <img src="../images/feature.png">
+                                                </div>
+                                                <div class="detail-video">
+                                                    <p class="title-video">
+                                                        Trigonometic tutorial 1
+                                                    </p>
+                                                    <span class="owner-video">
+                                                        from<span class="own-video"> Brian Scott</span>
+                                                    </span><br>
+                                                    <span class="view-count">
+                                                        view: <span>5560</span>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="video-list-item">
+                                        <div class="content-warpper">
+                                            <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                <div class="thumb-video">
+                                                    <img src="../images/feature.png">
+                                                </div>
+                                                <div class="detail-video">
+                                                    <p class="title-video">
+                                                        Trigonometic tutorial 1
+                                                    </p>
+                                                    <span class="owner-video">
+                                                        from<span class="own-video"> Brian Scott</span>
+                                                    </span><br>
+                                                    <span class="view-count">
+                                                        view: <span>5560</span>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="video-list-item">
+                                        <div class="content-warpper">
+                                            <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                <div class="thumb-video">
+                                                    <img src="../images/feature.png">
+                                                </div>
+                                                <div class="detail-video">
+                                                    <p class="title-video">
+                                                        Trigonometic tutorial 1
+                                                    </p>
+                                                    <span class="owner-video">
+                                                        from<span class="own-video"> Brian Scott</span>
+                                                    </span><br>
+                                                    <span class="view-count">
+                                                        view: <span>5560</span>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="video-list-item">
+                                        <div class="content-warpper">
+                                            <a href="https://www.youtube.com/embed/7vPoxoRhDXU">
+                                                <div class="thumb-video">
+                                                    <img src="../images/feature.png">
+                                                </div>
+                                                <div class="detail-video">
+                                                    <p class="title-video">
+                                                        Trigonometic tutorial 1
+                                                    </p>
+                                                    <span class="owner-video">
+                                                        from<span class="own-video"> Brian Scott</span>
+                                                    </span><br>
+                                                    <span class="view-count">
+                                                        view: <span>5560</span>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                   
+                        </div><!-- /End Video details content -->  
+
+                    </section><!-- /End content -->
+                </div><!-- End container -->
+
+        	</div>
+        </main>
+        <!--  end main -->
+
+        <!-- footer area -->
+        <footer id="footer">
+            <div class="container">
+            	<div class="row box-ft">
+	            	<div class="footer-logo col-md-6"> <!-- footer logo -->
+	            		<div><img src="../images/logo-footer.png" alt="">&nbsp;&nbsp;&nbsp;
+	            		<span>Copyright 2016 <a href="/">siblinks.com</a>, made with <span data-icon="&#xe089;" id="heart"></span></i></span></div>
+	            	</div>
+            		<div class="col-md-6 footer-menu"> <!-- Footer menu -->
+            			<a href="#">About us /</a>  
+            			<a href="#">Contact Us /</a>  
+            			<a href="#">Privacy Policy /</a>  
+            			<a href="#">Terms of Service</a>
+            		</div>
+            	</div>
+            </div>
+        </footer>
+        <!--end footer-->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.js"></script>
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+        <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        
+        <!-- <script type="text/javascript" src="../js/bootstrap-datepicker.js"></script> -->
+        <script type="text/javascript">
+        </script>
+    </body> <!-- /end body -->
+</html> <!-- /end html -->

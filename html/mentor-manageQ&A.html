@@ -1,0 +1,621 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" content="text/html" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Home" name="HongTTT"/>
+        <title>
+            SibLinks
+        </title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!-- <link href="../css/nv.d3.css" rel="stylesheet" type="text/css"> -->
+
+    </head>
+    <body id="mentor">
+        <!-- Header -->
+        <header id="header">
+            <div class="module-navigation">
+                <div class="clearfix">
+                    <!-- Left header -->
+                    <div class="mentor-left-header">
+                        <div class="left-header-wrapper">
+                            <div class="main-logo">
+                                <a href="/">
+                                    <span class="logo-full"><img src="../images/logo.png"></span>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!-- /End Left header -->
+
+                    <!-- Center header -->
+                    <div class="mentor-center-header">
+                        <div class="navbar-header"> 
+                            <button type="button" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                            </button>
+                        </div>
+                        <p class="upload-image">
+                            <span class="add-img"><input type="file" id="files" name="files[]" multiple /><label for="files"><span data-icon="&#xe070;">upload</span></label></span>
+                        </p>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /End center header -->
+
+                    <!-- Right header -->
+                    <div class="mentor-right-header">
+                        <!-- nofitication of user -->
+                        <div class="user-nofitication">
+                            <div class="logined"> 
+                                <div class="notification ">
+                                    <img src="../images/bell.png"><span>2</span>
+                                </div>
+                                <div class="user-login">
+                                    <div class="user-img">
+                                        <span><img src="../images/user.jpg"></span>
+                                    </div>
+                                    <div class="profile-user"><img src="../images/arrow.png"></div>
+                                    <div class="user-info inactive">
+                                        <ul>
+                                            <li class="profile"><a href="profile.html"><span data-icon="&#xe08a;"></span>Profile</a></li>
+                                            <li class="setting"><a href="setting.html"><span data-icon="&#xe037;"></span>Setting</a></li>
+                                            <li class="logout"><a href="/"><span class="fa fa-power-off"></span>Logout</a></li>
+                                        </ul>
+                                    </div>                   
+                                </div>
+                            </div>
+                            <div class="no-login inactive">
+                                <div class="register">
+                                    <a href="register.html">Register</a>
+                                </div>
+                                <div class="login">
+                                    <a href="login.html">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-color">
+                        </div>
+                    </div>
+                    <!-- /End Right header -->
+                </div>                    
+            </div><!-- /module-navigation -->
+            
+        </header>
+        <!-- header end -->
+
+        <!-- main start -->
+        <main id="main">
+            <!-- Sidebar left menu -->
+            <div id="sidebar-menu" class="sidebar-left">
+                <div class="navigation ">
+                    <nav class="navbar">
+                        <div class="navbar-collapse">
+                            <div class="mentor-infor">
+                                <div class="mentor-infor-img">
+                                    <img src="../images/user.jpg">
+                                </div>
+                                <div class="mentor-infor-name">
+                                    <p>Welcome</p>
+                                    <p><strong>Linda Young</strong></p>
+                                </div>                                           
+                            </div> 
+                            <div class="browse"><p>Browse</p></div>
+                            <ul class="mobimenu nav sidebar-nav">                                     
+                                <li class="active">
+                                    <a href="dashboard.html">
+                                        <span class="fa fa-tachometer"></span>
+                                        <span class="menu-title">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#x77;"></span>
+                                        <span class="menu-title">Q&A</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#x49;"></span>
+                                        <span class="menu-title">Videos</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#xe101;"></span>
+                                        <span class="menu-title">Essay</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#x67;"></span>
+                                        <span class="menu-title">Analytics</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#xe08a;"></span>
+                                        <span class="menu-title">Profile</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- /End Sidebar left menu -->
+
+            <!-- Main center content -->
+            <div class="content" id="mentor-qa">
+                <div class="center-content">
+                    <div class="content-content-wrapper">
+                        <section class="mentor-manage-qa">
+                            <!-- Content header -->
+                            <div class="mentor-manage-qa-header">
+                                <h4>Manage Q&A</h4>
+                                <p>Ut a porttitor leo. Aliquam fermentum nec elit lobortis tristique </p>
+                            </div>
+                            <!-- /End Content header -->
+
+                            <!-- Content of page -->
+                            <div class="mentor-manage-qa-content">
+                                <!-- Top content -->
+                                <div class="row top-mag">
+                                    <div class="col-md-8">
+                                        <div class="col-md-5 search">
+                                            <form class="navbar-form" role="search">
+                                                <div class="input-group">
+                                                    <div class="input-group-btn">
+                                                        <button class="btn btn-default" type="submit"><img src="../images/icon-search.png" alt=""></button>
+                                                    </div>
+                                                    <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-3 sl-sbj">
+                                            <select class="select-sbj">
+                                                <option value="0">Option 1</option>
+                                                <option value="1">Option 2</option>
+                                                <option value="2">Option 3</option>
+                                                <option value="3">Option 4</option>
+                                                <option value="4">Option 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2 sl-newwest">
+                                            <select class="select-newwest">
+                                                <option value="0">Option 1</option>
+                                                <option value="1">Option 2</option>
+                                                <option value="2">Option 3</option>
+                                                <option value="3">Option 4</option>
+                                                <option value="4">Option 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2 btn-filter"><button>Filter</button></div>
+                                    </div>
+                                </div>
+                                <!-- /End Top content -->
+
+                                <!-- bottom content -->
+                                <div class="row main-rate">
+                                    <!-- Left bottom content -->
+                                    <div class="manage-student-list col-md-3">
+                                        <ul>
+                                            <li>
+                                                <div class="student-img">
+                                                    <a href="#"><img src="../images/user.png"></a>
+                                                </div>
+                                                <div class="student-info">
+                                                    <p class="stu-name"><a href="#">Student name</a><span> asked 5 minis ago</span></p>
+                                                    <p class="stu-inessay">In Application, Financial Aid</p>
+                                                    <p class="stu-descrip">Lorem</p>
+                                                    <p class="stu-status">
+                                                        <span class="replied">Replied</span>
+                                                        <span class="time-rep">5 min ago</span>
+                                                    </p>
+                                                    <p class="stu-rate">
+                                                        23 <span data-icon=""></span>
+                                                        12 <span data-icon=""></span>
+                                                        68 <span data-icon=""></span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="stu-img">
+                                                    <a href="#"><img src="../images/user.png"></a>
+                                                </div>
+                                                <div class="stu-info">
+                                                    <p class="stu-name"><a href="#">Student name</a><span> asked 5 mins ago</span></p>
+                                                    <p class="stu-in-cat">In Application, Financial Aid</p>
+                                                    <p class="stu-descrip">Lorem</p>
+                                                    <p class="stu-status">
+                                                        <span class="replied">Replied</span>
+                                                        <span class="time-rep">5 min ago</span>
+                                                    </p>
+                                                    <p class="stu-rate">
+                                                        23 <span data-icon=""></span>
+                                                        12 <span data-icon=""></span>
+                                                        68 <span data-icon=""></span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /End left bottom content -->
+
+                                    <!-- Right bottom content -->
+                                    <div class="student-info-details">
+                                    <div class="stu-replied">
+                                        <div class="total-reply">
+                                            3 Replied
+                                        </div>
+                                        <div class="next"><span data-icon=""></span></div>
+                                        <div class="next"><span data-icon=""></span></div>
+                                    </div>
+                                    <div class="stu-replied-wrapper">
+                                        <div class="stu-replied-head">
+                                            <div class="stu-img">
+                                                <a href="#"><img src="../images/user.png"></a>
+                                            </div>
+                                            <div class="stu-info">
+                                                <p class="stu-name"><a href="#">Student name</a><span> asked 5 mins ago</span></p>
+                                                <p class="stu-in-cat">In Application, Financial Aid</p>
+                                            </div>
+                                            <div class="stu-rate">
+                                                23 <span data-icon=""></span>
+                                                12 <span data-icon=""></span>
+                                                68 <span data-icon=""></span>
+                                            </div>
+                                        </div>
+                                        <div class="stu-replied-content">
+                                            <div class="stu-quest">
+                                                lorem
+                                            </div>
+                                            <!-- Images of question -->
+                                            <div class="images-question">
+                                                <ul>
+                                                    <li class="item">
+                                                        <div class="item-img">
+                                                            <img src="../images/tutorial_04.png">
+                                                            <div class="item-hover">
+                                                              <img src="../images/ask question/look-img.png">
+                                                            </div>
+                                                        </div>                           
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="item-img">
+                                                            <img src="../images/tutorial_03.png">
+                                                            <div class="item-hover">
+                                                              <img src="../images/ask question/look-img.png">
+                                                            </div>
+                                                        </div>
+                                                    </li> 
+                                                    <li class="item">
+                                                        <div class="item-img">
+                                                            <img src="../images/tutorial_02.png">
+                                                            <div class="item-hover">
+                                                                <img src="../images/ask question/look-img.png">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="item-img">
+                                                            <img src="../images/tutorial_01.png">
+                                                            <div class="item-hover">
+                                                              <img src="../images/ask question/look-img.png">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="item-img">
+                                                            <img src="../images/tutorial_01.png">
+                                                            <div class="item-hover">
+                                                              <img src="../images/ask question/look-img.png">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- /End Images of question -->
+
+                                            <div class="video-comment post">
+                                        <div class="video-comment-sum">
+                                            <h3>16 Comments</h3>
+                                        </div>
+                                        <div class="post-footer">
+                                            <div class="input-group">
+                                                <img class="avatar" src="http://bootdey.com/img/Content/user_1.jpg" alt="avatar"> 
+                                                <textarea class="form-control" placeholder="Add a comment" type="text" id="add-comment"></textarea>
+                                                <div class="comment-action">
+                                                    <button class="cancel">Cancel</button>
+                                                    <button class="add-comment">Add comment</button>
+                                                    
+                                                </div>
+                                            </div>
+                                            <ul class="comments-list">
+                                                <li class="comment">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="avatar" src="http://bootdey.com/img/Content/user_1.jpg" alt="avatar">
+                                                    </a>
+                                                    <div class="comment-body">
+                                                        <div class="comment-heading">
+                                                            <h4 class="user">Gavino Free</h4>
+                                                            <h5 class="time">5 minutes ago</h5>
+                                                        </div>
+                                                        <p>Sure, oooooooooooooooohhhhhhhhhhhhhhhh</p>
+                                                    </div>
+                                                    <ul class="comments-list">
+                                                        <li class="comment">
+                                                            <a class="pull-left" href="#">
+                                                                <img class="avatar" src="http://bootdey.com/img/Content/user_3.jpg" alt="avatar">
+                                                            </a>
+                                                            <div class="comment-body">
+                                                                <div class="comment-heading">
+                                                                    <h4 class="user">Ryan Haywood</h4>
+                                                                    <h5 class="time">3 minutes ago</h5>
+                                                                    <span class="heart"> 6 <span data-icon="&#xe089;"></span>
+                                                                    </span>
+                                                                </div>
+                                                                <p>Relax my friend</p>
+                                                            </div>
+                                                        </li> 
+                                                        <li class="comment">
+                                                            <a class="pull-left" href="#">
+                                                                <img class="avatar" src="http://bootdey.com/img/Content/user_2.jpg" alt="avatar">
+                                                            </a>
+                                                            <div class="comment-body">
+                                                                <div class="comment-heading">
+                                                                    <h4 class="user">Gavino Free</h4>
+                                                                    <h5 class="time">3 minutes ago</h5>
+                                                                </div>
+                                                                <p>Ok, cool.</p>
+                                                            </div>
+                                                        </li> 
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+        </div>
+    </div>
+    <!-- POPUP of images's question -->
+    <div class="popup-images">
+        <div class="popup-images-wrapper">
+            <ul id="bxslider">
+                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
+            </ul>
+            <!-- The thumbnails -->
+            <ul id="bxslider-pager">
+                <li data-slideIndex="0"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                <li data-slideIndex="1"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                <li data-slideIndex="2"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                <li data-slideIndex="3"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                <li data-slideIndex="4"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                <li data-slideIndex="5"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                <li data-slideIndex="5"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+                <li data-slideIndex="5"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
+            </ul>
+        </div>
+        <div class="close-popup-images">
+        </div>
+    </div><!-- /End POPUP of images's question -->
+</div>
+                                    <!-- /End right bottom content -->
+                                </div>
+                                <!-- /End bottom content -->
+                            </div>
+                            <!-- /End Content of page -->
+                        </section>
+                    </div>
+                </div>              
+            </div>
+            <!-- /End Main center content -->
+
+            <!-- Sidebar right -->
+            <div id="sidebar-right">
+                <div class="right-content">
+                    <div class="right-content-tab">
+                        <div class="right-content-wrapper">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#group1"><span data-icon="&#xe050;"></span></a></li>
+                                <li><a data-toggle="tab" href="#group2"><span data-icon="&#xe066;"></span></a></li>
+                                <li><a data-toggle="tab" href="#group3"><span data-icon="&#xe033;"></span></a></li>
+                            </ul>
+                            <!-- Content of each tab -->                        
+                            <div class="tab-content">
+                                <!-- Content of tab All -->
+                                <div id="group1" class="tab-pane active">
+                                    <div class="student-subcripted">
+                                        <div class="student-subcripted-title">
+                                            <p>Students subscripted</p>
+                                        </div>
+                                        <div class="student-subcripted-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>                                            
+                                            </ul>
+                                            <div class="load-more"><button>Show more</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="recently-activity">
+                                        <div class="recently-activity-title">
+                                            <p>Recently Activity</p>
+                                        </div>
+                                        <div class="recently-activity-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>                                               
+                                            </ul>
+                                            <div class="load-more"><button>Show more</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="group2" class="tab-pane">
+                                </div>
+                                <div id="group3" class="tab-pane">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /End Sidebar right -->
+        </main>
+        <!--  end main -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+  	    <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+        <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+        
+        <script type="text/javascript">
+            $('.remove-image').live("click", function() {
+                    $(this).parent("div").remove();
+                });
+        </script>
+    </body> <!-- /end body -->
+</html> <!-- /end html -->

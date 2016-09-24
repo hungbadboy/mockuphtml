@@ -1,0 +1,612 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" content="text/html" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Home" name="HongTTT"/>
+        <title>
+            SibLinks
+        </title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!-- <link href="../css/nv.d3.css" rel="stylesheet" type="text/css"> -->
+
+    </head>
+    <body id="mentor">
+        <!-- Header -->
+        <header id="header">
+            <div class="module-navigation">
+                <div class="clearfix">
+                    <!-- Left header -->
+                    <div class="mentor-left-header">
+                        <div class="left-header-wrapper">
+                            <div class="main-logo">
+                                <a href="/">
+                                    <span class="logo-full"><img src="../images/logo.png"></span>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!-- /End Left header -->
+
+                    <!-- Center header -->
+                    <div class="mentor-center-header">
+                        <div class="navbar-header"> 
+                            <button type="button" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                            </button>
+                        </div>
+                        <p class="upload-image">
+                            <span class="add-img"><input type="file" id="files" name="files[]" multiple /><label for="files"><span data-icon="&#xe070;">upload</span></label></span>
+                        </p>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /End center header -->
+
+                    <!-- Right header -->
+                    <div class="mentor-right-header">
+                        <!-- nofitication of user -->
+                        <div class="user-nofitication">
+                            <div class="logined"> 
+                                <div class="notification ">
+                                    <img src="../images/bell.png"><span>2</span>
+                                </div>
+                                <div class="user-login">
+                                    <div class="user-img">
+                                        <span><img src="../images/user.jpg"></span>
+                                    </div>
+                                    <div class="profile-user"><img src="../images/arrow.png"></div>
+                                    <div class="user-info inactive">
+                                        <ul>
+                                            <li class="profile"><a href="profile.html"><span data-icon="&#xe08a;"></span>Profile</a></li>
+                                            <li class="setting"><a href="setting.html"><span data-icon="&#xe037;"></span>Setting</a></li>
+                                            <li class="logout"><a href="/"><span class="fa fa-power-off"></span>Logout</a></li>
+                                        </ul>
+                                    </div>                   
+                                </div>
+                            </div>
+                            <div class="no-login inactive">
+                                <div class="register">
+                                    <a href="register.html">Register</a>
+                                </div>
+                                <div class="login">
+                                    <a href="login.html">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-color">
+                        </div>
+                    </div>
+                    <!-- /End Right header -->
+                </div>                    
+            </div><!-- /module-navigation -->
+            
+        </header>
+        <!-- header end -->
+
+        <!-- main start -->
+        <main id="main" class="clearfix">
+            <div id="sidebar-menu" class="sidebar-left">
+                <div class="navigation ">
+                    <nav class="navbar">
+                        <div class="navbar-collapse">
+                            <div class="mentor-infor">
+                                <div class="mentor-infor-img">
+                                    <img src="../images/user.jpg">
+                                </div>
+                                <div class="mentor-infor-name">
+                                    <p>Welcome</p>
+                                    <p><strong>Linda Young</strong></p>
+                                </div>                                           
+                            </div> 
+                            <div class="browse"><p>Browse</p></div>
+                            <ul class="mobimenu nav sidebar-nav">                                     
+                                <li class="active">
+                                    <a href="dashboard.html">
+                                        <span class="fa fa-tachometer"></span>
+                                        <span class="menu-title">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#x77;"></span>
+                                        <span class="menu-title">Q&A</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#x49;"></span>
+                                        <span class="menu-title">Videos</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#xe101;"></span>
+                                        <span class="menu-title">Essay</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#x67;"></span>
+                                        <span class="menu-title">Analytics</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        <span data-icon="&#xe08a;"></span>
+                                        <span class="menu-title">Profile</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="content">
+                <div class="center-content">
+                    <div class="center-content-wrapper">
+                        <section id="dashboard">
+                            <div class="dashboard-wrapper">
+                                <div class="dashboard-header">    
+                                <h4>Manage Video</h4>
+                                <p>Ut a porttitor leo. Aliquam fermentum nec elit lobortis tristique </p>
+                                </div>
+                                <div class="manager-box-video">
+                                    <div class="row">
+                                        <div class="col-md-3 box-over">
+                                            <div class="top-over clearfix">
+                                                <span class="pull-left">overview</span>
+                                                <span class="pull-right" data-icon="&#xe037;"></span>
+                                                <div class="bx-video-play">
+                                                    <span><img src="../images/icon-play-box.png" alt=""></span>
+                                                    <span><b>68</b>&nbsp;videos</span><br/>
+                                                    <span><b>24</b>&nbsp;playlits</span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-review">
+                                                <li><img src="../images/icon-l-review.png" alt="">&nbsp;&nbsp;<b>11392</b>&nbsp;&nbsp;views</li>
+                                                <li><img src="../images/icon-l-comments.png" alt="">&nbsp;&nbsp;<b>231</b>&nbsp;&nbsp;comments</li>
+                                                <li class="clearfix"><span class="pull-left"><img src="../images/icon-l-star.png" alt="">&nbsp;&nbsp;<b>4.5</b>&nbsp;&nbsp;rate</span>
+                                                    <ul class="list-star pull-left">
+                                                        <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-star-h.png" alt=""></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3 box-video-inner">
+                                            <div class="video-detail">
+                                                <img src="../images/img-video.png" alt="">
+                                                <span class="icon-play-video"><img src="../images/icon-play-video.png" alt=""></span>
+                                            </div>
+                                            <div class="detail-vd">
+                                                <h5>Ut at sem quis urna fringilla congue a <br/>in ex. Aliquam sed imperdiet elit</h5>
+                                                <div class="clearfix">
+                                                    <ul class="list-star pull-left">
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                    </ul>
+                                                    <p class="list-view pull-right">
+                                                        <span><img src="../images/icon-pl.png" alt=""> 324</span>&nbsp;&nbsp;
+                                                        <span><img src="../images/icon-like.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                        <span><img src="../images/icon-cm.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <h4 class="pull-left">newest</h4>
+                                                    <ul class="pull-right icon-sl">
+                                                        <li><a href="#"><img src="../images/icon-left.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-right.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 box-video-inner">
+                                            <div class="video-detail">
+                                                <img src="../images/img-video-2.png" alt="">
+                                                <span class="icon-play-video"><img src="../images/icon-play-video.png" alt=""></span>
+                                            </div>
+                                            <div class="detail-vd detail-vd-2">
+                                                <h5>Ut at sem quis urna fringilla congue a <br/>in ex. Aliquam sed imperdiet elit</h5>
+                                                <div class="clearfix">
+                                                    <ul class="list-star pull-left">
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                    </ul>
+                                                    <p class="list-view pull-right">
+                                                        <span><img src="../images/icon-pl.png" alt=""> 324</span>&nbsp;&nbsp;
+                                                        <span><img src="../images/icon-like.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                        <span><img src="../images/icon-cm.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <h4 class="pull-left">newest</h4>
+                                                    <ul class="pull-right icon-sl">
+                                                        <li><a href="#"><img src="../images/icon-left.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-right.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 box-video-inner">
+                                            <div class="video-detail">
+                                                <img src="../images/img-video-3.png" alt="">
+                                                <span class="icon-play-video"><img src="../images/icon-play-video.png" alt=""></span>
+                                            </div>
+                                            <div class="detail-vd detail-vd-3">
+                                                <h5>Ut at sem quis urna fringilla congue a <br/>in ex. Aliquam sed imperdiet elit</h5>
+                                                <div class="clearfix">
+                                                    <ul class="list-star pull-left">
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                    </ul>
+                                                    <p class="list-view pull-right">
+                                                        <span><img src="../images/icon-pl.png" alt=""> 324</span>&nbsp;&nbsp;
+                                                        <span><img src="../images/icon-like.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                        <span><img src="../images/icon-cm.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix">
+                                                    <h4 class="pull-left">newest</h4>
+                                                    <ul class="pull-right icon-sl">
+                                                        <li><a href="#"><img src="../images/icon-left.png" alt=""></a></li>
+                                                        <li><a href="#"><img src="../images/icon-right.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row main-rate">
+                                        <div class="col-md-4">
+                                            <div class="box-rate">
+                                                <h4>rate</h4>
+                                                <ul>
+                                                    <li class="clearfix">
+                                                        <span class="img-tb pull-left"><img src="../images/img-t-list.png" alt=""></span>
+                                                        <div class="text-rate pull-left">
+                                                            <h5>Student name</h5>
+                                                            <div class="rate-star clearfix">
+                                                                <span class="pull-left">rate </span>
+                                                                <ul class="list-star pull-left">
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>video<span>Physics Introduction </span></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <span class="img-tb pull-left"><img src="../images/img-t-list.png" alt=""></span>
+                                                        <div class="text-rate pull-left">
+                                                            <h5>Student name</h5>
+                                                            <div class="rate-star clearfix">
+                                                                <span class="pull-left">rate </span>
+                                                                <ul class="list-star pull-left">
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>video<span>Physics Introduction </span></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <span class="img-tb pull-left"><img src="../images/img-t-list.png" alt=""></span>
+                                                        <div class="text-rate pull-left">
+                                                            <h5>Student name</h5>
+                                                            <div class="rate-star clearfix">
+                                                                <span class="pull-left">rate </span>
+                                                                <ul class="list-star pull-left">
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>video<span>Physics Introduction </span></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <span class="img-tb pull-left"><img src="../images/img-t-list.png" alt=""></span>
+                                                        <div class="text-rate pull-left">
+                                                            <h5>Student name</h5>
+                                                            <div class="rate-star clearfix">
+                                                                <span class="pull-left">rate </span>
+                                                                <ul class="list-star pull-left">
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-star-l.png" alt=""></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>video<span>Physics Introduction </span></p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="box-l-comment">
+                                                <h4>latest comments</h4>
+                                                <div class="item-cm clearfix">
+                                                    <span class="img-tb pull-left"><img src="../images/img-t-list.png" alt=""></span>
+                                                    <div class="pull-left detail-cm">
+                                                        <ul class="top-name">
+                                                            <li><a href="#">Rajesh Chavan</a></li>
+                                                            <li><span class="time">2 mins ago on</span></li>
+                                                            <li><span class="question">How to learn Algebra effectively </span></li>
+                                                        </ul>
+                                                        <p>Sed neque ipsum, placerat quis pellentesque quis, aliquet non eros. Morbi at laoreet justo. Ut sodales egestas augue a tincidunt. Nullam nec nisi porta, vestibulum tellus sit amet, luctus ex</p>
+                                                    </div>
+                                                    <a class="pull-right btn-reply" href="#">reply</a>
+                                                </div>
+                                                <div class="item-cm clearfix">
+                                                    <span class="img-tb pull-left"><img src="../images/img-t-list.png" alt=""></span>
+                                                    <div class="pull-left detail-cm">
+                                                        <ul class="top-name">
+                                                            <li><a href="#">Rajesh Chavan</a></li>
+                                                            <li><span class="time">2 mins ago on</span></li>
+                                                            <li><span class="question">How to learn Algebra effectively </span></li>
+                                                        </ul>
+                                                        <p>Sed neque ipsum, placerat quis pellentesque quis, aliquet non eros. Morbi at laoreet justo. Ut sodales egestas augue a tincidunt. Nullam nec nisi porta, vestibulum tellus sit amet, luctus ex</p>
+                                                    </div>
+                                                    <a class="pull-right btn-reply" href="#">reply</a>
+                                                </div>
+                                                <div class="item-cm clearfix">
+                                                    <span class="img-tb pull-left"><img src="../images/img-t-list.png" alt=""></span>
+                                                    <div class="pull-left detail-cm">
+                                                        <ul class="top-name">
+                                                            <li><a href="#">Rajesh Chavan</a></li>
+                                                            <li><span class="time">2 mins ago on</span></li>
+                                                            <li><span class="question">How to learn Algebra effectively </span></li>
+                                                        </ul>
+                                                        <p>Sed neque ipsum, placerat quis pellentesque quis, aliquet non eros. Morbi at laoreet justo. Ut sodales egestas augue a tincidunt. Nullam nec nisi porta, vestibulum tellus sit amet, luctus ex</p>
+                                                    </div>
+                                                    <a class="pull-right btn-reply" href="#">reply</a>
+                                                </div>
+                                                <div class="item-cm clearfix">
+                                                    <span class="img-tb pull-left"><img src="../images/img-t-list.png" alt=""></span>
+                                                    <div class="pull-left detail-cm">
+                                                        <ul class="top-name">
+                                                            <li><a href="#">Rajesh Chavan</a></li>
+                                                            <li><span class="time">2 mins ago on</span></li>
+                                                            <li><span class="question">How to learn Algebra effectively </span></li>
+                                                        </ul>
+                                                        <p>Sed neque ipsum, placerat quis pellentesque quis, aliquet non eros. Morbi at laoreet justo. Ut sodales egestas augue a tincidunt. Nullam nec nisi porta, vestibulum tellus sit amet, luctus ex</p>
+                                                    </div>
+                                                    <a class="pull-right btn-reply" href="#">reply</a>
+                                                </div>
+                                                <p class="btn-load"><a href="#">load more comment</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>                
+            </div>
+            <div id="sidebar-right">
+                <div class="right-content">
+                    <div class="right-content-tab">
+                        <div class="right-content-wrapper">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#group1"><span data-icon="&#xe050;"></span></a></li>
+                                <li><a data-toggle="tab" href="#group2"><span data-icon="&#xe066;"></span></a></li>
+                                <li><a data-toggle="tab" href="#group3"><span data-icon="&#xe033;"></span></a></li>
+                            </ul>
+                            <!-- Content of each tab -->                        
+                            <div class="tab-content">
+                                <!-- Content of tab All -->
+                                <div id="group1" class="tab-pane active">
+                                    <div class="student-subcripted">
+                                        <div class="student-subcripted-title">
+                                            <p>Students subscripted</p>
+                                        </div>
+                                        <div class="student-subcripted-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>                                                
+                                            </ul>
+                                            <div class="load-more"><button>Show more</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="recently-activity">
+                                        <div class="recently-activity-title">
+                                            <p>Recently Activity</p>
+                                        </div>
+                                        <div class="recently-activity-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>                                               
+                                            </ul>
+                                            <div class="load-more"><button>Show more</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="group2" class="tab-pane">
+                                </div>
+                                <div id="group3" class="tab-pane">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--  end main -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+  	    <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+        <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+        <!-- <script src="../js/nv.d3.js"></script> -->
+        
+        <script type="text/javascript">
+            $('.remove-image').live("click", function() {
+                $(this).parent("div").remove();
+            });
+            $("#check-all").change(function () {
+                $(".check-input").prop('checked', $(this).prop("checked"));
+            });
+        </script>
+    </body> <!-- /end body -->
+</html> <!-- /end html -->
