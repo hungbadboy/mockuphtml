@@ -128,7 +128,7 @@ jQuery(document).ready(function($) {
     $(".has-answer").click(function(){
       $(this).parents(".number-answer").find(".detail-answer-question").slideToggle();
     });
-    $(".total-answer i").click(function(){
+    $("#question-details .total-answer i").click(function(){
         $(".sort-answer").slideToggle()
     })
 
