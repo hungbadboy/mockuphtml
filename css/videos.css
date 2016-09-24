@@ -44,7 +44,7 @@ span.number-media {
     text-align: center;
     margin-top: 10px;
     background: #ffcc00;
-    padding: 12px 0;
+    padding: 8px 0;
     font-size: 18px;
     font-weight: 500;
     border-radius: 4px;
@@ -646,12 +646,14 @@ li .video-mentor-information {
     width: auto;
     float: left;
 }
-#videos-details .video-detaile-script {
-    width: 100%;
+#videos-details .video-detail-script {
+    width: calc(100% + 50px);
     float: left;
     margin: 15px 0;
-    padding: 20px 10px 5px 10px;
+    padding: 20px 10px 10px 50px;
     background: #edf1f5;
+    position: relative;
+    left: -50px;
 }
 #videos-details button.read-more {
     border: none;
@@ -740,8 +742,8 @@ li .video-mentor-information {
     cursor: pointer;
 }
 #videos-details .control-video div>span:before {
-    color: rgba(255,204,0,0.5);
-    font-size: 100px;
+    color: rgba(255,204,0,0.3);
+    font-size: 85px;
 }
 #videos-details .control-video div:hover>span:before {
     color: rgba(255,204,0,0.7);
@@ -953,7 +955,7 @@ span.favourite:before {
 .video-list-content li {
     float: left;
     margin-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     position: relative;
     cursor: pointer;
     width: 196px;
@@ -980,6 +982,94 @@ span.favourite:before {
     position: relative;
     top: -2px;
 }
-.videos-content-header-top>div.link-mentor:hover {
+.videos-content-header-top>div.link-mentor:hover,
+.videos-content-header-top>div.link-mentor:hover a{
     background: #505050;
+    color: #ffcc00;
+}
+.search button.btn.btn-default {
+    border-left: none;
+}
+
+input#srch-term {
+    border-right: none;
+}
+.videos-content-header-top li {
+    position: relative;
+    width: 100%
+}
+.videos-content-header-top li a{
+    text-align: left;
+}
+.videos-start span:before {
+    color: #ffcc00;
+}
+#history .video-list-content li:last-child:before, 
+#favourite .video-list-content li:last-child:before {
+    height: 0;
+}
+#subcriptions .video-list-content ul,
+#all .video-list-content ul {
+    overflow: initial;
+}
+#history .video-wrapper,
+#favourite .video-wrapper {
+    overflow: hidden;
+    border-bottom: 1px solid #ececed;
+    padding-bottom: 15px;
+}
+/*.comment-simplebox-arrow {
+    height: 12px;
+    position: absolute;
+    top: 0;
+    width: 12px;
+    left: 0;
+    margin: 0;
+}
+.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+}
+.comment-simplebox-arrow .arrow-outer {
+    border: 6px solid #d5d5d5;
+    left: 0;
+    top: 0;
+}*/
+
+.category {float: right;}
+
+.category span {
+    margin-right: 3px;
+}
+
+.category span:first-child {
+    color: #909090;
+}
+.video-iframe {
+    width: 65%;
+    margin: auto;
+    float: left;
+    margin-right: 10px
+}
+.video-iframe.noplaylist {
+    width: 100%;
+}
+
+.series-video {
+    width: 33.3333333%;
+    float: left;
+}
+li.video-list-item.active .thumb-video {
+    border: 2px solid #ffcc00;
+}
+#videos-details .video-detail-script:before {
+    content: "";
+    -webkit-box-shadow: 43px -12px 30px 0px rgba(237,241,245,1);
+    -moz-box-shadow: 43px -12px 30px 0px rgba(237,241,245,1);
+    box-shadow: 0px -22px 30px 0px rgba(237,241,245,1);
+    width: calc(100% - 50px);
+    position: absolute;
+    bottom: 26px;
+    height: 33px;
 }

@@ -686,3 +686,6 @@ button.ask-question-now:hover {
 .student-profile-content .content-question {
     height: auto;
 }
+#question-details .detail-answer-question {
+    display: block;
+}

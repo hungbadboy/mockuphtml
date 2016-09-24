@@ -572,7 +572,7 @@ html, body, #chart1, svg {
 }
 
 .dashboard-video {
-    width: 330px;
+    width: 325px;
     margin-right: 0px;
     float: left;
 }
@@ -1216,5 +1216,21 @@ span.img-tb{
     background-color: #f0f3f4;
     padding: 5px 15px;
     border-radius: 5px;
+}
+.dashboard-video .icon-play-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+}
+.dashboard-video .video-detail img {
+    width: 100%;
+}
+.dashboard-video .video-detail {
+    position: relative;
 }
 /*========//CSS MANAGER VIDEO=============*/
