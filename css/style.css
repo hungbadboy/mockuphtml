@@ -113,7 +113,7 @@ section h5 {
 }
 main>.content{
     margin-top: 70px;
-    min-height: calc(100vh - 70px);
+    /*min-height: calc(100vh - 70px);*/
 }
 button {
     padding: 0;
@@ -776,4 +776,7 @@ button.regist:hover {
     top: 0;
     left: 0;
     border-radius: 4px;
+}
+#student-profile main>.content{
+    min-height: calc(100vh - 70px);
 }
