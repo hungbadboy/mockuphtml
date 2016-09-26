@@ -610,6 +610,7 @@ li .video-mentor-information {
 #videos-details .video-member-subcriber {
     float: left;
     /*margin-top: 10px;*/
+    margin-left: 10px;
 }
 #videos-details .video-mentor-details {
     width: 100%;
@@ -621,11 +622,12 @@ li .video-mentor-information {
     font-weight: 600;
 }
 #videos-details .video-member-subcriber p {
-    padding: 5px;
+    padding: 5px 0;
 }
 #videos-details p.videos-rate-infor span {
     font-size: 16px;
     /*padding-top: 10px;*/
+    margin: 0 5px;
 }
 #videos-details .video-member-subcriber span {
     color: #fff;
@@ -636,13 +638,14 @@ li .video-mentor-information {
     font-size: 24px;
     margin-top: -2px;
 }
-#videos-details button.share {
+#videos-details button.share, #videos-details button.favorite {
     background: none;
     border: 1px solid #cececd;
     border-radius: 4px;
     padding: 8px 10px;
     margin-top: 5px;
     margin-left: 0px;
+    margin-right: 5px;
 }
 #videos-details .videos-rate-infor {
     float: right;
@@ -944,7 +947,9 @@ p.subscribers:hover {
     border-bottom: 4px solid #ccc;
 }
 #videos-details button.share:hover,
-button.share:hover {
+button.share:hover,
+#videos-details button.favorite:hover, 
+button.favorite:hover {
     background: #505050;
     color: #fff;
 }

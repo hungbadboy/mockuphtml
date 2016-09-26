@@ -702,3 +702,8 @@ button.ask-question-now:hover {
 .question:last-child .detail-question {
     border: none;
 }
+#student-mentor-nodata .mentors-video-recently h4,
+#student-mentor-nodata .mentor-profile-answered p {
+    color: #909090;
+    margin-left: 30px;
+}
