@@ -26,6 +26,7 @@
     position: relative;
     z-index: 3;
     background: #fff;
+    height: 100px;
 }
 .step li.active:before {
     border-bottom: 6px solid #ffcc00;
@@ -81,7 +82,7 @@
 }
 
 .step-apply {
-    width: 110px;
+    width: 125px;
 }
 
 .step-apply h2 {
@@ -97,6 +98,9 @@
 .step-apply p {
     font-weight: 600;
     margin-top: 15px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 15px;
 }
 .college-admission-content button.next {
     float: right;
@@ -106,7 +110,7 @@
     padding: 6px 20px;
     border-radius: 4px;
     margin-top: 15px;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 .college-admission-content button.back {
     float: left;
@@ -116,7 +120,7 @@
     padding: 6px 20px;
     border-radius: 4px;
     margin-top: 15px;
-    margin-left: 15px;  
+    margin-left: 20px;
 }
 #college-admission .video-list-content li {
     margin-right: 0px;
@@ -214,7 +218,7 @@
 .your-essay {
     border: 1px solid #e8e8e8;
     margin-bottom: 30px;
-    padding: 30px 15px;
+    padding: 30px 15px 20px;
 }
 .your-essay-content span.essay-reviewing, 
 .your-essay-content span.essay-wait-review, 
@@ -516,4 +520,7 @@ button.share:hover {
 }
 .your-essay-content li.last-essay:before {
     height: 0;
+}
+.essay-thumb-right {
+    margin-top: 25px;
 }
