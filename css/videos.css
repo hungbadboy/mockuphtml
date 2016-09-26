@@ -396,7 +396,7 @@ li .video-mentor-information {
     width: 60px;
     border-radius: 50%;
     border: 4px solid #fff;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .video-mentor-details>h4 {
@@ -415,7 +415,7 @@ li .video-mentor-information {
     margin-top: -5px;
 }
 #video-check-out .video-member-subcriber {
-    margin-top: 15px;
+    margin-top: 12px;
 }
 #video-check-out .video-member-subcriber p {
     background: #ff5353;
@@ -679,7 +679,7 @@ li .video-mentor-information {
     border-radius: 50%;
 }
 #videos-details textarea#add-comment {
-    width: calc(100% - 58px);
+    width: calc(100% - 48px);
     float: left;
 }
 #videos-details .input-group {
