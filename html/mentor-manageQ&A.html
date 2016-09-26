@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../css/responsive.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-        <!-- <link href="../css/nv.d3.css" rel="stylesheet" type="text/css"> -->
+        <link href="../css/nv.d3.css" rel="stylesheet" type="text/css">
 
     </head>
     <body id="mentor">
@@ -160,271 +160,390 @@
             <!-- /End Sidebar left menu -->
 
             <!-- Main center content -->
-            <div class="content" id="mentor-qa">
+            <div class="content">
                 <div class="center-content">
-                    <div class="content-content-wrapper">
-                        <section class="mentor-manage-qa">
+                    <div class="center-content-wrapper">
+                        <section id="dashboard">
                             <!-- Content header -->
-                            <div class="mentor-manage-qa-header">
-                                <h4>Manage Q&A</h4>
+                            <div class="dashboard-header">    
+                                <h4>Manage Video</h4>
                                 <p>Ut a porttitor leo. Aliquam fermentum nec elit lobortis tristique </p>
                             </div>
                             <!-- /End Content header -->
-
                             <!-- Content of page -->
-                            <div class="mentor-manage-qa-content">
-                                <!-- Top content -->
+                            <div class="manager-video mentor-manage-qa-content">
                                 <div class="row top-mag">
-                                    <div class="col-md-8">
-                                        <div class="col-md-5 search">
+                                    <div class="col-md-12">
+                                        <div class="col-md-4 search">
                                             <form class="navbar-form" role="search">
-                                                <div class="input-group">
+                                                <div class="input-group">                                                    
+                                                    <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term">
                                                     <div class="input-group-btn">
                                                         <button class="btn btn-default" type="submit"><img src="../images/icon-search.png" alt=""></button>
                                                     </div>
-                                                    <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term">
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="col-md-3 sl-sbj">
+                                        <div class="col-md-2 sl-sbj">
                                             <select class="select-sbj">
-                                                <option value="0">Option 1</option>
-                                                <option value="1">Option 2</option>
-                                                <option value="2">Option 3</option>
-                                                <option value="3">Option 4</option>
-                                                <option value="4">Option 5</option>
+                                                <option value="0">Subjects</option>
+                                                <option value="1">Subjects 2</option>
+                                                <option value="2">Subjects 3</option>
+                                                <option value="3">Subjects 4</option>
+                                                <option value="4">Subjects 5</option>
                                             </select>
                                         </div>
                                         <div class="col-md-2 sl-newwest">
                                             <select class="select-newwest">
-                                                <option value="0">Option 1</option>
-                                                <option value="1">Option 2</option>
-                                                <option value="2">Option 3</option>
-                                                <option value="3">Option 4</option>
-                                                <option value="4">Option 5</option>
+                                                <option value="0">Category</option>
+                                                <option value="1">Category 2</option>
+                                                <option value="2">Category 3</option>
+                                                <option value="3">Category 4</option>
+                                                <option value="4">Category 5</option>
                                             </select>
                                         </div>
                                         <div class="col-md-2 btn-filter"><button>Filter</button></div>
                                     </div>
                                 </div>
                                 <!-- /End Top content -->
-
-                                <!-- bottom content -->
-                                <div class="row main-rate">
-                                    <!-- Left bottom content -->
-                                    <div class="manage-student-list col-md-3">
-                                        <ul>
-                                            <li>
-                                                <div class="student-img">
-                                                    <a href="#"><img src="../images/user.png"></a>
-                                                </div>
-                                                <div class="student-info">
-                                                    <p class="stu-name"><a href="#">Student name</a><span> asked 5 minis ago</span></p>
-                                                    <p class="stu-inessay">In Application, Financial Aid</p>
-                                                    <p class="stu-descrip">Lorem</p>
-                                                    <p class="stu-status">
-                                                        <span class="replied">Replied</span>
-                                                        <span class="time-rep">5 min ago</span>
-                                                    </p>
-                                                    <p class="stu-rate">
-                                                        23 <span data-icon=""></span>
-                                                        12 <span data-icon=""></span>
-                                                        68 <span data-icon=""></span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="stu-img">
-                                                    <a href="#"><img src="../images/user.png"></a>
-                                                </div>
-                                                <div class="stu-info">
-                                                    <p class="stu-name"><a href="#">Student name</a><span> asked 5 mins ago</span></p>
-                                                    <p class="stu-in-cat">In Application, Financial Aid</p>
-                                                    <p class="stu-descrip">Lorem</p>
-                                                    <p class="stu-status">
-                                                        <span class="replied">Replied</span>
-                                                        <span class="time-rep">5 min ago</span>
-                                                    </p>
-                                                    <p class="stu-rate">
-                                                        23 <span data-icon=""></span>
-                                                        12 <span data-icon=""></span>
-                                                        68 <span data-icon=""></span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- /End left bottom content -->
-
-                                    <!-- Right bottom content -->
-                                    <div class="student-info-details">
-                                    <div class="stu-replied">
-                                        <div class="total-reply">
-                                            3 Replied
-                                        </div>
-                                        <div class="next"><span data-icon=""></span></div>
-                                        <div class="next"><span data-icon=""></span></div>
-                                    </div>
-                                    <div class="stu-replied-wrapper">
-                                        <div class="stu-replied-head">
-                                            <div class="stu-img">
-                                                <a href="#"><img src="../images/user.png"></a>
-                                            </div>
-                                            <div class="stu-info">
-                                                <p class="stu-name"><a href="#">Student name</a><span> asked 5 mins ago</span></p>
-                                                <p class="stu-in-cat">In Application, Financial Aid</p>
-                                            </div>
-                                            <div class="stu-rate">
-                                                23 <span data-icon=""></span>
-                                                12 <span data-icon=""></span>
-                                                68 <span data-icon=""></span>
-                                            </div>
-                                        </div>
-                                        <div class="stu-replied-content">
-                                            <div class="stu-quest">
-                                                lorem
-                                            </div>
-                                            <!-- Images of question -->
-                                            <div class="images-question">
-                                                <ul>
-                                                    <li class="item">
-                                                        <div class="item-img">
-                                                            <img src="../images/tutorial_04.png">
-                                                            <div class="item-hover">
-                                                              <img src="../images/ask question/look-img.png">
-                                                            </div>
-                                                        </div>                           
-                                                    </li>
-                                                    <li class="item">
-                                                        <div class="item-img">
-                                                            <img src="../images/tutorial_03.png">
-                                                            <div class="item-hover">
-                                                              <img src="../images/ask question/look-img.png">
-                                                            </div>
-                                                        </div>
-                                                    </li> 
-                                                    <li class="item">
-                                                        <div class="item-img">
-                                                            <img src="../images/tutorial_02.png">
-                                                            <div class="item-hover">
-                                                                <img src="../images/ask question/look-img.png">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item">
-                                                        <div class="item-img">
-                                                            <img src="../images/tutorial_01.png">
-                                                            <div class="item-hover">
-                                                              <img src="../images/ask question/look-img.png">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item">
-                                                        <div class="item-img">
-                                                            <img src="../images/tutorial_01.png">
-                                                            <div class="item-hover">
-                                                              <img src="../images/ask question/look-img.png">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!-- /End Images of question -->
-
-                                            <div class="video-comment post">
-                                        <div class="video-comment-sum">
-                                            <h3>16 Comments</h3>
-                                        </div>
-                                        <div class="post-footer">
-                                            <div class="input-group">
-                                                <img class="avatar" src="http://bootdey.com/img/Content/user_1.jpg" alt="avatar"> 
-                                                <textarea class="form-control" placeholder="Add a comment" type="text" id="add-comment"></textarea>
-                                                <div class="comment-action">
-                                                    <button class="cancel">Cancel</button>
-                                                    <button class="add-comment">Add comment</button>
-                                                    
-                                                </div>
-                                            </div>
-                                            <ul class="comments-list">
-                                                <li class="comment">
-                                                    <a class="pull-left" href="#">
-                                                        <img class="avatar" src="http://bootdey.com/img/Content/user_1.jpg" alt="avatar">
-                                                    </a>
-                                                    <div class="comment-body">
-                                                        <div class="comment-heading">
-                                                            <h4 class="user">Gavino Free</h4>
-                                                            <h5 class="time">5 minutes ago</h5>
-                                                        </div>
-                                                        <p>Sure, oooooooooooooooohhhhhhhhhhhhhhhh</p>
-                                                    </div>
-                                                    <ul class="comments-list">
-                                                        <li class="comment">
-                                                            <a class="pull-left" href="#">
-                                                                <img class="avatar" src="http://bootdey.com/img/Content/user_3.jpg" alt="avatar">
-                                                            </a>
-                                                            <div class="comment-body">
-                                                                <div class="comment-heading">
-                                                                    <h4 class="user">Ryan Haywood</h4>
-                                                                    <h5 class="time">3 minutes ago</h5>
-                                                                    <span class="heart"> 6 <span data-icon="&#xe089;"></span>
-                                                                    </span>
-                                                                </div>
-                                                                <p>Relax my friend</p>
-                                                            </div>
-                                                        </li> 
-                                                        <li class="comment">
-                                                            <a class="pull-left" href="#">
-                                                                <img class="avatar" src="http://bootdey.com/img/Content/user_2.jpg" alt="avatar">
-                                                            </a>
-                                                            <div class="comment-body">
-                                                                <div class="comment-heading">
-                                                                    <h4 class="user">Gavino Free</h4>
-                                                                    <h5 class="time">3 minutes ago</h5>
-                                                                </div>
-                                                                <p>Ok, cool.</p>
-                                                            </div>
-                                                        </li> 
-                                                    </ul>
+                                <div class="main-qa clearfix">
+                                    <div class="col-md-4 left-qa">
+                                        <div role="tabpanel tab-all">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active">
+                                                    <a href="#tab-1" aria-controls="home" role="tab" data-toggle="tab">All</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#tab-2" aria-controls="answered" role="tab" data-toggle="tab">Answered</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#tab-3" aria-controls="unanswered" role="tab" data-toggle="tab">Unanswered</a>
                                                 </li>
                                             </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane active" id="tab-1">
+                                                    <div class="group-item-qa">
+                                                        <div class="item-qa active clearfix">
+                                                            <div class="col-md-3">
+                                                                <img src="../images/user.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-md-9 bx-dt-qa">
+                                                                <h5>Student name <span class="time">asked 5 mins ago</span></h5>
+                                                                <p><span>in</span> <b>Applications, Financial Aid</b></p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
+                                                                <div class="clearfix bt-item">
+                                                                    <div class="col-md-6 replied"><h6>Replied<span>&nbsp;5 min ago</span></h6></div>
+                                                                    <div class="col-md-6">
+                                                                        <p class="list-view">
+                                                                            <a href="#">23 <span data-icon="&#x77;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">12 <span class="like-h" data-icon="&#xe089;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">68 <i class="fa fa-eye" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-qa clearfix">
+                                                            <div class="col-md-3">
+                                                                <img src="../images/user.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-md-9 bx-dt-qa">
+                                                                <h5>Student name <span class="time">asked 5 mins ago</span></h5>
+                                                                <p><span>in</span> <b>Applications, Financial Aid</b></p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
+                                                                <div class="clearfix bt-item">
+                                                                    <div class="col-md-6 replied"><h6>Replied<span>&nbsp;5 min ago</span></h6></div>
+                                                                    <div class="col-md-6">
+                                                                        <p class="list-view">
+                                                                            <a href="#">23 <span data-icon="&#x77;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">12 <span class="like-h" data-icon="&#xe089;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">68 <i class="fa fa-eye" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-qa clearfix">
+                                                            <div class="col-md-3">
+                                                                <img src="../images/user.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-md-9 bx-dt-qa">
+                                                                <h5>Student name <span class="time">asked 5 mins ago</span></h5>
+                                                                <p><span>in</span> <b>Applications, Financial Aid</b></p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
+                                                                <div class="clearfix bt-item">
+                                                                    <div class="col-md-6 replied"><h6>Replied<span>&nbsp;5 min ago</span></h6></div>
+                                                                    <div class="col-md-6">
+                                                                        <p class="list-view">
+                                                                            <a href="#">23 <span data-icon="&#x77;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">12 <span class="like-h" data-icon="&#xe089;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">68 <i class="fa fa-eye" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-qa clearfix">
+                                                            <div class="col-md-3">
+                                                                <img src="../images/user.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-md-9 bx-dt-qa">
+                                                                <h5>Student name <span class="time">asked 5 mins ago</span></h5>
+                                                                <p><span>in</span> <b>Applications, Financial Aid</b></p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
+                                                                <div class="clearfix bt-item">
+                                                                    <div class="col-md-6 replied"><h6>Replied<span>&nbsp;5 min ago</span></h6></div>
+                                                                    <div class="col-md-6">
+                                                                        <p class="list-view">
+                                                                            <a href="#">23 <span data-icon="&#x77;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">12 <span class="like-h" data-icon="&#xe089;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">68 <i class="fa fa-eye" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-qa clearfix">
+                                                            <div class="col-md-3">
+                                                                <img src="../images/user.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-md-9 bx-dt-qa">
+                                                                <h5>Student name <span class="time">asked 5 mins ago</span></h5>
+                                                                <p><span>in</span> <b>Applications, Financial Aid</b></p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
+                                                                <div class="clearfix bt-item">
+                                                                    <div class="col-md-6 replied"><h6>Replied<span>&nbsp;5 min ago</span></h6></div>
+                                                                    <div class="col-md-6">
+                                                                        <p class="list-view">
+                                                                            <a href="#">23 <span data-icon="&#x77;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">12 <span class="like-h" data-icon="&#xe089;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">68 <i class="fa fa-eye" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-qa clearfix">
+                                                            <div class="col-md-3">
+                                                                <img src="../images/user.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-md-9 bx-dt-qa">
+                                                                <h5>Student name <span class="time">asked 5 mins ago</span></h5>
+                                                                <p><span>in</span> <b>Applications, Financial Aid</b></p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
+                                                                <div class="clearfix bt-item">
+                                                                    <div class="col-md-6 replied"><h6>Replied<span>&nbsp;5 min ago</span></h6></div>
+                                                                    <div class="col-md-6">
+                                                                        <p class="list-view">
+                                                                            <a href="#">23 <span data-icon="&#x77;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">12 <span class="like-h" data-icon="&#xe089;"></span></a>&nbsp;&nbsp;
+                                                                            <a href="#">68 <i class="fa fa-eye" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="btn-load"><a href="#">load more</a></p>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="tab-2">tab-2</div>
+                                                <div role="tabpanel" class="tab-pane" id="tab-3">tab-3</div>
+                                            </div>
                                         </div>
                                     </div>
-
-        </div>
-    </div>
-    <!-- POPUP of images's question -->
-    <div class="popup-images">
-        <div class="popup-images-wrapper">
-            <ul id="bxslider">
-                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
-                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
-                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
-                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
-                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
-                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
-                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
-                <li><img src="../images/ask question/question-img-06.jpg" alt=""></li>
-            </ul>
-            <!-- The thumbnails -->
-            <ul id="bxslider-pager">
-                <li data-slideIndex="0"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
-                <li data-slideIndex="1"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
-                <li data-slideIndex="2"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
-                <li data-slideIndex="3"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
-                <li data-slideIndex="4"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
-                <li data-slideIndex="5"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
-                <li data-slideIndex="5"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
-                <li data-slideIndex="5"><a href=""><img src="../images/ask question/question-img-06.jpg"></a></li>
-            </ul>
-        </div>
-        <div class="close-popup-images">
-        </div>
-    </div><!-- /End POPUP of images's question -->
-</div>
-                                    <!-- /End right bottom content -->
+                                    <div class="col-md-8 box-main-replied">
+                                        <div class="slider-rpl">
+                                            <div class="box-btn-sl clearfix">
+                                                <a href="#" class="btn-prev"><img src="../images/icon-sl-left.png" alt=""></a>
+                                                <a href="#" class="btn-next"><img src="../images/icon-sl-right.png" alt=""></a>
+                                            </div>
+                                            <div class="group-item-sl">
+                                                <div class="item-sl-rpl">
+                                                    <p class="text-rpl">1 Replied</p>
+                                                    <div class="bx-detail-rpl">
+                                                        <div class="top-rpl clearfix">
+                                                            <div class="col-md-2">
+                                                                <img src="../images/user.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-md-6 bx-dt-qa">
+                                                                <h5>Student name</h5>
+                                                                <span class="time">asked 5 mins ago</span>
+                                                                <p class="txt-category">Category <b>Applications, Financial Aid</b></p>
+                                                            </div>
+                                                            <div class="col-md-4 bt-item">
+                                                                <p class="list-view">
+                                                                    <a href="#">23 <span data-icon="&#x77;"></span></a>&nbsp;&nbsp;
+                                                                    <a href="#">12 <span class="like-h" data-icon="&#xe089;"></span></a>&nbsp;&nbsp;
+                                                                    <a href="#">68 <i class="fa fa-eye" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-rpl-2">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie justo eu ante vehicula fermentum. Fusce id odio enim. Ut sit amet velit urna. Etiam vehicula ante vel risus malesuada, sit amet vulputate purus pulvinar. Duis ex nunc, viverra eu fringilla eleifend, vulputate a neque. Ut venenatis felis ac fringilla dignissim. Pellentesque efficitur eget diam a aliquet. Donec efficitur, odio eu auctor porta, ligula dolor hendrerit ex, quis pharetra turpis felis ac mauris. Phasellus finibus ultrices nulla, ac semper erat pharetra in.
+                                                        </p>
+                                                        <p>
+                                                            Fusce vulputate bibendum rhoncus. Sed posuere odio sem, fermentum aliquet metus vulputate ut. Mauris tempor metus at pretium sodales. Etiam tristique ipsum eu dui varius, ac hendrerit arcu pharetra. Etiam lacus diam, ultrices eu feugiat quis, bibendum sit amet nibh. Mauris venenatis blandit neque, at dapibus purus facilisis vel. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum non accumsan metus. Nullam efficitur neque leo. Suspendisse semper, felis sed iaculis sagittis, mauris est tempus ex, sed gravida purus erat sed turpis. Integer elementum lobortis augue quis suscipit. Proin fermentum nunc et porta suscipit. In felis nisi, egestas vel ante a, iaculis auctor ex.
+                                                        </p>
+                                                        <div class="images-question">
+                                                            <ul>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_04.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>                           
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_03.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li> 
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_02.png">
+                                                                        <div class="item-hover">
+                                                                            <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_01.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="item-img">
+                                                                        <img src="../images/tutorial_01.png">
+                                                                        <div class="item-hover">
+                                                                          <img src="../images/ask question/look-img.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div><!-- /End Images of question -->
+                                                        <div class="form-chat">
+                                                            <form action="">
+                                                                <div class="box-chat-onl clearfix">
+                                                                    <a href="#" class="col-md-1"><img src="../images/user.jpg" alt=""></a>
+                                                                    <div class="texta">
+                                                                        <textarea name="" class="col-md-11" placeholder="add your reply here" ></textarea>
+                                                                    </div>
+                                                                    <div class="icon-upload">
+                                                                        <input class="input-file" name="file1" id="file1" type="file">
+                                                                        <label for="file1" class="label-1">
+                                                                            <img src="../images/img-upload.png" alt="">
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="upload-image">
+                                                                    <output id="list"></output>
+                                                                    <span class="add-img">
+                                                                        <input type="file" class="input-file-2" id="files" name="files[]" multiple /><label for="files"><img src="../images/add-img.png"></label>
+                                                                    </span>
+                                                                </p>
+                                                                <div class="detail-chat">
+                                                                    <ul class="chat">
+                                                                        <li class="right clearfix">
+                                                                            <span class="chat-img pull-right">
+                                                                                <img src="../images/user.jpg" alt="User Avatar">
+                                                                            </span>
+                                                                            <div class="chat-body clearfix">
+                                                                                <div class="header">
+                                                                                    <strong class="pull-right primary-font">You</strong><span class="pull-right time">asked 1 mins ago</span><a href="#">8 <span class="like-h" data-icon="&#xe089;"></span></a>
+                                                                                </div>
+                                                                                <p>
+                                                                                    Donec volutpat turpis risus, ac aliquet ligula varius ut. Cras lacus orci,<br/> scelerisque quis sem sed, condimentum cursus quam
+                                                                                </p>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="left clearfix">
+                                                                            <span class="chat-img pull-left">
+                                                                                <img src="../images/user.jpg" alt="User Avatar">
+                                                                            </span>
+                                                                            <div class="chat-body clearfix">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">Mentor name</strong><span class="time">asked 2 mins ago</span><a href="#">6<span class="like-h" data-icon="&#xe089;"></span></a>
+                                                                                </div>
+                                                                                <p>
+                                                                                    Sed neque ipsum, placerat quis pellentesque quis, aliquet non eros. Morbi at<br/> laoreet justo
+                                                                                </p>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="right clearfix">
+                                                                            <span class="chat-img pull-right">
+                                                                                <img src="../images/user.jpg" alt="User Avatar">
+                                                                            </span>
+                                                                            <div class="chat-body clearfix">
+                                                                                <div class="header">
+                                                                                    <strong class="pull-right primary-font">You</strong><span class="pull-right time">asked 1 mins ago</span><a href="#">8 <span class="like-h" data-icon="&#xe089;"></span></a>
+                                                                                </div>
+                                                                                <p>
+                                                                                    Donec volutpat turpis risus, ac aliquet ligula varius ut. Cras lacus orci,<br/> scelerisque quis sem sed, condimentum cursus quam
+                                                                                </p>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="left clearfix">
+                                                                            <span class="chat-img pull-left">
+                                                                                <img src="../images/user.jpg" alt="User Avatar">
+                                                                            </span>
+                                                                            <div class="chat-body clearfix">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">Mentor name</strong><span class="time">asked 2 mins ago</span><a href="#">6<span class="like-h" data-icon="&#xe089;"></span></a>
+                                                                                </div>
+                                                                                <p>
+                                                                                    Sed neque ipsum, placerat quis pellentesque quis, aliquet non eros. Morbi at<br/> laoreet justo
+                                                                                </p>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="right clearfix">
+                                                                            <span class="chat-img pull-right">
+                                                                                <img src="../images/user.jpg" alt="User Avatar">
+                                                                            </span>
+                                                                            <div class="chat-body clearfix">
+                                                                                <div class="header">
+                                                                                    <strong class="pull-right primary-font">You</strong><span class="pull-right time">asked 1 mins ago</span><a href="#">8 <span class="like-h" data-icon="&#xe089;"></span></a>
+                                                                                </div>
+                                                                                <p>
+                                                                                    Donec volutpat turpis risus, ac aliquet ligula varius ut. Cras lacus orci,<br/> scelerisque quis sem sed, condimentum cursus quam
+                                                                                </p>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="left clearfix">
+                                                                            <span class="chat-img pull-left">
+                                                                                <img src="../images/user.jpg" alt="User Avatar">
+                                                                            </span>
+                                                                            <div class="chat-body clearfix">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">Mentor name</strong><span class="time">asked 2 mins ago</span><a href="#">6<span class="like-h" data-icon="&#xe089;"></span></a>
+                                                                                </div>
+                                                                                <p>
+                                                                                    Sed neque ipsum, placerat quis pellentesque quis, aliquet non eros. Morbi at<br/> laoreet justo
+                                                                                </p>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--item-sl-rpl-->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- /End bottom content -->
                             </div>
                             <!-- /End Content of page -->
+                            
                         </section>
                     </div>
                 </div>              
@@ -611,7 +730,6 @@
         <script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
         <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
-        
         <script type="text/javascript">
             $('.remove-image').live("click", function() {
                     $(this).parent("div").remove();

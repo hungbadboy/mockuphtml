@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../css/responsive.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-        <!-- <link href="../css/nv.d3.css" rel="stylesheet" type="text/css"> -->
+        <link href="../css/nv.d3.css" rel="stylesheet" type="text/css">
 
     </head>
     <body id="mentor">
@@ -165,10 +165,10 @@
                                 <h4>Manage Video</h4>
                                 <p>Ut a porttitor leo. Aliquam fermentum nec elit lobortis tristique </p>
                                 </div>
-                                <div class="manager-video">
+                                <div class="manager-video manager-playlist">
                                     <div class="row top-mag">
-                                        <div class="col-md-8">
-                                            <div class="col-md-5 search">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <div class="col-md-7 search">
                                                 <form class="navbar-form" role="search">
                                                     <div class="input-group">                                                        
                                                         <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term">
@@ -180,16 +180,7 @@
                                             </div>
                                             <div class="col-md-3 sl-sbj">
                                                 <select class="select-sbj">
-                                                    <option value="0">Option 1</option>
-                                                    <option value="1">Option 2</option>
-                                                    <option value="2">Option 3</option>
-                                                    <option value="3">Option 4</option>
-                                                    <option value="4">Option 5</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2 sl-newwest">
-                                                <select class="select-newwest">
-                                                    <option value="0">Option 1</option>
+                                                    <option value="0">Subjects</option>
                                                     <option value="1">Option 2</option>
                                                     <option value="2">Option 3</option>
                                                     <option value="3">Option 4</option>
@@ -199,181 +190,218 @@
                                             <div class="col-md-2 btn-filter"><button>Filter</button></div>
                                         </div>
                                     </div>
-                                    <div class="btn-mg">
-                                        <button class="btn-delete">Delete</button>
-                                        <button class="add-play">Add to playlist</button>
-                                    </div>
-                                    <div class="main-manager-video">
-                                        <div class="filters clearfix">
-                                            <div class="check-all"><input id="check-all" type="checkbox" name="checkall" /></div>
-                                            <div class="text-trf">video informations</div>
-                                            <div class="text-play">playlist</div>
-                                            <div class="text-des">description</div>
-                                            <div class="text-ac">action</div>
-                                        </div>
-                                        <div class="group-item">
-                                            <div class="item">
-                                                <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
-                                                <div class="box-detail-play clearfix">
-                                                    <span class="item-thumbnail">
-                                                        <img src="../images/img-item.png" alt="">
-                                                    </span>
-                                                    <div class="detail-pl-inner">
-                                                        <h5>How to learn Physics effectively</h5>
-                                                        <span class="add-time">added 1 hour ago</span>
-                                                        <ul class="list-star">
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                        </ul>
-                                                        <p class="list-view">
-                                                            <span><img src="../images/icon-play.png" alt=""> 324</span>&nbsp;&nbsp;
-                                                            <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
-                                                            <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
-                                                        </p>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-add-newplay">
+                                                <form action="" method="POST" role="form">
+                                                    <h4>Add new playlist</h4>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control input-custom" id="" placeholder="Title">
                                                     </div>
-                                                </div>
-                                                <p class="box-playlist">
-                                                    Chemistry
-                                                </p>
-                                                <p class="box-description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Praesent pretium consequat varius. Integer at semper tortor.<br/> Ut id arcu scelerisque eros elementum congue non eu lectus
-                                                </p>
-                                                <div class="box-ac">
-                                                    <ul class="list-ac">
-                                                        <li><a href="#">Edit</a></li>
-                                                        <li><a href="#">Add playlist</a></li>
-                                                        <li><a href="#">Delete</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
-                                                <div class="box-detail-play clearfix">
-                                                    <span class="item-thumbnail">
-                                                        <img src="../images/img-item.png" alt="">
-                                                    </span>
-                                                    <div class="detail-pl-inner">
-                                                        <h5>How to learn Physics effectively</h5>
-                                                        <span class="add-time">added 1 hour ago</span>
-                                                        <ul class="list-star">
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                        </ul>
-                                                        <p class="list-view">
-                                                            <span><img src="../images/icon-play.png" alt=""> 324</span>&nbsp;&nbsp;
-                                                            <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
-                                                            <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
-                                                        </p>
+                                                    <div class="form-group">
+                                                        <textarea name="desciptions" rows="6" cols="5" class="form-control textarea-custom" placeholder="Desciptions"></textarea>
                                                     </div>
-                                                </div>
-                                                <p class="box-playlist">
-                                                    Chemistry
-                                                </p>
-                                                <p class="box-description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Praesent pretium consequat varius. Integer at semper tortor.<br/> Ut id arcu scelerisque eros elementum congue non eu lectus
-                                                </p>
-                                                <div class="box-ac">
-                                                    <ul class="list-ac">
-                                                        <li><a href="#">Edit</a></li>
-                                                        <li><a href="#">Add playlist</a></li>
-                                                        <li><a href="#">Delete</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
-                                                <div class="box-detail-play clearfix">
-                                                    <span class="item-thumbnail">
-                                                        <img src="../images/img-item.png" alt="">
-                                                    </span>
-                                                    <div class="detail-pl-inner">
-                                                        <h5>How to learn Physics effectively</h5>
-                                                        <span class="add-time">added 1 hour ago</span>
-                                                        <ul class="list-star">
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                        </ul>
-                                                        <p class="list-view">
-                                                            <span><img src="../images/icon-play.png" alt=""> 324</span>&nbsp;&nbsp;
-                                                            <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
-                                                            <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
-                                                        </p>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control input-custom" id="" placeholder="Subject">
                                                     </div>
-                                                </div>
-                                                <p class="box-playlist">
-                                                    Chemistry
-                                                </p>
-                                                <p class="box-description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Praesent pretium consequat varius. Integer at semper tortor.<br/> Ut id arcu scelerisque eros elementum congue non eu lectus
-                                                </p>
-                                                <div class="box-ac">
-                                                    <ul class="list-ac">
-                                                        <li><a href="#">Edit</a></li>
-                                                        <li><a href="#">Add playlist</a></li>
-                                                        <li><a href="#">Delete</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
-                                                <div class="box-detail-play clearfix">
-                                                    <span class="item-thumbnail">
-                                                        <img src="../images/img-item.png" alt="">
-                                                    </span>
-                                                    <div class="detail-pl-inner">
-                                                        <h5>How to learn Physics effectively</h5>
-                                                        <span class="add-time">added 1 hour ago</span>
-                                                        <ul class="list-star">
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
-                                                        </ul>
-                                                        <p class="list-view">
-                                                            <span><img src="../images/icon-play.png" alt=""> 324</span>&nbsp;&nbsp;
-                                                            <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
-                                                            <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
-                                                        </p>
+                                                    <div class="form-group">
+                                                        <input type="file" class="inputfile" name="file1" id="file1" value="">
+                                                        <label for="file1" class="label-1">
+                                                            <img src="../images/icon-upload.png" alt="">
+                                                            <span>to upload<br/> playlist thumbnail</span>
+                                                        </label>
                                                     </div>
-                                                </div>
-                                                <p class="box-playlist">
-                                                    Chemistry
-                                                </p>
-                                                <p class="box-description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Praesent pretium consequat varius. Integer at semper tortor.<br/> Ut id arcu scelerisque eros elementum congue non eu lectus
-                                                </p>
-                                                <div class="box-ac">
-                                                    <ul class="list-ac">
-                                                        <li><a href="#">Edit</a></li>
-                                                        <li><a href="#">Add playlist</a></li>
-                                                        <li><a href="#">Delete</a></li>
-                                                    </ul>
-                                                </div>
+                                                    <button type="submit" class="btn btn-primary btn-custom">Add</button>
+
+                                                </form>
                                             </div>
                                         </div>
-                                        <div class="row clearfix">
-                                            <p class="btn-load-more"><a class="load-more-mng" href="#">load more</a></p>
-                                        </div>
-                                        <div class="filters clearfix">
-                                            <div class="check-all"><input id="check-all" type="checkbox" name="checkall" /></div>
-                                            <div class="text-trf">video informations</div>
-                                            <div class="text-play">playlist</div>
-                                            <div class="text-des">description</div>
-                                            <div class="text-ac">action</div>
-                                        </div>
-                                        <div class="btn-mg">
-                                            <button class="btn-delete">Delete</button>
-                                            <button class="add-play">Add to playlist</button>
+                                        <div class="col-md-8">
+                                            <div class="btn-mg">
+                                                <button class="btn-delete">Delete selected</button>
+                                            </div>
+                                            <div class="main-manager-video main-list-video">
+                                                <div class="filters clearfix">
+                                                    <div class="check-all"><input id="check-all" type="checkbox" name="checkall" /></div>
+                                                    <div class="text-trf">playlist informations</div>
+                                                    <div class="text-play">subject</div>
+                                                    <div class="text-ac">action</div>
+                                                </div>
+                                                <div class="group-item">
+                                                    <div class="item">
+                                                        <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
+                                                        <div class="box-detail-play clearfix">
+                                                            <span class="item-thumbnail">
+                                                                <img src="../images/img-item.png" alt="">
+                                                                <div class="box-all-vd">
+                                                                    <p>
+                                                                        <b>69</b>
+                                                                        <span>videos</span>
+                                                                        <img src="../images/img-all-video.png" alt="">
+                                                                    </p>
+                                                                </div>
+                                                            </span>
+                                                            <div class="detail-pl-inner">
+                                                                <h5>Chemistry</h5>
+                                                                <span class="add-time">added 1 hour ago</span>
+                                                                <ul class="list-star">
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                </ul>
+                                                                <p class="list-view">
+                                                                    <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                                    <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="box-playlist">
+                                                            Math
+                                                        </p>
+                                                        <div class="box-ac">
+                                                            <ul class="list-ac">
+                                                                <li><a href="#">Edit</a></li>
+                                                                <li><a href="#">Add playlist</a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
+                                                        <div class="box-detail-play clearfix">
+                                                            <span class="item-thumbnail">
+                                                                <img src="../images/img-item.png" alt="">
+                                                                <div class="box-all-vd">
+                                                                    <p>
+                                                                        <b>69</b>
+                                                                        <span>videos</span>
+                                                                        <img src="../images/img-all-video.png" alt="">
+                                                                    </p>
+                                                                </div>
+                                                            </span>
+                                                            <div class="detail-pl-inner">
+                                                                <h5>Chemistry</h5>
+                                                                <span class="add-time">added 1 hour ago</span>
+                                                                <ul class="list-star">
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                </ul>
+                                                                <p class="list-view">
+                                                                    <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                                    <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="box-playlist">
+                                                            Math
+                                                        </p>
+                                                        <div class="box-ac">
+                                                            <ul class="list-ac">
+                                                                <li><a href="#">Edit</a></li>
+                                                                <li><a href="#">Add playlist</a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
+                                                        <div class="box-detail-play clearfix">
+                                                            <span class="item-thumbnail">
+                                                                <img src="../images/img-item.png" alt="">
+                                                                <div class="box-all-vd">
+                                                                    <p>
+                                                                        <b>69</b>
+                                                                        <span>videos</span>
+                                                                        <img src="../images/img-all-video.png" alt="">
+                                                                    </p>
+                                                                </div>
+                                                            </span>
+                                                            <div class="detail-pl-inner">
+                                                                <h5>Chemistry</h5>
+                                                                <span class="add-time">added 1 hour ago</span>
+                                                                <ul class="list-star">
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                </ul>
+                                                                <p class="list-view">
+                                                                    <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                                    <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="box-playlist">
+                                                            Math
+                                                        </p>
+                                                        <div class="box-ac">
+                                                            <ul class="list-ac">
+                                                                <li><a href="#">Edit</a></li>
+                                                                <li><a href="#">Add playlist</a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
+                                                        <div class="box-detail-play clearfix">
+                                                            <span class="item-thumbnail">
+                                                                <img src="../images/img-item.png" alt="">
+                                                                <div class="box-all-vd">
+                                                                    <p>
+                                                                        <b>69</b>
+                                                                        <span>videos</span>
+                                                                        <img src="../images/img-all-video.png" alt="">
+                                                                    </p>
+                                                                </div>
+                                                            </span>
+                                                            <div class="detail-pl-inner">
+                                                                <h5>Chemistry</h5>
+                                                                <span class="add-time">added 1 hour ago</span>
+                                                                <ul class="list-star">
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                </ul>
+                                                                <p class="list-view">
+                                                                    <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                                    <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="box-playlist">
+                                                            Math
+                                                        </p>
+                                                        <div class="box-ac">
+                                                            <ul class="list-ac">
+                                                                <li><a href="#">Edit</a></li>
+                                                                <li><a href="#">Add playlist</a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <p class="btn-load-more"><a class="load-more-mng" href="#">load more</a></p>
+                                                </div>
+                                                <div class="filters clearfix">
+                                                    <div class="check-all"><input id="check-all" type="checkbox" name="checkall" /></div>
+                                                    <div class="text-trf">playlist informations</div>
+                                                    <div class="text-play">subject</div>
+                                                    <div class="text-ac">action</div>
+                                                </div>
+                                                <div class="btn-mg">
+                                                    <button class="btn-delete">Delete selected</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -561,7 +589,7 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
         <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
-        <!-- <script src="../js/nv.d3.js"></script> -->
+        <script src="../js/nv.d3.js"></script>
         
         <script type="text/javascript">
             $('.remove-image').live("click", function() {
