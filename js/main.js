@@ -64,7 +64,7 @@ jQuery(document).ready(function($) {
         $(this).find(".mentors-img-hover, .hover-video").hide(); //show img mentor then show to icon to go to mentors details
     });
     $(".edit-details-question").click(function(){  //
-        $(".edit-question").toggle();
+        $(this).find(".edit-question").toggle();
     })
     $(".sort").click(function(){        //show sort answer
         $(".sort-answer").toggle();
