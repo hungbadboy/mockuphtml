@@ -1663,12 +1663,12 @@ span.img-tb{
     border: none;
     border-radius: 0;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 22px 7px;
     cursor: pointer;
 }
 .mentor-manage-qa-content .left-essay .t-panel span{
-    padding: 10px 19px 7px;   
+    padding: 10px 13px 7px;
 }
 .mentor-manage-qa-content .left-qa .t-panel span.active{
     border-bottom: 6px solid #f3c303;

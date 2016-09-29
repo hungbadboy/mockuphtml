@@ -85,6 +85,9 @@
     .main-manager-video .filters .text-ac {
         width: 25%;
     }
+    .mentor-manage-qa-content .left-essay .t-panel span {
+        padding: 10px 10px 7px;
+    }
 }
 @media screen and (max-width: 1600px) { 
     .information-content>div,
