@@ -223,7 +223,7 @@
 
     /***Menu***/
     .background-color {
-        width: calc((100% - 970px)/2 + 107px);
+        width: calc((100% - 970px)/2 + 100px);
     }
     .module-navigation .navigation .navbar-default {
         margin-left: 0%;
@@ -406,6 +406,7 @@
     .newest-answer.col-md-3 {
         width: 63%;
         margin-left: 30%;
+        margin-top: 0px;
     }
 
     /*Student Profile*/
@@ -451,10 +452,6 @@
     .number-video>h4 {
         font-size: 24px;
     }
-    /*#history .video-list-content li:before, 
-    #favourite .video-list-content li:before {
-        left: 85.5%;
-    }*/
 
     /*College*/
     .college-admission-content-wrapper {
@@ -605,7 +602,7 @@
         background-color: #ffcc00;
     }
     .background-color {
-        width: calc((100% - 750px)/2 + 107px);
+        width: calc((100% - 750px)/2 + 100px);
     }
     .module-navigation .navigation .navbar-default {
         width: 68%;
@@ -725,6 +722,7 @@
         width: 58%;
         text-align: center;
         margin: auto;
+        padding-bottom: 0;
     }
 
     .mentor-profile .top-mentors-img {
@@ -744,6 +742,9 @@
         top: 306px;
         left: -34%;
         text-align: left;
+    }
+    .summary-rate li {
+        width: 23%;
     }
     
     /*Videos page*/
@@ -936,6 +937,39 @@
         left: -100px;
     }
 
+    /*Mentor profile */
+    .mentor-profile.col-md-5 {
+        width: 100%;
+    }
+    .top-mentors-info-detail {
+        left: 0;
+    }
+    .subscribers-button {
+        text-align: center;
+    }
+    .mentors-video-recently.col-md-6.col-md-offset-3 {
+        width: 100%;
+        margin: 0;
+        position: relative;
+        top: 310px;
+        padding: 0;
+        overflow: hidden;
+        float: left;
+    }
+    .top-mentors-info-detail {
+        width: 100%;
+    }
+    .newest-answer.col-md-3 {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        float: left;
+        background: #fff;
+        margin-top: 310px;
+    }
+    .mentors-profile-headers .subscribers {
+        margin: 20px 0;
+    }
 
 }
 
