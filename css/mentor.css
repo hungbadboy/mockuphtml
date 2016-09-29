@@ -2822,3 +2822,99 @@ li.page-item.next a {
     background: #ffcc00;
 }
 /*============//LOGIN================*/
+
+.modal-add-video{
+    width: 947px !important;
+}
+.modal-add-video .modal-header,
+.modal-add-video .modal-body,
+.modal-add-video form{
+    padding: 0;
+}
+.modal-add-video .modal-content{
+    padding: 25px 20px 40px 25px;
+}
+.modal-add-video .modal-body{
+    padding-top: 25px;
+}
+.modal-add-video .modal-header h4{
+    font-size: 18px;
+    color: #505050;
+    padding-bottom: 12px;
+}
+.modal-add-video form input.input-custom-link{
+    background: url('../images/icon-play.png') 410px center no-repeat;
+}
+.modal-add-video form input[type="text"],
+.modal-add-video form select{
+    border-radius: 0;
+    height: 42px;
+    font-size: 12px;
+    color: #909090;
+    margin-bottom: 20px;
+}
+.modal-add-video form textarea{
+    border-radius: 0;
+    font-size: 12px;
+    color: #909090;
+    margin-bottom: 20px;
+}
+.modal-add-video .right-modal h4{
+    font-size: 14px;
+    color: #505050;
+    margin: 0;
+    padding-bottom: 17px;
+}
+.modal-add-video .right-modal .box-video-lag{
+    position: relative;
+}
+.modal-add-video .right-modal .box-video-lag img{
+    width: 100%;
+}
+.modal-add-video .right-modal .box-video-lag .icon-play-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+}
+.modal-add-video .right-modal p{
+    font-size: 12px;
+    color: #909090;
+    line-height: 24px;
+    padding-top: 14px;
+}
+.modal-add-video .list-add-video{
+    padding-top: 28px;
+}
+.modal-add-video .list-add-video h4{
+    font-size: 14px;
+    color: #505050;
+}
+.modal-add-video .list-add-video .filter-modal{
+    border-top: 1px solid #e0e1e1;
+    border-bottom: 1px solid #e0e1e1;
+    padding: 13px 0 13px 0;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.modal-add-video .list-add-video .group-item .item{
+    font-size: 12px;
+    color: #505050;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.modal-add-video .list-add-video .group-item .item:nth-child(even){
+    background-color: #edf1f5;
+}
+.modal-add-video .list-add-video .group-item .item .list-ac li{
+    display: inline-block;
+    padding-right: 5px;
+}
+.modal-add-video .list-add-video .group-item .item .list-ac li a{
+    color: #909090;
+}

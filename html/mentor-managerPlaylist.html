@@ -41,8 +41,8 @@
                             <span class="fa fa-bars"></span>
                             </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" href='#uploadImg' id="upImg">
-                            <span data-icon="&#xe070;">upload</span>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" href='#modal-id' id="upImg">
+                            <span data-icon="&#xe070;">Upload Tutorials</span>
                         </button>
                     </div>
                     <!-- /End center header -->
@@ -134,13 +134,6 @@
                                     <a href="mentor-manage-essay.html">
                                         <span data-icon="&#xe101;"></span>
                                         <span class="menu-title">Essay</span>
-                                        <span data-icon="&#x34;" class="sub-menu"></span>
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="mentor-managervideo.html">
-                                        <span data-icon="&#x67;"></span>
-                                        <span class="menu-title">Analytics</span>
                                         <span data-icon="&#x34;" class="sub-menu"></span>
                                     </a>
                                 </li>
@@ -581,96 +574,108 @@
         <!--  end main -->
 
         <!-- Upload image popup -->
-        <div class="modal fade" id="uploadImg">
-            <div class="modal-dialog">
+        <div class="modal fade" id="modal-id">
+            <div class="modal-dialog modal-add-video">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h3>Media Manager</h3>
-                        <div class="add-selected">Add selected</div>
+                        <h4 class="modal-title">Video upload</h4>
                     </div>
-                    <div class="modal-body clearfix media-manager">
-                        <form action="">
-                            <div class="media-manager-wrapper">
-                                <div class="media-upload">
-                                    <div id="drop_zone"><h5>Drop files anywhere to upload</h5></div>
-                                    <label for="files">Select Image</label>
-                                    <input type="file" id="files" name="files[]" multiple />
-                                </div>
-                                <div class="media-uploaded">
-                                    <ul>
-                                        <li class="">
-                                            <img src="../images/image-01.png">
-                                            <div class="choose-uploaded">
-                                              <img src="../images/choose-uploaded.png">
-                                            </div>
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/image-02.png">
-                                            <div class="choose-uploaded">
-                                              <img src="../images/choose-uploaded.png">
-                                            </div>
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/image-03.png">
-                                            <div class="choose-uploaded">
-                                              <img src="../images/choose-uploaded.png">
-                                            </div>
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/image-04.png">
-                                            <div class="choose-uploaded">
-                                              <img src="../images/choose-uploaded.png">
-                                            </div>
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/image-05.png">
-                                            <div class="choose-uploaded">
-                                              <img src="../images/choose-uploaded.png">
-                                            </div>
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/image-06.png">
-                                            <div class="choose-uploaded">
-                                              <img src="../images/choose-uploaded.png">
-                                            </div>
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/image-07.png">
-                                            <div class="choose-uploaded">
-                                              <img src="../images/choose-uploaded.png">
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="pagination-number show-item">
-                                    <nav>
-                                      <ul class="pagination">
-                                        <li class="page-item disabled previous">
-                                          <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">
-                                                <p><</p>
-                                            </span>
-                                            <span class="sr-only">Previous</span>
-                                          </a>
-                                        </li>
-                                        <li class="page-item active">
-                                          <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item next">
-                                          <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">
-                                                <p>></p>
-                                            </span>
-                                            <span class="sr-only">Next</span>
-                                          </a>
-                                        </li>
-                                      </ul>
-                                    </nav>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-modal">
+                                    <form action="" method="POST" role="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="" placeholder="Video title">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-custom-link" id="" placeholder="Youtube Link or ID">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea name="desciptions" rows="4" cols="5" class="form-control textarea-custom" placeholder="Youtube Link or ID"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="0">Choose subject</option>
+                                                <option value="1">Choose subject</option>
+                                                <option value="2">Choose subject</option>
+                                                <option value="3">Choose subject</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="0">Choose playlist</option>
+                                                <option value="1">Choose playlist</option>
+                                                <option value="2">Choose playlist</option>
+                                                <option value="3">Choose playlist</option>
+                                            </select>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                        </form>
+                            <div class="col-md-6 right-modal">
+                                <h4>Get information from youtube</h4>
+                                <div class="box-video-lag">
+                                    <img src="../images/img-lag-video.png" alt="">
+                                    <span class="icon-play-video"><img src="../images/icon-play-video.png" alt=""></span>
+                                </div>
+                                <p>Praesent id odio tortor. Maecenas sagittis tellus eu ipsum auctor, vel<br/> aliquet felis molestie....</p>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="bx-btn pull-right">
+                                <button class="btn-play active"><b>upload</b></button>
+                                <button class="btn-edit"><b>cancel</b></button>
+                            </div>
+                        </div>
+                        <div class="list-add-video">
+                            <h4>Recently added videos</h4>
+                            <div class="filter-modal clearfix">
+                                <div class="col-md-3">video informations</div>
+                                <div class="col-md-1">subject</div>
+                                <div class="col-md-5">description</div>
+                                <div class="col-md-3">action</div>
+                            </div>
+                            <div class="group-item">
+                                <div class="item clearfix">
+                                    <div class="col-md-3">How to learn Physics effectively</div>
+                                    <div class="col-md-1">Math</div>
+                                    <div class="col-md-5">Praesent id odio tortor. Maecenas sagittis tellus eu...</div>
+                                    <div class="col-md-3">
+                                        <ul class="list-ac">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Add playlist</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item clearfix">
+                                    <div class="col-md-3">How to learn Physics effectively</div>
+                                    <div class="col-md-1">Math</div>
+                                    <div class="col-md-5">Praesent id odio tortor. Maecenas sagittis tellus eu...</div>
+                                    <div class="col-md-3">
+                                        <ul class="list-ac">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Add playlist</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item clearfix">
+                                    <div class="col-md-3">How to learn Physics effectively</div>
+                                    <div class="col-md-1">Math</div>
+                                    <div class="col-md-5">Praesent id odio tortor. Maecenas sagittis tellus eu...</div>
+                                    <div class="col-md-3">
+                                        <ul class="list-ac">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Add playlist</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
