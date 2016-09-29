@@ -574,3 +574,7 @@ button.cancel:hover {
 .mentors-profile-content .mentors-video-recently {
     min-height: 100vh;
 }
+.mentors-profile-content .top-videos-wrapper .top-videos-list li {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}

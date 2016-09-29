@@ -154,15 +154,15 @@ header {
     position: fixed;
     top: 0px;
     right: 0px;
-    width: calc((100% - 1170px)/2 + 107px);
+    width: calc((100% - 1170px)/2 + 100px);
     height: 70px;
     background: #ffcc00;
     z-index: 0;
 }
 .user-nofitication {
     margin-top: 12px;
-    width: 155px;
-    float: right;    
+    width: 148px;
+    float: right;
 }
 .notification,
 .user-login,
