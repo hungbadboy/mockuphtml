@@ -1,0 +1,701 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" content="text/html" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Home" name="HongTTT"/>
+        <title>
+            SibLinks
+        </title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="../css/nv.d3.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body id="mentor">
+        <!-- Header -->
+        <header id="header">
+            <div class="module-navigation">
+                <div class="clearfix">
+                    <!-- Left header -->
+                    <div class="mentor-left-header">
+                        <div class="left-header-wrapper">
+                            <div class="main-logo">
+                                <a href="/">
+                                    <span class="logo-full"><img src="../images/logo.png"></span>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!-- /End Left header -->
+
+                    <!-- Center header -->
+                    <div class="mentor-center-header">
+                        <div class="navbar-header"> 
+                            <button type="button" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" href='#uploadImg' id="upImg">
+                            <span data-icon="&#xe070;">upload</span>
+                        </button>
+                    </div>
+                    <!-- /End center header -->
+
+                    <!-- Right header -->
+                    <div class="mentor-right-header">
+                        <!-- nofitication of user -->
+                        <div class="user-nofitication">
+                            <div class="logined"> 
+                                <div class="notification ">
+                                    <img src="../images/bell.png"><span>2</span>
+                                </div>
+                                <div class="user-login">
+                                    <div class="user-img">
+                                        <span><img src="../images/user.jpg"></span>
+                                    </div>
+                                    <div class="profile-user"><img src="../images/arrow.png"></div>
+                                    <div class="user-info inactive">
+                                        <ul>
+                                            <li class="profile"><a href="profile.html"><span data-icon="&#xe08a;"></span>Profile</a></li>
+                                            <li class="setting"><a href="setting.html"><span data-icon="&#xe037;"></span>Setting</a></li>
+                                            <li class="logout"><a href="/"><span class="fa fa-power-off"></span>Logout</a></li>
+                                        </ul>
+                                    </div>                   
+                                </div>
+                            </div>
+                            <div class="no-login inactive">
+                                <div class="register">
+                                    <a href="register.html">Register</a>
+                                </div>
+                                <div class="login">
+                                    <a href="login.html">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-color">
+                        </div>
+                    </div>
+                    <!-- /End Right header -->
+                </div>                    
+            </div><!-- /module-navigation -->
+            
+        </header>
+        <!-- header end -->
+
+        <!-- main start -->
+        <main id="main" class="clearfix">
+            <div id="sidebar-menu" class="sidebar-left">
+                <div class="navigation ">
+                    <nav class="navbar">
+                        <div class="navbar-collapse">
+                            <div class="mentor-infor">
+                                <div class="mentor-infor-img">
+                                    <img src="../images/user.jpg">
+                                </div>
+                                <div class="mentor-infor-name">
+                                    <p>Welcome</p>
+                                    <p><strong>Linda Young</strong></p>
+                                </div>                                           
+                            </div> 
+                            <div class="browse"><p>Browse</p></div>
+                            <ul class="mobimenu nav sidebar-nav">                                     
+                                <li>
+                                    <a href="mentor-dashboard.html">
+                                        <span class="fa fa-tachometer"></span>
+                                        <span class="menu-title">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menuSub">
+                                        <span data-icon="&#x77;"></span>
+                                        <span class="menu-title">Q&A</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                    <ul class="menuSubmenu">
+                                        <li class="active">
+                                            <a href="mentor-manageQ&A.html">
+                                                <span class="menu-title">All</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="menu-title">Replied</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="mentor-manage-essay.html">
+                                        <span data-icon="&#xe101;"></span>
+                                        <span class="menu-title">Essay</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="mentor-managervideo.html">
+                                        <span data-icon="&#x67;"></span>
+                                        <span class="menu-title">Analytics</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mentor-mentorProfile.html">
+                                        <span data-icon="&#xe08a;"></span>
+                                        <span class="menu-title">Profile</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="content">
+                <div class="center-content">
+                    <div class="center-content-wrapper">
+                        <section id="dashboard">
+                            <div class="dashboard-wrapper">
+                                <div class="dashboard-header">    
+                                <h4>Manage Video</h4>
+                                <p>Ut a porttitor leo. Aliquam fermentum nec elit lobortis tristique </p>
+                                </div>
+                                <div class="manager-video manager-playlist">
+                                    <div class="row top-mag">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <div class="col-md-7 search">
+                                                <form class="navbar-form" role="search">
+                                                    <div class="input-group">                                                        
+                                                        <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term">
+                                                        <div class="input-group-btn">
+                                                            <button class="btn btn-default" type="submit"><img src="../images/icon-search.png" alt=""></button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-md-3 sl-sbj">
+                                                <select class="select-sbj">
+                                                    <option value="0">Subjects</option>
+                                                    <option value="1">Option 2</option>
+                                                    <option value="2">Option 3</option>
+                                                    <option value="3">Option 4</option>
+                                                    <option value="4">Option 5</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 btn-filter"><button>Filter</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-add-newplay">
+                                                <form action="" method="POST" role="form">
+                                                    <h4>Add new playlist</h4>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control input-custom" id="" placeholder="Title">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <textarea name="desciptions" rows="6" cols="5" class="form-control textarea-custom" placeholder="Desciptions"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control input-custom" id="" placeholder="Subject">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="file" class="inputfile" name="file1" id="file1" value="">
+                                                        <label for="file1" class="label-1">
+                                                            <img src="../images/icon-upload.png" alt="">
+                                                            <span>to upload<br/> playlist thumbnail</span>
+                                                        </label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary btn-custom">Add</button>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="btn-mg">
+                                                <button class="btn-delete">Delete selected</button>
+                                            </div>
+                                            <div class="main-manager-video main-list-video">
+                                                <div class="filters clearfix">
+                                                    <div class="check-all"><input id="check-all" type="checkbox" name="checkall" /></div>
+                                                    <div class="text-trf">playlist informations</div>
+                                                    <div class="text-play">subject</div>
+                                                    <div class="text-ac">action</div>
+                                                </div>
+                                                <div class="group-item">
+                                                    <div class="item">
+                                                        <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
+                                                        <div class="box-detail-play clearfix">
+                                                            <span class="item-thumbnail">
+                                                                <img src="../images/img-item.png" alt="">
+                                                                <div class="box-all-vd">
+                                                                    <p>
+                                                                        <b>69</b>
+                                                                        <span>videos</span>
+                                                                        <img src="../images/img-all-video.png" alt="">
+                                                                    </p>
+                                                                </div>
+                                                            </span>
+                                                            <div class="detail-pl-inner">
+                                                                <h5>Chemistry</h5>
+                                                                <span class="add-time">added 1 hour ago</span>
+                                                                <ul class="list-star">
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                </ul>
+                                                                <p class="list-view">
+                                                                    <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                                    <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="box-playlist">
+                                                            Math
+                                                        </p>
+                                                        <div class="box-ac">
+                                                            <ul class="list-ac">
+                                                                <li><a href="#">Edit</a></li>
+                                                                <li><a href="#">Add playlist</a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
+                                                        <div class="box-detail-play clearfix">
+                                                            <span class="item-thumbnail">
+                                                                <img src="../images/img-item.png" alt="">
+                                                                <div class="box-all-vd">
+                                                                    <p>
+                                                                        <b>69</b>
+                                                                        <span>videos</span>
+                                                                        <img src="../images/img-all-video.png" alt="">
+                                                                    </p>
+                                                                </div>
+                                                            </span>
+                                                            <div class="detail-pl-inner">
+                                                                <h5>Chemistry</h5>
+                                                                <span class="add-time">added 1 hour ago</span>
+                                                                <ul class="list-star">
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                </ul>
+                                                                <p class="list-view">
+                                                                    <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                                    <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="box-playlist">
+                                                            Math
+                                                        </p>
+                                                        <div class="box-ac">
+                                                            <ul class="list-ac">
+                                                                <li><a href="#">Edit</a></li>
+                                                                <li><a href="#">Add playlist</a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
+                                                        <div class="box-detail-play clearfix">
+                                                            <span class="item-thumbnail">
+                                                                <img src="../images/img-item.png" alt="">
+                                                                <div class="box-all-vd">
+                                                                    <p>
+                                                                        <b>69</b>
+                                                                        <span>videos</span>
+                                                                        <img src="../images/img-all-video.png" alt="">
+                                                                    </p>
+                                                                </div>
+                                                            </span>
+                                                            <div class="detail-pl-inner">
+                                                                <h5>Chemistry</h5>
+                                                                <span class="add-time">added 1 hour ago</span>
+                                                                <ul class="list-star">
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                </ul>
+                                                                <p class="list-view">
+                                                                    <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                                    <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="box-playlist">
+                                                            Math
+                                                        </p>
+                                                        <div class="box-ac">
+                                                            <ul class="list-ac">
+                                                                <li><a href="#">Edit</a></li>
+                                                                <li><a href="#">Add playlist</a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="check-box"><input type="checkbox" class="check-input" name="checkall" /></div>
+                                                        <div class="box-detail-play clearfix">
+                                                            <span class="item-thumbnail">
+                                                                <img src="../images/img-item.png" alt="">
+                                                                <div class="box-all-vd">
+                                                                    <p>
+                                                                        <b>69</b>
+                                                                        <span>videos</span>
+                                                                        <img src="../images/img-all-video.png" alt="">
+                                                                    </p>
+                                                                </div>
+                                                            </span>
+                                                            <div class="detail-pl-inner">
+                                                                <h5>Chemistry</h5>
+                                                                <span class="add-time">added 1 hour ago</span>
+                                                                <ul class="list-star">
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                    <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                                </ul>
+                                                                <p class="list-view">
+                                                                    <span><img src="../images/icon-view.png" alt=""> 12</span>&nbsp;&nbsp;
+                                                                    <span><img src="../images/icon-comment.png" alt=""> 16</span>&nbsp;&nbsp;
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="box-playlist">
+                                                            Math
+                                                        </p>
+                                                        <div class="box-ac">
+                                                            <ul class="list-ac">
+                                                                <li><a href="#">Edit</a></li>
+                                                                <li><a href="#">Add playlist</a></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <p class="btn-load-more"><a class="load-more-mng" href="#">load more</a></p>
+                                                </div>
+                                                <div class="filters clearfix">
+                                                    <div class="check-all"><input id="check-all" type="checkbox" name="checkall" /></div>
+                                                    <div class="text-trf">playlist informations</div>
+                                                    <div class="text-play">subject</div>
+                                                    <div class="text-ac">action</div>
+                                                </div>
+                                                <div class="btn-mg">
+                                                    <button class="btn-delete">Delete selected</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>                
+            </div>
+            <div id="sidebar-right">
+                <div class="right-content">
+                    <div class="right-content-tab">
+                        <div class="right-content-wrapper">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#group1"><span data-icon="&#xe050;"></span></a></li>
+                                <li><a data-toggle="tab" href="#group2"><span data-icon="&#xe066;"></span></a></li>
+                                <li><a data-toggle="tab" href="#group3"><span data-icon="&#xe033;"></span></a></li>
+                            </ul>
+                            <!-- Content of each tab -->                        
+                            <div class="tab-content">
+                                <!-- Content of tab All -->
+                                <div id="group1" class="tab-pane active">
+                                    <div class="student-subcripted">
+                                        <div class="student-subcripted-title">
+                                            <p>Students subscripted</p>
+                                        </div>
+                                        <div class="student-subcripted-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>                                                
+                                            </ul>
+                                            <div class="load-more"><button>Show more</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="recently-activity">
+                                        <div class="recently-activity-title">
+                                            <p>Recently Activity</p>
+                                        </div>
+                                        <div class="recently-activity-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>                                               
+                                            </ul>
+                                            <div class="load-more"><button>Show more</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="group2" class="tab-pane">
+                                </div>
+                                <div id="group3" class="tab-pane">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--  end main -->
+
+        <!-- Upload image popup -->
+        <div class="modal fade" id="uploadImg">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3>Media Manager</h3>
+                        <div class="add-selected">Add selected</div>
+                    </div>
+                    <div class="modal-body clearfix media-manager">
+                        <form action="">
+                            <div class="media-manager-wrapper">
+                                <div class="media-upload">
+                                    <div id="drop_zone"><h5>Drop files anywhere to upload</h5></div>
+                                    <label for="files">Select Image</label>
+                                    <input type="file" id="files" name="files[]" multiple />
+                                </div>
+                                <div class="media-uploaded">
+                                    <ul>
+                                        <li class="">
+                                            <img src="../images/image-01.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-02.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-03.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-04.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-05.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-06.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-07.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pagination-number show-item">
+                                    <nav>
+                                      <ul class="pagination">
+                                        <li class="page-item disabled previous">
+                                          <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <p><</p>
+                                            </span>
+                                            <span class="sr-only">Previous</span>
+                                          </a>
+                                        </li>
+                                        <li class="page-item active">
+                                          <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item next">
+                                          <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <p>></p>
+                                            </span>
+                                            <span class="sr-only">Next</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /End Upload image popup -->
+        
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+  	    <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+        <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+        <script src="../js/nv.d3.js"></script>
+        
+        <script type="text/javascript">
+            $('.remove-image').live("click", function() {
+                $(this).parent("div").remove();
+            });
+            $("#check-all").change(function () {
+                $(".check-input").prop('checked', $(this).prop("checked"));
+            });
+        </script>
+    </body> <!-- /end body -->
+</html> <!-- /end html -->

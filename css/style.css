@@ -196,6 +196,7 @@ header {
     border-radius: 50%;
     border: 4px solid #fff;
     margin-right: 10px;
+    height: 48px;
 }
 /*Header no login*/
 .inactive {
@@ -242,6 +243,16 @@ p.button-img {
 }
 .navbar-header>button[type="button"] {
     padding: 5px;
+}
+ul.menuSubmenu li {
+    padding: 10px 50px;
+}
+
+.menuSubmenu {
+    display: none;   
+}
+#sidebar-menu .navigation .nav>.active .menuSubmenu .active span{
+    color:  #ffcc00;
 }
 /*Header login user information*/
 .user-info {
@@ -392,7 +403,7 @@ button[type="button"] {
     border-radius: 4px;
 }
 /*popup media*/
-.media-manager {
+/*.media-manager {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -400,7 +411,7 @@ button[type="button"] {
     top: 0;
     z-index: 1;
     left: 100%;
-}
+}*/
 .media-manager-wrapper.col-lg-5 {
     background: #fff;
     overflow: hidden;
@@ -574,7 +585,7 @@ ul.nav.nav-tabs li.active>a {
 .item-img {
     position: relative;
 }
-.item-img>img {
+.tutorials-content .item-img>img {
     width: 100%;
 }
 .item-hover {
@@ -779,4 +790,14 @@ button.regist:hover {
 }
 #student-profile main>.content{
     min-height: calc(100vh - 70px);
+}
+
+.top-mentors-img a>img {
+    height: 48px;
+}
+.top-mentors-img span.offline, 
+.top-mentors-img span.online {
+    position: absolute;
+    bottom: -3px;
+    right: 4%;
 }

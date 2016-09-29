@@ -1,0 +1,729 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" content="text/html" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Home" name="HongTTT"/>
+        <title>
+            SibLinks
+        </title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="../css/nv.d3.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body id="mentor">
+        <!-- Header -->
+        <header id="header">
+            <div class="module-navigation">
+                <div class="clearfix">
+                    <!-- Left header -->
+                    <div class="mentor-left-header">
+                        <div class="left-header-wrapper">
+                            <div class="main-logo">
+                                <a href="/">
+                                    <span class="logo-full"><img src="../images/logo.png"></span>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!-- /End Left header -->
+
+                    <!-- Center header -->
+                    <div class="mentor-center-header">
+                        <div class="navbar-header"> 
+                            <button type="button" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" href='#uploadImg' id="upImg">
+                            <span data-icon="&#xe070;">upload</span>
+                        </button>
+                    </div>
+                    <!-- /End center header -->
+
+                    <!-- Right header -->
+                    <div class="mentor-right-header">
+                        <!-- nofitication of user -->
+                        <div class="user-nofitication">
+                            <div class="logined"> 
+                                <div class="notification ">
+                                    <img src="../images/bell.png"><span>2</span>
+                                </div>
+                                <div class="user-login">
+                                    <div class="user-img">
+                                        <span><img src="../images/user.jpg"></span>
+                                    </div>
+                                    <div class="profile-user"><img src="../images/arrow.png"></div>
+                                    <div class="user-info inactive">
+                                        <ul>
+                                            <li class="profile"><a href="profile.html"><span data-icon="&#xe08a;"></span>Profile</a></li>
+                                            <li class="setting"><a href="setting.html"><span data-icon="&#xe037;"></span>Setting</a></li>
+                                            <li class="logout"><a href="/"><span class="fa fa-power-off"></span>Logout</a></li>
+                                        </ul>
+                                    </div>                   
+                                </div>
+                            </div>
+                            <div class="no-login inactive">
+                                <div class="register">
+                                    <a href="register.html">Register</a>
+                                </div>
+                                <div class="login">
+                                    <a href="login.html">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-color">
+                        </div>
+                    </div>
+                    <!-- /End Right header -->
+                </div>                    
+            </div><!-- /module-navigation -->
+            
+        </header>
+        <!-- header end -->
+
+        <!-- main start -->
+        <main id="main" class="clearfix">
+            <div id="sidebar-menu" class="sidebar-left">
+                <div class="navigation ">
+                    <nav class="navbar">
+                        <div class="navbar-collapse">
+                            <div class="mentor-infor">
+                                <div class="mentor-infor-img">
+                                    <img src="../images/user.jpg">
+                                </div>
+                                <div class="mentor-infor-name">
+                                    <p>Welcome</p>
+                                    <p><strong>Linda Young</strong></p>
+                                </div>                                           
+                            </div> 
+                            <div class="browse"><p>Browse</p></div>
+                            <ul class="mobimenu nav sidebar-nav">                                     
+                                <li>
+                                    <a href="mentor-dashboard.html">
+                                        <span class="fa fa-tachometer"></span>
+                                        <span class="menu-title">Dashboard</span>
+                                    </a>
+                                </li>
+                               <li>
+                                    <a href="#" class="menuSub">
+                                        <span data-icon="&#x77;"></span>
+                                        <span class="menu-title">Q&A</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                    <ul class="menuSubmenu">
+                                        <li class="active">
+                                            <a href="mentor-manageQ&A.html">
+                                                <span class="menu-title">All</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="menu-title">Replied</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="mentor-manage-essay.html">
+                                        <span data-icon="&#xe101;"></span>
+                                        <span class="menu-title">Essay</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="mentor-managervideo.html">
+                                        <span data-icon="&#x67;"></span>
+                                        <span class="menu-title">Analytics</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mentor-mentorProfile.html">
+                                        <span data-icon="&#xe08a;"></span>
+                                        <span class="menu-title">Profile</span>
+                                        <span data-icon="&#x34;" class="sub-menu"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="content">
+                <div class="center-content">
+                    <div class="center-content-wrapper">
+                        <section id="dashboard">
+                            <div class="dashboard-wrapper">
+                                <div class="dashboard-header">    
+                                <h4>Manage Video</h4>
+                                <p>Ut a porttitor leo. Aliquam fermentum nec elit lobortis tristique </p>
+                                </div>
+                                <div class="manager-detail-video">
+                                    <div class="play-video">
+                                        <div class="box-btn-sl clearfix">
+                                            <a href="#" class="btn-prev"><img src="../images/icon-left-sl-vd.png" alt=""></a>
+                                            <a href="#" class="btn-next"><img src="../images/icon-right-sl-vd.png" alt=""></a>
+                                        </div>
+                                        <div class="group-video-pl">
+                                            <div class="item-pl-video clearfix">
+                                                <div class="col-md-1"></div>
+                                                <div class="video-play col-md-7">
+                                                    <img src="../images/img-video-l.png" alt="">
+                                                </div>
+                                                <div class="video-wait col-md-3">
+                                                    <div class="top-w clearfix">
+                                                        <h5 class="pull-left">Learn Algebra Series</h5>
+                                                        <span class="pull-right" data-icon="&#xe037;"></span>
+                                                    </div>
+                                                    <div class="top-nav-w clearfix">
+                                                        <span class="pull-left">Brian Scott</span>
+                                                        <span class="pull-right">4 of 16 videos</span>
+                                                    </div>
+                                                    <ul class="list-videp-w">
+                                                        <li>
+                                                            <a class="clearfix" href="#">
+                                                                <span class="pull-left"><img src="../images/img-video-sm.png" alt=""></span>
+                                                                <h6 class="pull-left">Chapter 1: Commutative and<br/> Associative Properties</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="clearfix" href="#">
+                                                                <span class="pull-left"><img src="../images/img-video-sm.png" alt=""></span>
+                                                                <h6 class="pull-left">Chapter 1: Commutative and<br/> Associative Properties</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="clearfix" href="#">
+                                                                <span class="pull-left"><img src="../images/img-video-sm.png" alt=""></span>
+                                                                <h6 class="pull-left">Chapter 1: Commutative and<br/> Associative Properties</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="clearfix" href="#">
+                                                                <span class="pull-left"><img src="../images/img-video-sm.png" alt=""></span>
+                                                                <h6 class="pull-left">Chapter 1: Commutative and<br/> Associative Properties</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="clearfix" href="#">
+                                                                <span class="pull-left"><img src="../images/img-video-sm.png" alt=""></span>
+                                                                <h6 class="pull-left">Chapter 1: Commutative and<br/> Associative Properties</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="clearfix" href="#">
+                                                                <span class="pull-left"><img src="../images/img-video-sm.png" alt=""></span>
+                                                                <h6 class="pull-left">Chapter 1: Commutative and<br/> Associative Properties</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="clearfix" href="#">
+                                                                <span class="pull-left"><img src="../images/img-video-sm.png" alt=""></span>
+                                                                <h6 class="pull-left">Chapter 1: Commutative and<br/> Associative Properties</h6>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ctn-main col-md-12">
+                                        <div class="col-md-8">
+                                            <div class="main-cm-detail">
+                                                <div class="top-cm">
+                                                    <h3>How to learn Physics effectively</h3>
+                                                    <span class="time">9 months ago</span>
+                                                    <div class="btn-count clearfix">
+                                                        <div class="bx-btn pull-left">
+                                                            <button class="btn-add active" data-toggle="modal" href='#modal-id'>Add to playlist</button>
+                                                            <button class="btn-edit">Edit</button>
+                                                            <button class="btn-remove">Delete</button>
+                                                        </div>
+                                                        <p class="list-view pull-right">
+                                                            <span><i class="fa fa-play-circle-o" aria-hidden="true"></i> 324</span>&nbsp;&nbsp;
+                                                            <a href="#"><span class="like-h" data-icon="&#xe089;"></span> 12</a>&nbsp;&nbsp;
+                                                            <span><i class="fa fa-comments" aria-hidden="true"></i> 16</span>&nbsp;&nbsp;
+                                                        </p>
+                                                    </div>
+                                                    <div class="txt-dg clearfix">
+                                                        <p class="pull-left">Rate <span>5.0 (4 votes)</span></p>&nbsp;&nbsp;
+                                                        <ul class="list-star pull-left">
+                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                            <li><a href="#"><img src="../images/icon-s.png" alt=""></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="show-about">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a risus mollis, scelerisque nunc at, viverra nisi. Donec ornare fringilla turpis id lobortis. Nullam eu turpis elit. Donec a feugiat metus. Aliquam interdum nibh eu efficitur pellentesque. Nullam commodo ac dolor ac aliquet. Curabitur quis maximus justo, ac rutrum est. Sed arcu risus, posuere sit amet velit ut, rutrum consequat nunc.</p>
+                                                    <a href="#">Readmore<span data-icon="&#x33;"></span></a>
+                                                </div>
+                                                <div class="catego clearfix">
+                                                    <p class="pull-right"><span>Catalogue</span>&nbsp;&nbsp;<b>Chemistry, Biology</b></p>
+                                                </div>
+                                                <div class="form-commnent">
+                                                    <h3>16 Comments</h3>
+                                                    <form action="">
+                                                        <div class="box-chat-onl clearfix">
+                                                            <a href="#" class="col-md-1"><img src="../images/user.jpg" alt=""></a>
+                                                            <div class="texta col-md-11">
+                                                                <textarea name="" placeholder="add your reply here"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detail-commnet">
+                                                            <ul>
+                                                                <li class="clearfix">
+                                                                    <span class="chat-img col-md-1">
+                                                                        <img src="../images/user.jpg" alt="User Avatar">
+                                                                    </span>
+                                                                    <div class="chat-body col-md-11">
+                                                                        <div class="header">
+                                                                            <strong class="primary-font">You</strong><a href="#">8 <span class="like-h" data-icon="&#xe089;"></span></a><span class="time">asked 1 mins ago</span>
+                                                                            <a href="#" class="txt-dlt pull-right">Delete</a>
+                                                                        </div>
+                                                                        <p>
+                                                                            Donec volutpat turpis risus, ac aliquet ligula varius ut. Cras lacus orci, scelerisque quis sem sed, condimentum cursus quam
+                                                                        </p>
+                                                                    </div>
+                                                                    <ul class="sub-cm">
+                                                                        <li class="clearfix">
+                                                                            <span class="chat-img col-md-1">
+                                                                                <img src="../images/user.jpg" alt="User Avatar">
+                                                                            </span>
+                                                                            <div class="chat-body col-md-11">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">You</strong><a href="#">8 <span class="like-h" data-icon="&#xe089;"></span></a><span class="time">asked 1 mins ago</span>
+                                                                                    <a href="#" class="txt-dlt pull-right">Delete</a>
+                                                                                </div>
+                                                                                <p>
+                                                                                    Donec volutpat turpis risus, ac aliquet ligula varius ut. Cras lacus orci, scelerisque quis sem sed, condimentum cursus quam
+                                                                                </p>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="clearfix">
+                                                                    <span class="chat-img col-md-1">
+                                                                        <img src="../images/user.jpg" alt="User Avatar">
+                                                                    </span>
+                                                                    <div class="chat-body col-md-11">
+                                                                        <div class="header">
+                                                                            <strong class="primary-font">You</strong><a href="#">8 <span class="like-h" data-icon="&#xe089;"></span></a><span class="time">asked 1 mins ago</span>
+                                                                            <a href="#" class="txt-dlt pull-right">Delete</a>
+                                                                        </div>
+                                                                        <p>
+                                                                            Donec volutpat turpis risus, ac aliquet ligula varius ut. Cras lacus orci, scelerisque quis sem sed, condimentum cursus quam
+                                                                        </p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <p class="btn-load"><a href="#">load more comments</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 right-sub-video">
+                                            <h4>Related Videos</h4>
+                                            <ul class="list-sub-video">
+                                                <li class="clearfix">
+                                                    <span class="pull-left"><img src="../images/img-sub-video.png" alt=""></span>
+                                                    <div class="sub-vd-right pull-left">
+                                                        <h5>Trigonometric Tutorial 1</h5>
+                                                        <p>from <b>Brian Scott</b></p>
+                                                        <p>View: <span>5564</span></p>
+                                                    </div> 
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="pull-left"><img src="../images/img-sub-video.png" alt=""></span>
+                                                    <div class="sub-vd-right pull-left">
+                                                        <h5>Trigonometric Tutorial 1</h5>
+                                                        <p>from <b>Brian Scott</b></p>
+                                                        <p>View: <span>5564</span></p>
+                                                    </div> 
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="pull-left"><img src="../images/img-sub-video.png" alt=""></span>
+                                                    <div class="sub-vd-right pull-left">
+                                                        <h5>Trigonometric Tutorial 1</h5>
+                                                        <p>from <b>Brian Scott</b></p>
+                                                        <p>View: <span>5564</span></p>
+                                                    </div> 
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="pull-left"><img src="../images/img-sub-video.png" alt=""></span>
+                                                    <div class="sub-vd-right pull-left">
+                                                        <h5>Trigonometric Tutorial 1</h5>
+                                                        <p>from <b>Brian Scott</b></p>
+                                                        <p>View: <span>5564</span></p>
+                                                    </div> 
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="pull-left"><img src="../images/img-sub-video.png" alt=""></span>
+                                                    <div class="sub-vd-right pull-left">
+                                                        <h5>Trigonometric Tutorial 1</h5>
+                                                        <p>from <b>Brian Scott</b></p>
+                                                        <p>View: <span>5564</span></p>
+                                                    </div> 
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span class="pull-left"><img src="../images/img-sub-video.png" alt=""></span>
+                                                    <div class="sub-vd-right pull-left">
+                                                        <h5>Trigonometric Tutorial 1</h5>
+                                                        <p>from <b>Brian Scott</b></p>
+                                                        <p>View: <span>5564</span></p>
+                                                    </div> 
+                                                </li>
+                                                <p class="btn-load"><a href="#">load more videos</a></p>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>                
+            </div>
+            <div id="sidebar-right">
+                <div class="right-content">
+                    <div class="right-content-tab">
+                        <div class="right-content-wrapper">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#group1"><span data-icon="&#xe050;"></span></a></li>
+                                <li><a data-toggle="tab" href="#group2"><span data-icon="&#xe066;"></span></a></li>
+                                <li><a data-toggle="tab" href="#group3"><span data-icon="&#xe033;"></span></a></li>
+                            </ul>
+                            <!-- Content of each tab -->                        
+                            <div class="tab-content">
+                                <!-- Content of tab All -->
+                                <div id="group1" class="tab-pane active">
+                                    <div class="student-subcripted">
+                                        <div class="student-subcripted-title">
+                                            <p>Students subscripted</p>
+                                        </div>
+                                        <div class="student-subcripted-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="student-subcripted-img online">
+                                                        <img src="../images/mentor-01.jpg">
+                                                        <span class="offline"><img src="../images/ask question/online.png"></span>
+                                                    </div>
+                                                    <div class="student-subcripted-info">
+                                                        <p class="student-subcripted-name">
+                                                            <strong>Brian M.Scott</strong>
+                                                        </p>
+                                                        <p class="student-subcripted-icon ">
+                                                            <span data-icon="&#xe065;"></span>
+                                                        </p>
+                                                    </div>
+                                                </li>                                                
+                                            </ul>
+                                            <div class="load-more"><button>Show more</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="recently-activity">
+                                        <div class="recently-activity-title">
+                                            <p>Recently Activity</p>
+                                        </div>
+                                        <div class="recently-activity-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="number-content">
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="recently-activity-info">
+                                                        <p class="recently-activity-time">
+                                                            <span>2 hours ago</span>
+                                                        </p>
+                                                        <div class="recently-activity-status">
+                                                            <span class="recently-activity-name">
+                                                            Student name</span><span>Just rating your video</span>
+                                                        </div>
+                                                    </div>
+                                                </li>                                               
+                                            </ul>
+                                            <div class="load-more"><button>Show more</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="group2" class="tab-pane">
+                                </div>
+                                <div id="group3" class="tab-pane">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Upload image popup -->
+        <div class="modal fade" id="uploadImg">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3>Media Manager</h3>
+                        <div class="add-selected">Add selected</div>
+                    </div>
+                    <div class="modal-body clearfix media-manager">
+                        <form action="">
+                            <div class="media-manager-wrapper">
+                                <div class="media-upload">
+                                    <div id="drop_zone"><h5>Drop files anywhere to upload</h5></div>
+                                    <label for="files">Select Image</label>
+                                    <input type="file" id="files" name="files[]" multiple />
+                                </div>
+                                <div class="media-uploaded">
+                                    <ul>
+                                        <li class="">
+                                            <img src="../images/image-01.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-02.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-03.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-04.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-05.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-06.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <img src="../images/image-07.png">
+                                            <div class="choose-uploaded">
+                                              <img src="../images/choose-uploaded.png">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pagination-number show-item">
+                                    <nav>
+                                      <ul class="pagination">
+                                        <li class="page-item disabled previous">
+                                          <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <p><</p>
+                                            </span>
+                                            <span class="sr-only">Previous</span>
+                                          </a>
+                                        </li>
+                                        <li class="page-item active">
+                                          <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item next">
+                                          <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <p>></p>
+                                            </span>
+                                            <span class="sr-only">Next</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /End Upload image popup -->
+        
+        <div class="modal fade" id="modal-id">
+            <div class="modal-dialog modal-choose-playlist">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Choose playlist</h4>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <form action="">
+                            <h5 for="">Add new playlist <span>&nbsp;&nbsp;or&nbsp;&nbsp;</span></h5>
+                            <div class="file-choose">
+                                <input type="file" class="inputfile" name="file2" id="file2" value="" placeholder="">
+                                <label for="file2" class="label-2">Choose a playlist already exists</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" class="form-control" value="" placeholder="Title">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" class="form-control" id="" cols="5" rows="5" placeholder="Desciptions"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" name="" id="">
+                                    <option value="0">Subject</option>
+                                    <option value="0">Subject</option>
+                                    <option value="0">Subject</option>
+                                    <option value="0">Subject</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="file" class="inputfile" name="file1" id="file1" value="">
+                                <label for="file1" class="label-1">
+                                    <img src="../images/icon-upload.png" alt="">
+                                    <span>to upload<br> playlist thumbnail</span>
+                                </label>
+                            </div>
+                            <div class="btn-modal pull-right">
+                                <button type="button" class="btn btn-default btn-cs">Save changes</button> 
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  end main -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+  	    <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.js"></script>
+        <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+        <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+        <script src="../js/nv.d3.js"></script>
+        
+        <script type="text/javascript">
+            $('.remove-image').live("click", function() {
+                $(this).parent("div").remove();
+            });
+            $("#check-all").change(function () {
+                $(".check-input").prop('checked', $(this).prop("checked"));
+            });
+        </script>
+    </body> <!-- /end body -->
+</html> <!-- /end html -->
