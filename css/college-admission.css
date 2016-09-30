@@ -28,10 +28,9 @@
     background: #fff;
     height: 100px;
 }
-.step li.active:before {
+/* .step li.active:before {
     border-bottom: 6px solid #ffcc00;
-    top: 
-}
+} */
 .step li:before {
     content: "";
     border-bottom: 6px solid #edf1f5;
@@ -495,7 +494,7 @@ button.share:hover {
 .college-form-body input, .college-form-body textarea {
     color: #505050;
     border: 1px solid #cECecd;
-    padding: 10px 10px;
+    padding: 10px 15px;
 }
 .college-form-body input {
     width: 50%;
@@ -541,4 +540,40 @@ button.share:hover {
     bottom: 26px;
     height: 27px;
 }
+.college-form-body .form-group {
+    width: calc(50% - 5px);
+    float: left;    
+}
+.college-form-body div.form-group.choose-university{
+    margin-right: 5px;
+}
+.college-form-body .form-group.choose-faculty {
+    margin-left: 5px;
+}
+.college-form-body .form-group select{
+    border-radius: 0;
+}
+.college-laststep button[type="button"] {
+    background: #ffcc00;
+    color: #505050;
+}
+.college-laststep button[type="button"]:hover {
+    background: #505050;
+    color: #ffcc00;
+}
+.button-action-essay button {
+    background: #edf1f5;
+    color: #505050;
+    padding: 10px 25px;
+    margin-right: 5px;
+}
 
+.button-action-essay {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+
+.button-action-essay button:hover {
+    background: #ffcc00;
+}

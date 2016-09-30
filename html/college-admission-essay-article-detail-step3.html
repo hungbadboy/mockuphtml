@@ -111,13 +111,13 @@
                                 <h3>Step your <span>Essay</span></h3>
                                 <div class="step">
                                     <ul>
-                                        <li class="active in">
+                                        <li>
                                             <div class="step-apply">
                                                 <h2>1</h2>
                                                 <p>Before apply</p>
                                             </div>
                                         </li>
-                                        <li class="active in">
+                                        <li>
                                             <div class="step-apply">
                                                 <h2>2</h2>
                                                 <p>Sample apply</p>
@@ -142,12 +142,33 @@
                                     </div>
                                     <div class="college-form-body">
                                         <p><input type="text" placeholder="Essay title" name="essaytitle"></p>
+                                        <p>Apply to University</p>
+                                        <div class="form-group choose-university">
+                                            <select name="" id="" class="form-control">
+                                                <option value="0">Choose university</option>
+                                                <option value="1">Choose subject</option>
+                                                <option value="2">Choose subject</option>
+                                                <option value="3">Choose subject</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group choose-faculty">
+                                            <select name="" id="" class="form-control">
+                                                <option value="0">Choose faculty</option>
+                                                <option value="1">Choose subject</option>
+                                                <option value="2">Choose subject</option>
+                                                <option value="3">Choose subject</option>
+                                            </select>
+                                        </div>
                                         <p><textarea type="textarea" name="essaydesscription">Essay description</textarea></p>
                                         <p class="upload-file">
                                             <!-- <output id="list"></output> -->
-                                            <input type="file" id="files" name="files[]" multiple /><label for="files"><span>Upload your file (word, excel, pdf....)<i class="fa fa-link" aria-hidden="true"></i></label></span>
+                                            <input type="file" id="files" name="files[]" multiple /><label for="files"><span>Upload your file (word, excel, pdf....)<i class="fa fa-link" aria-hidden="true"></i></span></label>
                                         </p>
                                     </div>
+                                    <div>
+                                        <button type="button" id="submit">Submit</button>
+                                    </div>
+
                                 </form>
 
                             </div>
@@ -193,26 +214,16 @@
                                                                 <h3>Essay detail</h3>
                                                                 <div class="essay-detail-top">
                                                                     <h5>How to save children from violencek</h5>
-                                                                    <span class="post-time">add 3 hours ago</span>                                                         
+                                                                    <span class="post-time">add 3 hours ago</span>                                                      
                                                                 </div>
-                                                                <div class="essay-thumb">
-                                                                    <div class="essay-thumb-left">
-                                                                        <p>Mentor:</p>
-                                                                        <p class="name-mentor"><a href="#">Brian M.Scott</a></p>
-                                                                        <p><span class="essay-reviewing">Reviewing</span></p><br>
-                                                                    </div>
-                                                                    <div class="essay-thumb-right">
-                                                                        <a href="#"><img src="../images/mentor-09.png"></a>
-                                                                    </div>
+                                                                <div class="essay-status">
+                                                                    <p><span class="essay-reviewing">Reviewing</span></p>
+                                                                    <p><button class="share">Share</button></p>
                                                                 </div>
-                                                                <div class="essay-infor">
-                                                                    <p class="rate-video">
-                                                                        <span>Rate this reply</span>
-                                                                        <span data-icon="&#xe033;&#xe033;&#xe033;&#xe033;"></span>
-                                                                        <!-- <button class="share">Share</button> -->
-                                                                    </p>
+                                                                <div class="button-action-essay">
+                                                                    <button type="button" id="edit">Edit</button>
+                                                                    <button type="button" id="delete">Delete</button>
                                                                 </div>
-                                                                
                                                             </div>
                                                             <div class="essay-detail-right col-md-9">
                                                                 <h4>Desciption</h4>
@@ -280,22 +291,13 @@
                                                                     <h5>How to save children from violencek</h5>
                                                                     <span class="post-time">add 3 hours ago</span>                                                         
                                                                 </div>
-                                                                <div class="essay-thumb">
-                                                                    <div class="essay-thumb-left">
-                                                                        <p>Mentor:</p>
-                                                                        <p class="name-mentor"><a href="#">Brian M.Scott</a></p>
-                                                                        <p><span class="essay-wait-review">Waiting for review</span></p><br>
-                                                                    </div>
-                                                                    <div class="essay-thumb-right">
-                                                                        <a href="#"><img src="../images/mentor-09.png"></a>
-                                                                    </div>
+                                                                <div class="essay-status">
+                                                                    <p><span class="essay-wait-review">Waiting for review</span></p>
+                                                                    <p><button class="share">Share</button></p>
                                                                 </div>
-                                                                <div class="essay-infor">
-                                                                    <p class="rate-video">
-                                                                        <span>Rate this reply</span>
-                                                                        <span data-icon="&#xe033;&#xe033;&#xe033;&#xe033;"></span>
-                                                                        <!-- <button class="share">Share</button> -->
-                                                                    </p>
+                                                                <div class="button-action-essay">
+                                                                    <button type="button" id="edit">Edit</button>
+                                                                    <button type="button" id="delete">Delete</button>
                                                                 </div>
                                                                 
                                                             </div>
@@ -366,22 +368,13 @@
                                                                     <h5>How to save children from violencek</h5>
                                                                     <span class="post-time">add 3 hours ago</span>                                                         
                                                                 </div>
-                                                                <div class="essay-thumb">
-                                                                    <div class="essay-thumb-left">
-                                                                        <p>Mentor:</p>
-                                                                        <p class="name-mentor"><a href="#">Brian M.Scott</a></p>
-                                                                        <p><span class="essay-reviewing">Reviewing</span></p><br>
-                                                                    </div>
-                                                                    <div class="essay-thumb-right">
-                                                                        <a href="#"><img src="../images/mentor-09.png"></a>
-                                                                    </div>
+                                                                <div class="essay-status">
+                                                                    <p><span class="essay-reviewing">Reviewing</span></p>
+                                                                    <p><button class="share">Share</button></p>
                                                                 </div>
-                                                                <div class="essay-infor">
-                                                                    <p class="rate-video">
-                                                                        <span>Rate this reply</span>
-                                                                        <span data-icon="&#xe033;&#xe033;&#xe033;&#xe033;"></span>
-                                                                        <!-- <button class="share">Share</button> -->
-                                                                    </p>
+                                                                <div class="button-action-essay">
+                                                                    <button type="button" id="edit">Edit</button>
+                                                                    <button type="button" id="delete">Delete</button>
                                                                 </div>
                                                                 
                                                             </div>
@@ -451,22 +444,13 @@
                                                                     <h5>How to save children from violencek</h5>
                                                                     <span class="post-time">add 3 hours ago</span>                                                         
                                                                 </div>
-                                                                <div class="essay-thumb">
-                                                                    <div class="essay-thumb-left">
-                                                                        <p>Mentor:</p>
-                                                                        <p class="name-mentor"><a href="#">Brian M.Scott</a></p>
-                                                                        <p><span class="essay-wait-review">Waiting for review</span></p><br>
-                                                                    </div>
-                                                                    <div class="essay-thumb-right">
-                                                                        <a href="#"><img src="../images/mentor-09.png"></a>
-                                                                    </div>
+                                                                <div class="essay-status">
+                                                                    <p><span class="essay-wait-review">Waiting for review</span></p>
+                                                                    <p><button class="share">Share</button></p>
                                                                 </div>
-                                                                <div class="essay-infor">
-                                                                    <p class="rate-video">
-                                                                        <span>Rate this reply</span>
-                                                                        <span data-icon="&#xe033;&#xe033;&#xe033;&#xe033;"></span>
-                                                                        <!-- <button class="share">Share</button> -->
-                                                                    </p>
+                                                                <div class="button-action-essay">
+                                                                    <button type="button" id="edit">Edit</button>
+                                                                    <button type="button" id="delete">Delete</button>
                                                                 </div>
                                                                 
                                                             </div>
@@ -536,24 +520,14 @@
                                                                     <h5>How to save children from violencek</h5>
                                                                     <span class="post-time">add 3 hours ago</span>                                                         
                                                                 </div>
-                                                                <div class="essay-thumb">
-                                                                    <div class="essay-thumb-left">
-                                                                        <p>Mentor:</p>
-                                                                        <p class="name-mentor"><a href="#">Brian M.Scott</a></p>
-                                                                        <p><span class="essay-answers">Answered</span></p><br>
-                                                                    </div>
-                                                                    <div class="essay-thumb-right">
-                                                                        <a href="#"><img src="../images/mentor-09.png"></a>
-                                                                    </div>
+                                                                <div class="essay-status">
+                                                                    <p><span class="essay-answers">Answered</span></p>
+                                                                    <p><button class="share">Share</button></p>
                                                                 </div>
-                                                                <div class="essay-infor">
-                                                                    <p class="rate-video">
-                                                                        <span>Rate this reply</span>
-                                                                        <span data-icon="&#xe033;&#xe033;&#xe033;&#xe033;"></span>
-                                                                        <!-- <button class="share">Share</button> -->
-                                                                    </p>
+                                                                <div class="button-action-essay">
+                                                                    <button type="button" id="edit">Edit</button>
+                                                                    <button type="button" id="delete">Delete</button>
                                                                 </div>
-                                                                
                                                             </div>
                                                             <div class="essay-detail-right col-md-9">
                                                                 <h4>Desciption</h4>
