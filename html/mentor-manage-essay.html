@@ -41,14 +41,10 @@
                             <span class="fa fa-bars"></span>
                             </button>
                         </div>
-                        <p class="upload-image">
-                            <span class="add-img"><input type="file" id="files" name="files[]" multiple /><label for="files"><span data-icon="&#xe070;">upload</span></label></span>
-                        </p>
-                        <form class="navbar-form navbar-left" role="search">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                        </form>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" href='#modal-id' id="upImg">
+                            <span data-icon="&#xe070;">Upload Tutorials</span>
+                        </button>
                     </div>
                     <!-- /End center header -->
 
@@ -118,11 +114,23 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <a href="#" class="menuSub">
                                         <span data-icon="&#x77;"></span>
                                         <span class="menu-title">Q&A</span>
                                         <span data-icon="&#x34;" class="sub-menu"></span>
                                     </a>
+                                    <ul class="menuSubmenu">
+                                        <li class="active">
+                                            <a href="mentor-manageQ&A.html">
+                                                <span class="menu-title">All</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="menu-title">Replied</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="/">
@@ -135,13 +143,6 @@
                                     <a href="/">
                                         <span data-icon="&#xe101;"></span>
                                         <span class="menu-title">Essay</span>
-                                        <span data-icon="&#x34;" class="sub-menu"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/">
-                                        <span data-icon="&#x67;"></span>
-                                        <span class="menu-title">Analytics</span>
                                         <span data-icon="&#x34;" class="sub-menu"></span>
                                     </a>
                                 </li>
@@ -177,10 +178,11 @@
                                         <div class="col-md-4 search">
                                             <form class="navbar-form" role="search">
                                                 <div class="input-group">
+                                                    
+                                                    <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term">
                                                     <div class="input-group-btn">
                                                         <button class="btn btn-default" type="submit"><img src="../images/icon-search.png" alt=""></button>
                                                     </div>
-                                                    <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term">
                                                 </div>
                                             </form>
                                         </div>
@@ -210,8 +212,8 @@
                                                                 <b>Essay title</b>
                                                                 <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
                                                                 <div class="clearfix bt-item">
-                                                                    <div class="col-md-5 replied"><span data-icon="&#xe02d;"></span>Process</div>
-                                                                    <div class="col-md-2 follow"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
+                                                                    <div class="processing pull-left"><span data-icon="&#xe02d;"></span>Process</div>
+                                                                    <div class="follow pull-left"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -224,8 +226,8 @@
                                                                 <b>Essay title</b>
                                                                 <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
                                                                 <div class="clearfix bt-item">
-                                                                    <div class="col-md-5 replied"><span data-icon="&#xe02d;"></span>Process</div>
-                                                                    <div class="col-md-2 follow"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
+                                                                    <div class="processing pull-left"><span data-icon="&#xe02d;"></span>Process</div>
+                                                                    <div class="follow pull-left"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -238,8 +240,8 @@
                                                                 <b>Essay title</b>
                                                                 <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
                                                                 <div class="clearfix bt-item">
-                                                                    <div class="col-md-5 replied"><span data-icon="&#xe02d;"></span>Process</div>
-                                                                    <div class="col-md-2 follow"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
+                                                                    <div class="processing pull-left"><span data-icon="&#xe02d;"></span>Process</div>
+                                                                    <div class="follow pull-left"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -252,8 +254,8 @@
                                                                 <b>Essay title</b>
                                                                 <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
                                                                 <div class="clearfix bt-item">
-                                                                    <div class="col-md-5 replied"><span data-icon="&#xe02d;"></span>Process</div>
-                                                                    <div class="col-md-2 follow"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
+                                                                    <div class="processing pull-left"><span data-icon="&#xe02d;"></span>Process</div>
+                                                                    <div class="follow pull-left"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -266,8 +268,8 @@
                                                                 <b>Essay title</b>
                                                                 <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
                                                                 <div class="clearfix bt-item">
-                                                                    <div class="col-md-5 replied"><span data-icon="&#xe02d;"></span>Process</div>
-                                                                    <div class="col-md-2 follow"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
+                                                                    <div class="processing pull-left"><span data-icon="&#xe02d;"></span>Process</div>
+                                                                    <div class="follow pull-left"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -280,8 +282,8 @@
                                                                 <b>Essay title</b>
                                                                 <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac</p>
                                                                 <div class="clearfix bt-item">
-                                                                    <div class="col-md-5 replied"><span data-icon="&#xe02d;"></span>Process</div>
-                                                                    <div class="col-md-2 follow"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
+                                                                    <div class="processing pull-left"><span data-icon="&#xe02d;"></span>Process</div>
+                                                                    <div class="follow pull-left"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -312,8 +314,8 @@
                                                                 <p class="txt-essay"><b>Essay title - Etiam venenatis ac elit in mattis</b></p>
                                                             </div>
                                                             <div class="bt-item col-md-3">
-                                                                <div class="col-md-8 replied"><span data-icon="&#xe02d;"></span>Process</div>
-                                                                <div class="col-md-2 follow"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
+                                                                <div class="processing pull-left"><span data-icon="&#xe02d;"></span>Process</div>
+                                                                <div class="follow pull-left"><span><i class="fa fa-font-awesome" aria-hidden="true"></i></span></div>
                                                             </div>
                                                         </div>
                                                         <p class="text-rpl-2">
@@ -338,6 +340,7 @@
                                                                     <a href="#" class="col-md-1"><img src="../images/user.jpg" alt=""></a>
                                                                     <div class="texta">
                                                                         <textarea name="" class="col-md-11" placeholder="add your reply here" ></textarea>
+                                                                        <div class="left-border"></div>
                                                                     </div>
                                                                     <div class="icon-upload">
                                                                         <input class="input-file" name="file1" id="file1" type="file">
@@ -603,7 +606,7 @@
 
         <!-- jQuery -->
         <script type="text/javascript" src="../js/jquery.min.js"></script>
-  	    <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
         <script type="text/javascript" src="../js/bootstrap.js"></script>
         <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
         <script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>

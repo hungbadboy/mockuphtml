@@ -855,11 +855,3 @@ button.regist:hover {
     margin-top: -12px;
 }
 /*===========//MODAL LOGIN HEADER============*/
-.box-main-replied .form-chat .box-chat-onl .texta:before {
-    position: absolute;
-    left: 53px;
-    top: 50%;
-    content: url(../images/br-left-box.png);
-    width: 20px;
-    height: 20px;
-}

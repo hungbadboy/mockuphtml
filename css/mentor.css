@@ -678,12 +678,20 @@ html, body, #chart1, svg {
 }
 
 .newest-sub-esay-name {
-    width: 50%;
+    width: calc(100% - 130px);
     float: left;
+    margin-bottom: 25px;
 }
-
+.newest-sub-esay-name span{
+    display: block;
+    padding-bottom: 3px;
+}
+span.essay-reviewing, span.essay-wait-review, span.essay-answers{
+    padding: 2px 15px;
+    display: inline;
+}
 .newest-sub-esay-status {
-    width: 50%;
+    width: 130px;
     float: left;
     text-align: right;
 }
@@ -693,8 +701,8 @@ html, body, #chart1, svg {
 .newest-sub-esay-name span {
     font-size: 12px;
 }
-.newest-sub-esay-status .essay-wait-review {
-    padding: 5px 23px;
+.newest-sub-esay-name span.essay-wait-review {
+    top: 0;
 }
 .newest-sub-esay-wrapper li:before {
     content: "";
@@ -1754,14 +1762,19 @@ span.img-tb{
 .mentor-manage-qa-content .group-item-qa .item-qa .bx-dt-qa p.list-view {
     text-align: right;
 }
-.replied{
-    padding: 5px 20px;
+.newest-sub-esay-status .processing{
+    background-color: #909090;
+}
+.processing{
+    padding: 5px 10px;
     background-color: #ff484a;
     color: #fff;
     font-size: 12px;
     border-radius: 5px;
+    width: 85px;
+    float: left;
 }
-.replied span{
+.processing span{
     padding-right: 5px;
     color: #fff;
 }
