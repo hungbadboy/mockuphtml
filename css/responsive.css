@@ -783,6 +783,9 @@
     .carousel-inner {
         height: 77px;
     }
+    .post-comment.col-md-8 {
+        width: 100%;
+    }
     
 
 }

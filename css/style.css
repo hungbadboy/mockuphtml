@@ -837,8 +837,29 @@ button.regist:hover {
 .modal-pp-login .modal-body{
     padding-bottom: 40px;
 }
-.modal-pp-login .modal-body .right-modal{
-    border-left: 1px solid #E7E7E7;
-    padding-left: 30px;
+.modal-body.login-in img {
+    width: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.modal-body.login-in h4 {
+    margin-bottom: 0px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.modal-body.login-in .col-xs-12 {
+    margin-bottom: 20px;
+}
+.modal-body.login-in .right-modal img {
+    margin-top: -12px;
 }
 /*===========//MODAL LOGIN HEADER============*/
+.box-main-replied .form-chat .box-chat-onl .texta:before {
+    position: absolute;
+    left: 53px;
+    top: 50%;
+    content: url(../images/br-left-box.png);
+    width: 20px;
+    height: 20px;
+}

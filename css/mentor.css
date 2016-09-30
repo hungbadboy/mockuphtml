@@ -1750,15 +1750,20 @@ span.img-tb{
     margin-bottom: 0;
     /* text-align: right; */
 }
+
 .mentor-manage-qa-content .group-item-qa .item-qa .bx-dt-qa p.list-view {
     text-align: right;
 }
-.mentor-manage-qa-content .group-item-qa .item-qa .bx-dt-qa .replied h6{
-    color: #505050;
+.replied{
+    padding: 5px 20px;
+    background-color: #ff484a;
+    color: #fff;
     font-size: 12px;
+    border-radius: 5px;
 }
-.mentor-manage-qa-content .group-item-qa .item-qa .bx-dt-qa .replied h6 span{
-    font-weight: normal;
+.replied span{
+    padding-right: 5px;
+    color: #fff;
 }
 .mentor-manage-qa-content .group-item-qa .item-qa .bt-item{
     padding-top: 10px;
@@ -1769,6 +1774,19 @@ span.img-tb{
     font-size: 12px;
     color: #909090;
     font-weight: 500;
+}
+.bt-item .follow{
+    padding: 4px 18px;
+    background-color: #d5d8dd;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+.bt-item .follow span i{
+    color: #909090;
+}
+.bx-detail-rpl .bt-item .follow{
+    padding: 4px 9px !important;
 }
 .mentor-manage-qa-content .item-qa .bt-item .list-view a .like-h{
     color:#ff6363;
@@ -1971,6 +1989,19 @@ span.img-tb{
     bottom: 0;
     padding-right: 24px;
     padding-bottom: 5px;
+}
+.btnreply{
+    padding-right: 18px;
+    padding-top: 15px;
+}
+.btnreply input{
+    padding: 5px 20px;
+    border: none;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #505050;
+    font-weight: 600;
 }
 .box-main-replied .form-chat .upload-image{
     padding: 10px 0 32px 66px;
