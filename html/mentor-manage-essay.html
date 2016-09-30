@@ -194,10 +194,10 @@
                                         <div role="tabpanel tab-all">
                                             <!-- Nav tabs -->
                                             <div class="t-panel">
-                                                <span class="active">New</span>
-                                                <span>Processing</span>
-                                                <span>Ignored</span>
-                                                <span>Replied</span>
+                                                <p class="active">New<sup class="sup1">12</sup></p>
+                                                <p>Processing<sup class="sup2">12</sup</p>
+                                                <p>Ignored<sup class="sup3">12</sup</p>
+                                                <p>Replied<sup class="sup4">12</sup</p>
                                             </div>
                                             <!-- Tab panes -->
                                             <div class="tab-content">
@@ -602,6 +602,115 @@
             </div>
             <!-- /End Sidebar right -->
         </main>
+
+        <!-- Upload image popup -->
+        <div class="modal fade" id="modal-id">
+            <div class="modal-dialog modal-add-video">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Upload Tutorial</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-modal">
+                                    <form action="" method="POST" role="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="" placeholder="Video title">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-custom-link" id="" placeholder="Youtube Link or ID">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea name="desciptions" rows="4" cols="5" class="form-control textarea-custom" placeholder="Youtube Link or ID"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="0">Choose subject</option>
+                                                <option value="1">Choose subject</option>
+                                                <option value="2">Choose subject</option>
+                                                <option value="3">Choose subject</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="0">Choose playlist</option>
+                                                <option value="1">Choose playlist</option>
+                                                <option value="2">Choose playlist</option>
+                                                <option value="3">Choose playlist</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-6 right-modal">
+                                <h4>Get information from youtube</h4>
+                                <div class="box-video-lag">
+                                    <img src="../images/img-lag-video.png" alt="">
+                                    <span class="icon-play-video"><img src="../images/icon-play-video.png" alt=""></span>
+                                </div>
+                                <p>Praesent id odio tortor. Maecenas sagittis tellus eu ipsum auctor, vel<br/> aliquet felis molestie....</p>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="bx-btn pull-right">
+                                <button class="btn-play active"><b>upload</b></button>
+                                <button class="btn-edit"><b>cancel</b></button>
+                            </div>
+                        </div>
+                        <div class="list-add-video">
+                            <h4>Recently added tutorials</h4>
+                            <div class="filter-modal clearfix">
+                                <div class="col-md-3">video informations</div>
+                                <div class="col-md-1">subject</div>
+                                <div class="col-md-5">description</div>
+                                <div class="col-md-3">action</div>
+                            </div>
+                            <div class="group-item">
+                                <div class="item clearfix">
+                                    <div class="col-md-3">How to learn Physics effectively</div>
+                                    <div class="col-md-1">Math</div>
+                                    <div class="col-md-5">Praesent id odio tortor. Maecenas sagittis tellus eu...</div>
+                                    <div class="col-md-3">
+                                        <ul class="list-ac">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Add playlist</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item clearfix">
+                                    <div class="col-md-3">How to learn Physics effectively</div>
+                                    <div class="col-md-1">Math</div>
+                                    <div class="col-md-5">Praesent id odio tortor. Maecenas sagittis tellus eu...</div>
+                                    <div class="col-md-3">
+                                        <ul class="list-ac">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Add playlist</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item clearfix">
+                                    <div class="col-md-3">How to learn Physics effectively</div>
+                                    <div class="col-md-1">Math</div>
+                                    <div class="col-md-5">Praesent id odio tortor. Maecenas sagittis tellus eu...</div>
+                                    <div class="col-md-3">
+                                        <ul class="list-ac">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Add playlist</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /End Upload image popup -->
         <!--  end main -->
 
         <!-- jQuery -->
