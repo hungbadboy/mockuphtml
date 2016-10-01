@@ -244,6 +244,9 @@
     .background-color {
         width: calc((100% - 970px)/2 + 106px);
     }
+    .navigation ul {
+        top: 15px;
+    }
     /*information & content*/
     .information-content>div,
     .about-content>div {
@@ -334,6 +337,7 @@
     .background-color {
         width: calc((100% - 970px)/2 + 82px);
     }
+    
     
     /*Ask a question*/
     .total-question.col-xs-6 {
@@ -826,6 +830,9 @@
         top: 77px;
         right: 0;
         margin-right: -77.5px;
+    }
+    .user-nofitication {
+        width: 155px;
     }
 
     /*Tutorial*/
