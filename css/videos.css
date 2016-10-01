@@ -1161,7 +1161,7 @@ li.video-list-item.active .thumb-video {
     width: 100%;
 }
 .search {
-    width: auto;
+    width: 43%;
     float: right;
     margin-right: 25px;
     margin-top: 17px;
@@ -1169,4 +1169,13 @@ li.video-list-item.active .thumb-video {
 .breadcrum h5 {
     width: auto;
     float: left;
+}
+.navbar-form .input-group {
+    width: 100%;
+}
+input#srch-term {
+    width: 100%;
+}
+.search .navbar-form .input-group .input-group-btn {
+    width: 40px;
 }
