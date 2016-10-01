@@ -222,9 +222,9 @@
 @media screen and (max-width: 1281px) { 
 
     /***Menu***/
-    .background-color {
+    /*.background-color {
         width: calc((100% - 970px)/2 + 100px);
-    }
+    }*/
     .module-navigation .navigation .navbar-default {
         margin-left: 0%;
     }
@@ -234,6 +234,15 @@
     
     .navigation .nav>li>a {
         padding: 10px 9px;
+    }
+    .module-navigation .main-logo {
+        width: 20%;
+    }
+    .module-navigation .navigation {
+        width: 80%;
+    }
+    .background-color {
+        width: calc((100% - 970px)/2 + 106px);
     }
     /*information & content*/
     .information-content>div,
@@ -315,11 +324,17 @@
 @media screen and (max-width: 1200px) { 
     .user-nofitication {
         margin-right: 0%;
+        width: 130px;
+
     }
     .top-mentors.col-md-4 {
         position: absolute;
         right: -33%;
     }
+    .background-color {
+        width: calc((100% - 970px)/2 + 82px);
+    }
+    
     /*Ask a question*/
     .total-question.col-xs-6 {
         width: 42%;
@@ -611,6 +626,10 @@
         position: absolute;
         top: 77px;
         right: calc((100% - 750px)/2 + 123px);
+    }
+    .user-nofitication {
+        margin-right: 0%;
+        width: 148px;
     }
 
     /*Banner*/
