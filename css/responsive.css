@@ -973,6 +973,14 @@
     .mentors-profile-headers .subscribers {
         margin: 20px 0;
     }
+    input#srch-term,
+    .search button.btn.btn-default,
+    .search .input-group-btn {
+        width: auto;
+    }
+    .search {
+        margin-right: 15px;
+    }
 
 }
 
