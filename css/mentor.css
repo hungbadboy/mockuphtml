@@ -2990,3 +2990,194 @@ li.page-item.next a {
 .lastest-comment .question:last-child:after {
     height: 0;
 }
+
+/*===============HOME=================*/
+.form-login-home{
+    /* padding: 40px 30px 30px; */
+}
+.form-login-home .top-login{
+    padding: 15px 30px 30px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+.form-login-home .box-bttom {
+    padding: 5px 30px 30px;
+    background-color: #fff;
+}
+.form-login-home h3{
+    font-size: 18px !important;
+    color: #505050 !important;
+    line-height: 20px !important;
+    margin-bottom: 5px;
+}
+.form-login-home .txt-about{
+    font-size: 12px;
+    color: #909090;
+}
+.form-login-home .form-login form{
+    padding: 10px 0;
+}
+.form-login-home .form-login form input[type="text"], .form-login-home .form-login form input[type="password"]{
+    height: 42px;
+    border-radius: 0;
+}
+.form-login-home .form-login form .group-rmb{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.form-login-home .form-login form .group-rmb .form-group.pull-left{
+    position: relative;
+}
+.form-login-home .form-login form .group-rmb input[type="checkbox"]{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+.form-login-home .form-login form .group-rmb label{
+    padding-left: 25px;
+    font-weight: 600;
+}
+.form-login-home .form-login form .group-rmb p a{
+    color: #f3c303;
+    padding-left: 5px;
+}
+.form-login-home  .form-login form input[type="submit"]{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #505050;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.box-bttom h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: #505050 !important;
+    text-align: center;
+}
+.box-bttom h2 span{
+    font-weight: normal;
+}
+.box-bttom p{
+    text-align: center;
+    color: #909090;
+    font-size: 12px;
+}
+.bx-social{
+    text-align: center;
+}
+.bx-social span:first-child{
+    padding-right: 10px;
+}
+section.ask-mentors{
+    background: url('../images/banner-lg.png') top center no-repeat !important;
+    background-size: cover;
+    padding: 90px 0 81px;
+}
+section.ask-mentors h2{
+    color: #fff;
+}
+section.ask-mentors h3{
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+}
+.ask-mentors-description{
+    padding-top: 170px !important;
+}
+.information-home{
+    background-color: #f5c602;
+}
+.information-home .left-if{
+    padding-top: 195px;
+}
+.information-home .left-if h3{
+    font-size: 30px;
+    color: #505050;
+    padding-bottom: 10px;
+}
+.information-home .left-if p{
+    font-size: 18px;
+    color: #505050;
+}
+/* .information-home img{
+    width: 100%;
+    height: 100%;
+} */
+.about-home{
+    padding-top: 84px;
+    background-color: #edf1f5;
+}
+.about-home .right-about h2{
+    font-size: 36px;
+    color: #505050;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+.about-home .right-about p{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.about-home .right-about a{
+    font-size: 30px;
+    font-weight: 600;
+    color: #505050;
+    background-color: #f5c602;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+    width: 60%;
+    border-radius: 10px;
+}
+.testimonial{
+    background: url('../images/bkg-testt-home.png') top center no-repeat;
+    background-size: cover;
+    padding: 56px 0 22px;
+}
+.testimonial h2{
+    text-align: center;
+    color: #f5c602;
+    font-weight: 600;
+}
+.testimonial .slider li .thumb-mainslider{
+    padding: 50px 0 30px;
+}
+.testimonial .slider li .thumb-mainslider img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.testimonial .slider li p{
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.testimonial .slider li .author{
+    text-align: center;
+}
+.testimonial .slider li .author b{
+    color: #f5c602;
+    font-size: 14px;
+}
+.testimonial .slider li .author span{
+    color: #909090;
+    font-size: 14px;
+}
+.testimonial .bx-wrapper .bx-pager.bx-default-pager a:hover, .testimonial .bx-wrapper .bx-pager.bx-default-pager a.active{
+    background-color: #fff;
+}
+.testimonial .bx-wrapper .bx-pager.bx-default-pager a{
+    background: #898c8e;
+}
+.testimonial .slider li span.icon-p{
+    position: absolute;
+    top: 42%;
+    left: 10%;
+}
+/*=================//HOME================*/
