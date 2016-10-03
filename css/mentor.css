@@ -1662,6 +1662,9 @@ span.img-tb{
     margin-top: 10px;
     font-weight: 500;
 }
+.box-main-replied button.reply:hover {
+    background: #edf1f5;
+}
 .mentor-manage-qa-content .left-qa .t-panel{
     border-bottom: 1px solid #edf1f5;
     padding-top: 15px;
@@ -2302,6 +2305,20 @@ span.img-tb{
 .sub-right .txt-ifm p{
     font-size: 12px;
     color: #505050;
+}
+#setting-broswer {
+    background: #fff;
+    padding: 20px;
+}
+.box-avatar input[type=file] {
+    display: none;
+}
+span.broswer-img span:before {
+    color: rgba(255,255,255,0.8);
+}
+.search.search-mentor-student {
+    width: 100%;
+    float: left;
 }
 /*========//CSS MANAGER MENTOR PROFILE=============*/
 

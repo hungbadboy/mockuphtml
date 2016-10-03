@@ -163,13 +163,14 @@
                                         <div class="avt">
                                             <div class="box-avatar">
                                                 <div class="img-avt">
-                                                    <img src="../images/user.jpg" alt="">
-                                                    <a href="#" class="change-avt">
-                                                        <img src="../images/img-change-avt.png" alt="">
-                                                    </a>
+                                                    <img src="../images/user.jpg" alt="">                                                    
                                                 </div>
                                                 <h4>Linda Young</h4>
                                                 <span>freshman</span>
+                                                <span class="changeImg broswer-img">
+                                                    <input type="file" id="changeImg" name="changeImg[]">
+                                                    <label for="changeImg"><span data-icon=""></span></label>
+                                                </span>
                                             </div>
                                             <div class="box-information">
                                                 <h5>University</h5>
@@ -185,7 +186,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="box-form-setting">
+                                        <!-- <div class="box-form-setting">
                                             <h3>setting</h3>
                                             <form action="">
                                                 <div class="row">
@@ -240,12 +241,76 @@
                                                     </div>
                                                 </div>
                                             </form>
+                                        </div> -->
+                                        <div class="col-md-12 tab-pane" id="setting-broswer">
+                                        <div class="user-profile-setting">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active">
+                                                    <a data-toggle="tab" href="#perInfor">
+                                                        Personal Information
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#changPass">
+                                                        Change password
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="perInfor">
+                                                    <form action="" method="">
+                                                        <div class="personal-information">
+                                                            <div class="left-form">
+                                                                <p><input type="text" placeholder="Firstname" name="firstname"></p>
+                                                                <p><input type="text" placeholder="Lastname" name="lastname"></p>
+                                                                <p><input type="email" placeholder="Email" name="email"></p>
+                                                                <p><input type="text" placeholder="High School" name="school"></p>
+                                                                <p class="favorite field">
+                                                                    <p>Favourite field</p>
+                                                                    <input type="checkbox" value="Music" name="music"><label>Music</label>
+                                                                    <input type="checkbox" value="Art" name="art"><label>Art</label>
+                                                                    <input type="checkbox" value="Sport" name="sport"><label>Sport</label>
+                                                                </p>
+                                                            </div>
+                                                            <div class="right-form">
+                                                                <p class="sex">
+                                                                    <input type="radio" name="gender" value="male" checked><label>Male</label>
+                                                                    <input type="radio" name="gender" value="female"><label> Female</label>
+                                                                    <input type="radio" name="gender" value="other"><label> Other</label>
+                                                                </p>
+                                                                
+                                                                <p><input type="text" placeholder="BIO" name="bio"></p>
+                                                                <p><textarea placeholder="About me..." name="aboutme"></textarea></p>
+                                                            </div>
+                                                            
+                                                            <div class="submit col-md-12">
+                                                                <button type="button" id="reset">Reset</button>
+                                                                <button type="button" id="update">Update</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="content-question tab-pane" id="changPass">
+                                                    <form acition="" method="">
+                                                        <div class="change-password">
+                                                            <p><input type="password" placeholder="Current password" name="currentpassword" id="password"></p>
+                                                            <p><input type="password" id="pass" placeholder="New password" name="newpassword" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Change must be at least 8 characters"></p>
+                                                            <p><input type="password" placeholder="Confirm password" name="confirmpassword"></p>
+                                                        </div>
+                                                        <div class="submit col-md-12">
+                                                            <button type="button" id="reset">Reset</button>
+                                                            <button type="button" id="update">Update</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
+                                    </div><!-- /End Content Of Setting --> 
                                     </div>
                                     <div class="col-md-3">
                                         <div class="sub-right">
                                             <h3>subscribers</h3>
-                                            <div class="search">
+                                            <div class="search search-mentor-student">
                                                 <form class="navbar-form" role="search">
                                                     <div class="input-group">                                                        
                                                         <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term" onfocus="this.placeholder = ''">
