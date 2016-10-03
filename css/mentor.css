@@ -3108,7 +3108,7 @@ li.page-item.next a {
 .bx-social span:first-child{
     padding-right: 10px;
 }
-section.ask-mentors{
+section.signin-mentor{
     background: url('../images/banner-lg.png') top center no-repeat !important;
     background-size: cover !important;
     padding: 90px 0 81px;
@@ -3121,7 +3121,7 @@ section.ask-mentors h3{
     color: #fff;
     line-height: 30px;
 }
-.ask-mentors-description{
+.signin-mentor-descript{
     padding-top: 170px !important;
 }
 .information-home{

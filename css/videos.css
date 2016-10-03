@@ -193,7 +193,7 @@ span.number-media {
 .video-member-subcriber {
     width: auto;
     float: right;
-    right: 10px;
+    /* right: 10px; */
     position: relative;
 }
 .video-member-title p {
@@ -400,7 +400,7 @@ li .video-mentor-information {
     width: 60px;
     border-radius: 50%;
     border: 4px solid #fff;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 .video-mentor-details>h4 {
@@ -817,11 +817,6 @@ li .video-mentor-information {
     width: auto;
     float: left;
 }
-#videos-details .search {
-    width: 200px;
-    float: right;
-    margin-top: 10px;
-}
 #videos-details .series-video .video-list-item.active p,
 #videos-details .series-video .video-list-item.active span  {
     color: #ffcc00;
@@ -1163,7 +1158,7 @@ li.video-list-item.active .thumb-video {
 .searchbrecrum {
     width: 43%;
     float: right;
-    margin-right: 25px;
+    margin-right: 10px;
     margin-top: 17px;
 }
 .breadcrum h5 {
