@@ -279,7 +279,7 @@ ul.nav.nav-tabs li a {
     width: 100%;
     float: left;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .student-subcripted-name {
@@ -1643,6 +1643,7 @@ span.img-tb{
     padding-bottom: 10px;
 }
 /*========//CSS MANAGER PLAYLIST DETAIL=============*/
+
 /*========//CSS MANAGER mentor-manageQ&A=============*/
 .main-qa{
     padding-top: 10px;
@@ -1651,15 +1652,16 @@ span.img-tb{
     padding-left: 0;
     padding-right: 0;
 }
-/*.mentor-manage-qa-content .left-qa ul.nav.nav-tabs li a{
+.box-main-replied button.reply {
+    background: #ffcc00;
     color: #505050;
-    background: none !important;
-    margin-bottom: 0;
-    border: none;
-    border-radius: 0;
-    font-weight: normal;
-    font-size: 16px;
-}*/
+    padding: 5px 20px;
+    border-radius: 4px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
 .mentor-manage-qa-content .left-qa .t-panel{
     border-bottom: 1px solid #edf1f5;
     padding-top: 15px;
@@ -1821,7 +1823,7 @@ span.img-tb{
 .bx-detail-rpl .bt-item .follow{
     padding: 4px 9px !important;
 }
-.mentor-manage-qa-content .item-qa .bt-item .list-view a .like-h{
+.mentor-manage-qa-content .item-qa .bt-item .list-view .like-h{
     color:#ff6363;
 }
 .mentor-manage-qa-content .btn-load{
@@ -2042,10 +2044,20 @@ span.img-tb{
 }
 .box-main-replied .form-chat .upload-image{
     padding: 10px 0 32px 66px;
+    width: auto;
+    float: left;
+}
+.box-main-replied .add-image {
+    position: relative;
+    width: 100%;
+    float: left;
 }
 
 .chat li{
     margin-bottom: 40px;
+    width: 100%;
+    overflow: hidden;
+    padding-right: 20px;
 }
 
 .chat li.left .chat-body{
@@ -2070,7 +2082,7 @@ span.img-tb{
     font-size: 12px;
     color: #909090;
 }
-.chat li a .like-h{
+.chat li .like-h{
     color: #ff6363;
     padding: 0 5px;
 }
