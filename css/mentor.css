@@ -3004,9 +3004,6 @@ li.page-item.next a {
 }
 
 /*===============HOME=================*/
-.form-login-home{
-    /* padding: 40px 30px 30px; */
-}
 .form-login-home .top-login{
     padding: 15px 30px 30px;
     background-color: #fff;
@@ -3087,7 +3084,7 @@ li.page-item.next a {
 }
 section.ask-mentors{
     background: url('../images/banner-lg.png') top center no-repeat !important;
-    background-size: cover;
+    background-size: cover !important;
     padding: 90px 0 81px;
 }
 section.ask-mentors h2{
@@ -3103,9 +3100,13 @@ section.ask-mentors h3{
 }
 .information-home{
     background-color: #f5c602;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
 }
 .information-home .left-if{
-    padding-top: 195px;
+    padding-top: 170px;
+    padding-bottom: 205px;
 }
 .information-home .left-if h3{
     font-size: 30px;
@@ -3116,10 +3117,11 @@ section.ask-mentors h3{
     font-size: 18px;
     color: #505050;
 }
-/* .information-home img{
-    width: 100%;
-    height: 100%;
-} */
+ .information-home .right-if{
+    position: absolute;
+    top: 0;
+    right: 0;
+} 
 .about-home{
     padding-top: 84px;
     background-color: #edf1f5;
@@ -3169,6 +3171,8 @@ section.ask-mentors h3{
     text-align: center;
     font-size: 18px;
     color: #fff;
+    width: 70%;
+    margin: 0 auto;
 }
 .testimonial .slider li .author{
     text-align: center;
