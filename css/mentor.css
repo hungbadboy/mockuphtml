@@ -1,6 +1,6 @@
 /*Header*/
 #mentor header {
-    background: none;
+    background: none;F
 }
 .mentor-left-header {
     max-width: 250px;
@@ -864,6 +864,7 @@ span.icon-play-video {
 .manager-video .top-mag .select-newwest{
     height: 42px;
     background-color: #edf1f5;
+    cursor: pointer;
 }
 .manager-video .top-mag .btn-filter button{
     background-color: #f3c303;
@@ -1655,11 +1656,11 @@ span.img-tb{
 .box-main-replied button.reply {
     background: #ffcc00;
     color: #505050;
-    padding: 5px 20px;
+    padding: 7px 25px;
     border-radius: 4px;
     float: right;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: 500;
 }
 .box-main-replied button.reply:hover {
@@ -2094,6 +2095,14 @@ span.img-tb{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+.box-main-replied output {
+    width: auto;
+    float: left;
+}
+.box-main-replied span.add-img label {
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 /*========//CSS MANAGER mentor-manageQ&A=============*/
