@@ -744,6 +744,8 @@ li .video-mentor-information {
 #videos-details .video-details-playlist {
     background: #2f2f2f;
     max-height: 430px;
+    z-index: 2;
+    position: relative;
 }
 #videos-details .series-video {
     max-height: 430px;
@@ -1141,6 +1143,7 @@ li.video-list-item.active .thumb-video {
     position: relative;
     top: -6px;
     border-top: none;
+    z-index: 1;
 }
 #student-profile-information .top-mentor-header-title > span {
     margin-top: 11px;

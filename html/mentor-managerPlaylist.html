@@ -262,7 +262,7 @@
                                                         </p>
                                                         <div class="box-ac">
                                                             <ul class="list-ac">
-                                                                <li><a href="#">Edit</a></li>
+                                                                <li><a href="#modal-edit-videoplaylist" data-toggle="modal">Edit</a></li>
                                                                 <li><a href="#">Add playlist</a></li>
                                                                 <li><a href="#">Delete</a></li>
                                                             </ul>
@@ -465,7 +465,7 @@
                             <div class="tab-content">
                                 <!-- Content of tab All -->
                                 <div id="group1" class="tab-pane active">
-                                    <div class="student-subcripted">
+                                    <!-- <div class="student-subcripted">
                                         <div class="student-subcripted-title">
                                             <p>Students subscripted</p>
                                         </div>
@@ -558,7 +558,7 @@
                                             </ul>
                                             <div class="load-more"><button>Show more</button></div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="recently-activity">
                                         <div class="recently-activity-title">
                                             <p>Recently Activity</p>
@@ -732,6 +732,60 @@
             </div>
         </div>
         <!-- /End Upload image popup -->
+
+        <!-- Edit video playlist -->
+        <div class="modal fade" id="modal-edit-videoplaylist">
+            <div class="modal-dialog modal-add-video modal-edit-video">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Edit video</h4>
+                        <h4 class="video-title">Video title lorem</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <form action="" method="POST" role="form">
+                                <div class="col-md-6">
+                                    <div class="form-modal">
+                                        
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="" placeholder="Playlist title orem ipsum dolor sit amet, consectetur adipiscing elit...">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea name="desciptions" rows="4" cols="5" class="form-control textarea-custom" placeholder="Nam consectetur quam diam.Nulliam ac gravida magna.Aenean fringilla arcu felis,id dictum orci tempor id.Cras ultricies tempor turpis."></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="0">Math</option>
+                                                    <option value="1">Math</option>
+                                                    <option value="2">Math</option>
+                                                    <option value="3">Math</option>
+                                                </select>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 right-modal">
+                                    <div class="form-group">
+                                        <input type="file" class="inputfile" name="file2" id="file2" value="">
+                                        <label for="file2" class="label-2">
+                                            <img src="../images/icon-upload.png" alt="">
+                                            <span>to upload<br> playlist thumbnail</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="clearfix">
+                            <div class="bx-btn pull-right">
+                                <button class="btn-play active"><b>update</b></button>
+                                <button class="btn-edit"><b>cancel</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Edit video playlist-->
         
 
         <!-- jQuery -->

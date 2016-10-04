@@ -15,11 +15,6 @@
     }
     
     /*======Mentor.Mentorprofile==========*/
-    .manager-profile>div {
-        width: 100%;
-        padding: 0;
-        margin: 15px 0 ;
-    }
     .manager-profile .box-avatar,
     .box-information {
         width: 50%;
@@ -39,9 +34,36 @@
         background: none;
     }
     .manager-profile .box-avatar {
-        padding-bottom: 70px;
+        padding-bottom: 14%;
     }
-    
+    .manager-profile .manager-profile-image {
+        width: 70%;
+        float: left;
+        padding-right: 15px;
+        margin-bottom: 15px
+    }
+
+    .manager-profile .manager-profile-infor {
+        width: 70%;
+        float: left;
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    .manager-profile-student {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+    }
+
+    .manager-profile {
+        position: relative;
+        overflow: hidden;
+    }
+    #setting-broswer {
+        height: auto;
+    }
     /*======Mentor.Studentprofile==========*/
     .manager-profile-std .avt .count-qt {
         position: absolute;
@@ -52,9 +74,6 @@
     }
     .manager-profile .box-avatar {
         padding-top: 20px;
-    }
-    .mentorProfile .sub-right .list-std li {
-        width: 33.3333%;
     }
 
     /*======Mentor.Dashboard==========*/
@@ -261,8 +280,21 @@
     .sub-right .list-std li {
         width: 50%;
     }
-    .mentorProfile .sub-right .list-std li {
+    /*.mentorProfile .sub-right .list-std li {
         width: 50%;
+    }*/
+    .manager-profile .manager-profile-image,
+    .manager-profile .manager-profile-infor,
+    .manager-profile .manager-profile-student {
+        width: 100%;
+        padding: 0;
+    }
+    .manager-profile .manager-profile-student {
+        position: relative;
+        margin-top: 15px;
+    }
+    .manager-profile .box-avatar {
+        padding-bottom: 10%;
     }
 
     /*======mentor.manage-detail======*/
@@ -649,9 +681,9 @@
     .sub-right .list-std li {
         width: 100%;
     }
-    .mentorProfile .sub-right .list-std li {
+    /*.mentorProfile .sub-right .list-std li {
         width: 100%;
-    }
+    }*/
 
     /*======Mentor Landing page======*/
     .information-home .left-if{
