@@ -2223,6 +2223,7 @@ span.img-tb{
 .manager-profile .col-md-3{
     padding: 0;
 }
+
 .manager-profile .col-md-9{
     padding-right: 0;
 }
@@ -2432,7 +2433,34 @@ span.broswer-img span:before {
     background-color: #eef0f0;
     height: auto;
     z-index: 1;
-} 
+}
+.manager-profile-std .search form {
+    width: 50%;
+    float: left;
+}
+.manager-profile-std .slide-broswer {
+    width: auto;
+    float: right;
+    margin-right: 15px;
+}
+.manager-profile-std .slide-broswer a span:before {
+    font-size: 20px;
+    border: 1px solid #ececed;
+    padding: 0 2px 2px;
+}
+.manager-profile-std .slide-broswer a:hover span:before {
+    background: #ffcc00;
+}
+.manager-profile-std .col-md-3 {
+    width: 338px;
+}
+.manager-profile-std .col-md-9 {
+    width: calc(100% - 338px);
+}
+.manager-profile-std .sub-right .row {
+    width: 100%;
+    margin: 0;
+}
 /*========//CSS MANAGER MENTOR PROFILE STUDENT=============*/
 
 /*========CSS MANAGER MENTOR DETAIL VIDEO=============*/
