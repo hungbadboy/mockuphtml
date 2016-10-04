@@ -163,11 +163,11 @@ jQuery(document).ready(function($) {
         $(".mentor-left-header, #sidebar-menu, .mentor-center-header, .center-content").toggleClass("in");
     })
 
-    var winwidth = window.innerWidth;
-    if (winwidth < 1200) {
-      $(".line-tt").remove();
-      $(".browser-mentors-infor-wrapper div.col-md-4:nth-child(2)").append("<div class='line-tt'></div>");
-    }
+    // var winwidth = window.innerWidth;
+    // if (winwidth < 1200) {
+    //   $(".line-tt").remove();
+    //   $(".browser-mentors-infor-wrapper div.col-md-4:nth-child(2)").append("<div class='line-tt'></div>");
+    // }
    
     // $(".top-mentors-videos").stick_in_parent();
     //Bxslider - Slider images of ask a question page
