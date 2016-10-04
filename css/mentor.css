@@ -2486,6 +2486,16 @@ span.broswer-img span:before {
     overflow-y: scroll;
     height: 320px;
 }
+.manager-detail-video .play-video .group-video-pl .item-pl-video .list-videp-w li:hover span,
+.manager-detail-video .play-video .group-video-pl .item-pl-video .list-videp-w li.active span {
+    border: 2px solid #ffcc00;
+}
+
+.manager-detail-video .play-video .group-video-pl .item-pl-video .list-videp-w li:hover h6,
+.manager-detail-video .play-video .group-video-pl .item-pl-video .list-videp-w li.active h6 {
+    color: #ffcc00;
+}
+ 
 .manager-detail-video .play-video .group-video-pl .item-pl-video .list-videp-w::-webkit-scrollbar {
     width: 6px; height:2px;
     border-radius: 5px;
