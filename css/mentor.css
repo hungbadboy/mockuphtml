@@ -881,6 +881,7 @@ span.icon-play-video {
     margin-right: 15px;
     top: -30px;
     position: relative;
+    cursor: pointer;
 }
 .mentor-manage-video .sl-newwest span:before{
     color: #909090;
