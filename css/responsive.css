@@ -195,6 +195,9 @@
     .right-sub-video .list-sub-video li .sub-vd-right{
         padding-left: 10px;
     }
+    .mentor-qa-search {
+        width: 40%;
+    }
 
 }
 
@@ -265,9 +268,6 @@
     .manager-video .top-mag .sl-newwest, .manager-video .top-mag .sl-sbj {
         padding-right: 0;
         width: 140px;
-    }
-    .manager-video .top-mag .btn-filter {
-        width: 106px;
     }
     .box-main-replied .form-chat .box-chat-onl .texta:before {
         left: 68px;
@@ -354,6 +354,14 @@
         padding-bottom: 5px;
     }
 
+    /*mentor Q&A*/
+    .mentor-qa-search {
+        width: 100%;
+    }
+    .manager-video .top-mag .sl-newwest {
+        width: calc(100% - 90px);
+    }
+
 }
 /***For max screen 1281***/
 @media screen and (max-width: 1281px) { 
@@ -377,6 +385,9 @@
     }
     .navigation ul {
         top: 15px;
+    }
+    .module-navigation .mentor-left-header .main-logo {
+        width: auto;
     }
     /*======information & content======*/
     .information-content>div,
