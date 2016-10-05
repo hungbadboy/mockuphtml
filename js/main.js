@@ -83,7 +83,7 @@ jQuery(document).ready(function($) {
         $(".article-detail, .essay-detail").css({"left":"100%"}); //click on button close -> close popup college article & essay
     })
     $(".notification").click(function(){
-        $(".college-notification").animate({left: '0'}, 500); //show notification 
+        $(".notification-content").slideToggle(500); //show notification 
     })
     $(".close-popup-images").click(function(){
         $(".college-notification").animate({right: '100%', left:'-100%'}, 500); //hide notification
@@ -107,7 +107,7 @@ jQuery(document).ready(function($) {
       });
     })
     $(window).on("load",function(){
-      $(".essay-detail-right-content-wrapper, .article-detail-right-content-wrapper, .college-notification .top-mentors-list").mCustomScrollbar({
+      $(".essay-detail-right-content-wrapper, .article-detail-right-content-wrapper").mCustomScrollbar({
           theme:"dark",
           autoHideScrollbar: "boolean",
       });
@@ -154,23 +154,13 @@ jQuery(document).ready(function($) {
         next.children(':first-child').clone().appendTo($(this));
       }
     });
-        // get margin for mentor content
-    // var widthmenu= $(".mentor-left-header").width();
-    //     widthwindow = $("body").width(); 
-    //     $(".center-content").css({"margin-left": widthmenu, "width":widthwindow - widthmenu - 250});
+
 
     $(".navbar-header button").on( "click",function(){
         $(".mentor-left-header, #sidebar-menu, .mentor-center-header, .center-content").toggleClass("in");
     })
 
-    // var winwidth = window.innerWidth;
-    // if (winwidth < 1200) {
-    //   $(".line-tt").remove();
-    //   $(".browser-mentors-infor-wrapper div.col-md-4:nth-child(2)").append("<div class='line-tt'></div>");
-    // }
-   
-    // $(".top-mentors-videos").stick_in_parent();
-    //Bxslider - Slider images of ask a question page
+
 
     // Get border for broswer-mentor
     border_broswer();
@@ -207,6 +197,7 @@ jQuery(document).ready(function($) {
          
         } 
       }
+      // End Get border for broswer-mentor
 
 
         var $j = jQuery.noConflict();
