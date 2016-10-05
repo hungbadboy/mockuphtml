@@ -172,6 +172,43 @@ jQuery(document).ready(function($) {
     // $(".top-mentors-videos").stick_in_parent();
     //Bxslider - Slider images of ask a question page
 
+    // Get border for broswer-mentor
+    border_broswer();
+    $(window).resize(function(){      
+      border_broswer();
+    })
+    function border_broswer(){
+      var number_item = $(".browser-mentors-infor-wrapper>div").length; 
+        
+        winwidth = $("body").innerWidth();
+
+        if ( winwidth >= 1200){
+          $(".browser-mentors-infor-wrapper>div").css("border-bottom","1px solid #ececed");
+          num_int = number_item % 3 ;
+          num_int = (num_int == 0) ? 3 : num_int;
+          for (var i = 1 ; i <= num_int ; i++) {
+            $(".browser-mentors-infor-wrapper>div:nth-last-child("+ i +")").css("border","none");
+          }
+        }
+
+        else if ( (767 < winwidth) && (winwidth < 991) ){
+          console.log($("body").innerWidth());
+          $(".browser-mentors-infor-wrapper>div").css("border-bottom","1px solid #ececed");
+          num_int = number_item % 2 ;
+          num_int = (num_int == 0) ? 2 : num_int;
+          for (var i = 1 ; i <= num_int ; i++) {
+            $(".browser-mentors-infor-wrapper>div:nth-last-child("+ i +")").css("border","none");
+          }
+        } 
+
+        else if ( 767 > winwidth){
+            $(".browser-mentors-infor-wrapper>div").css("border-bottom","1px solid #ececed");
+            $(".browser-mentors-infor-wrapper>div:last-child").css("border","none");
+         
+        } 
+      }
+
+
         var $j = jQuery.noConflict();
 
         var realSlider= $j("ul#bxslider").bxSlider({
