@@ -823,6 +823,7 @@ span.icon-play-video {
     background-color: #fff;
     padding: 22px;
     margin-top: 23px;
+    overflow: hidden;
 }
 .manager-video .top-mag .search{
     padding: 0;
@@ -926,7 +927,38 @@ span.icon-play-video {
     font-weight: 600;
     margin-left: 15px;
 }
-
+.col-md-2.sl-sort {
+    width: auto;
+    float: right;
+    top: 20px;
+}
+.main-manager-video,
+.btn-act
+ {
+    width: 100%;
+    float: left;
+}
+.btn-act .btn-mg {
+    width: auto;
+    float: left;
+}
+.sl-sort button {
+    background: #edf1f5;
+    padding: 10px 15px;
+    margin: 3px;
+    border-radius: 4px;
+    position: relative;
+    font-weight: 600;
+}
+.sl-sort button:hover {
+    background: #ffcc00;
+}
+.sl-sort button span:nth-child(2):before {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    color: #909090;
+}
 .main-manager-video .filters{
     border-top: 1px solid #e0e1e1;
     border-bottom: 1px solid #e0e1e1;
