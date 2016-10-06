@@ -644,7 +644,11 @@ button.share:hover {
 .nft-body li {
     width: 100%;
     float: left;
-    padding: 7px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #ececed;
+}
+.nft-body li:last-child {
+    border: none;
 }
 .nft-name {
     font-weight: 600;
@@ -655,4 +659,24 @@ button.share:hover {
 .ntf-right {
     font-size: 12px;
     font-weight: 500;
+}
+
+.top-border:before{
+    content: "";
+    position: absolute ;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 10px solid #edf1f2;
+    border-bottom: 10px solid #edf1f2;
+    background: #edf1f2;
+    z-index: 9999;
 }

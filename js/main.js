@@ -83,7 +83,7 @@ jQuery(document).ready(function($) {
         $(".article-detail, .essay-detail").css({"left":"100%"}); //click on button close -> close popup college article & essay
     })
     $(".notification").click(function(){
-        $(".notification-content").slideToggle(500); //show notification 
+        $(".notification-content").toggle(); //show notification 
     })
     $(".close-popup-images").click(function(){
         $(".college-notification").animate({right: '100%', left:'-100%'}, 500); //hide notification
@@ -290,6 +290,7 @@ jQuery(document).ready(function($) {
                                 '" title="', escape(theFile.name), '"/><div class="remove-image"><img src="../images/remove-img.png"></div>'].join('');
               document.getElementById('list').insertBefore(div, null);
               $(".media-manager").hide();
+              
 
             };
           })(f);

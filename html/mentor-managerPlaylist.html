@@ -205,11 +205,20 @@
                                                         <input type="text" class="form-control input-custom" id="" placeholder="Subject">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="file" class="inputfile" name="file1" id="file1" value="">
+                                                        <!-- <input type="file" class="inputfile" name="file1" id="file1" value="">
                                                         <label for="file1" class="label-1">
                                                             <img src="../images/icon-upload.png" alt="">
                                                             <span>to upload<br/> playlist thumbnail</span>
-                                                        </label>
+                                                        </label> -->
+                                                        
+                                                            <span class="add-img" id="add-thumb">
+                                                                <output id="list" class="up-thumb up-thumb-sec"></output>
+                                                                <input type="file" id="files" name="files[]" class="inputfile"/>
+                                                                <label for="files" class="label-1">
+                                                                    <img src="../images/icon-upload.png" alt="">
+                                                                    <span>to upload<br> playlist thumbnail</span>
+                                                                </label>
+                                                            </span>
                                                     </div>
                                                     <button type="submit" class="btn btn-primary btn-custom">Add</button>
 
@@ -766,11 +775,19 @@
                                 </div>
                                 <div class="col-md-6 right-modal">
                                     <div class="form-group">
-                                        <input type="file" class="inputfile" name="file2" id="file2" value="">
+                                        <!-- <input type="file" class="inputfile" name="file2" id="file2" value="">
                                         <label for="file2" class="label-2">
                                             <img src="../images/icon-upload.png" alt="">
                                             <span>to upload<br> playlist thumbnail</span>
-                                        </label>
+                                        </label> -->
+                                        <output id="list" class="up-thumb"></output>
+                                        <span class="add-img">
+                                            <input type="file" id="files" name="files[]" class="inputfile"/>
+                                            <label for="files" class="label-2">
+                                                <img src="../images/icon-upload.png" alt="">
+                                                <span>to upload<br> playlist thumbnail</span>
+                                            </label>
+                                        </span>
                                     </div>
                                 </div>
                             </form>
