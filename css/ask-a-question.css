@@ -571,8 +571,8 @@ section.download {
     color: #ffcc00;
 }
 
-.edit-question li:first-child {
-    border-bottom: 1px solid #cecece;
+.edit-question li:nth-child(2) {
+    border-top: 1px solid #cecece;
 }
 .total-answer span:before {
     font-size: 18px;
@@ -603,7 +603,7 @@ section.download {
     width: 100%;
 }
 .content-question-wrapper {
-    height: 100%;
+    height: auto;
     padding-bottom: 50px;
     width: 100%;
 }

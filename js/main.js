@@ -303,5 +303,75 @@ jQuery(document).ready(function($) {
       }
 
     document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+    function FileSelectEditVideo(evt) {
+        var files = evt.target.files; // FileList object
+
+        // Loop through the FileList and render image files as thumbnails.
+        for (var i = 0, f; f = files[i]; i++) {
+
+          // Only process image files.
+          if (!f.type.match('image.*')) {
+            continue;
+          }
+
+          var reader = new FileReader();
+
+          // Closure to capture the file information.
+          reader.onload = (function(theFile) {
+            return function(e) {
+              // Render thumbnail.
+              var div = document.createElement('div');
+              div.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                '" title="', escape(theFile.name), '"/><div class="remove-image"><span data-icon="&#x4d;"></span></div>'].join('');
+              document.getElementById('list-edit').insertBefore(div, null);
+              $(".media-manager").hide();
+              
+
+            };
+          })(f);
+
+
+          // Read in the image file as a data URL.
+          reader.readAsDataURL(f);
+        }
+
+      }
+  document.getElementById('filesEdit').addEventListener('change', FileSelectEditVideo, false);
+
+  function FileSelectAddVideo(evt) {
+        var files = evt.target.files; // FileList object
+
+        // Loop through the FileList and render image files as thumbnails.
+        for (var i = 0, f; f = files[i]; i++) {
+
+          // Only process image files.
+          if (!f.type.match('image.*')) {
+            continue;
+          }
+
+          var reader = new FileReader();
+
+          // Closure to capture the file information.
+          reader.onload = (function(theFile) {
+            return function(e) {
+              // Render thumbnail.
+              var div = document.createElement('div');
+              div.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                '" title="', escape(theFile.name), '"/><div class="remove-image"><span data-icon="&#x4d;"></span></div>'].join('');
+              document.getElementById('list-addnew').insertBefore(div, null);
+              $(".media-manager").hide();
+              
+
+            };
+          })(f);
+
+
+          // Read in the image file as a data URL.
+          reader.readAsDataURL(f);
+        }
+
+      }
+  document.getElementById('files').addEventListener('change', FileSelectAddVideo, false);
   
 })
