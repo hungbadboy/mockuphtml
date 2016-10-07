@@ -137,6 +137,8 @@
 .college-video .video-description {
     width: 100%;
     float: left;
+    height: 120px;
+    margin-bottom: 15px;
 }
 .college-video .video-list-content li {
     padding: 0 15px;
@@ -333,7 +335,7 @@ button.share {
 }
 .article-detail-left,
 .essay-detail-left  {
-    height: auto;
+    height: 66vh;
     background: #fff;
     padding: 20px;
 }
@@ -386,7 +388,7 @@ button.read-more {
 }
 .essay-detail-right,
 .article-detail-right {
-    height: auto;
+    height: 66vh;
     padding-bottom: 30px;
     overflow: hidden;
 }

@@ -172,39 +172,29 @@
                             <!-- /End Content header -->
                             <!-- Content of page -->
                             <div class="manager-video mentor-manage-qa-content mentor-manage-video">
-                                <div class="row top-mag">
-                                    <div class="col-md-4 mentor-qa-search">
-                                        <div class="col-md-12 search">
-                                            <form class="navbar-form" role="search">
-                                                <div class="input-group">
-                                                    
-                                                    <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term" onfocus="this.placeholder = ''">
-                                                    <div class="input-group-btn">
-                                                        <button class="btn btn-default" type="submit"><img src="../images/icon-search.png" alt=""></button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <!-- <div class="sl-newwest">
-                                            <select class="select-newwest">
-                                                <option value="0">Category</option>
-                                                <option value="1">Category 2</option>
-                                                <option value="2">Category 3</option>
-                                                <option value="3">Category 4</option>
-                                                <option value="4">Category 5</option>
-                                            </select>
-                                        </div> -->
-                                        <div class="sl-newwest">
-                                            <input type="text" >
-                                            <span data-icon="&#x43;"></span>
-                                        </div>
-                                        <div class="btn-filter"><button>Filter</button></div>
-                                    </div>
-                                </div>
                                 <!-- /End Top content -->
                                 <div class="main-qa clearfix">
-                                    <div class="col-md-4 left-qa">
-                                        <div role="tabpanel tab-all">
+                                    <div class="left-qa">
+                                        <div class="row top-mag">
+                                            <div class="mentor-qa-search">
+                                                <div class="col-md-12 search">
+                                                    <form class="navbar-form" role="search">
+                                                        <div class="input-group">                                                    
+                                                            <input type="text" class="form-control input-search" placeholder="Type your search" name="srch-term" id="srch-term" onfocus="this.placeholder = ''">
+                                                            <div class="input-group-btn">
+                                                                <button class="btn btn-default" type="submit"><img src="../images/icon-search.png" alt=""></button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="sl-newwest">
+                                                    <input type="text" >
+                                                    <span data-icon="&#x43;"></span>
+                                                </div>
+                                                <div class="btn-filter"><button>Filter</button></div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel tab-all" class="tab-answered">
                                             <!-- Nav tabs -->
                                             <div class="t-panel">
                                                 <p class="active">All</p>
@@ -213,9 +203,9 @@
                                             </div>
                                             <!-- Tab panes -->
                                             <div class="tab-content">
-                                                <div role="tabpanel" class="tab-pane active" id="tab-1">
+                                                <div role="tabpanel" class="tab-pane active tab-answered-tab" id="tab-1">
                                                     <div class="group-item-qa">
-                                                        <div class="item-qa active clearfix">
+                                                        <div class="item-qa active clearfix" data-toggle="modal" href='#answer-detail'>
                                                             <div class="col-md-3">
                                                                 <a href="#"><img src="../images/user.jpg" alt=""></a>
                                                             </div>
@@ -396,12 +386,12 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <p class="btn-load"><a href="#">load more</a></p>
+                                                    <!-- <p class="btn-load"><a href="#">load more</a></p> -->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-8 box-main-replied">
+                                    <div class="box-main-replied">
                                         <div class="slider-rpl">
                                             <div class="box-btn-sl clearfix">
                                                 <a href="#" class="btn-prev"><span data-icon="&#x34;"></span></a>
@@ -885,6 +875,78 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- /End Upload image popup -->
+
+        <!-- Upload image popup -->
+        <div class="modal fade" id="answer-detail">
+            <div class="modal-dialog modal-add-video modal-qa">
+                <div class="modal-content clearfix">
+                    <div class="btn-sl-qa">
+                        <a class="prev-qa" href="#"><span data-icon="&#x34;"></span></a>
+                        <a class="next-qa" href="#"><span data-icon="&#x35;"></span></a>
+                    </div>
+                    <div class="col-md-6 left-question">
+                        <h5><span><img src="../images/icon-h5-l-qa.png" alt=""></span>Question</h5>
+                        <div class="top-user clearfix">
+                            <div class="col-md-2 img-avarta">
+                               <img src="../images/user.jpg" alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Student name</h6>
+                                <span class="time">asked 5 mins ago</span>
+                                <p class="list-view">
+                                    23 <span data-icon="w"></span>&nbsp;&nbsp;
+                                    12 <span class="like-h" data-icon=""></span>&nbsp;&nbsp;
+                                    68 <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dt-txt-question">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie justo eu ante vehicula fermentum. Fusce id odio enim. Ut sit amet velit urna. Etiam vehicula ante vel risus malesuada, sit amet vulputate purus pulvinar. Duis ex nunc, viverra eu fringilla eleifend, vulputate a neque. Ut venenatis felis ac fringilla dignissim. Pellentesque efficitur eget diam a aliquet. Donec efficitur, odio eu auctor porta, ligula dolor hendrerit ex, quis pharetra turpis felis ac mauris. Phasellus finibus ultrices nulla, ac semper erat pharetra in.</p>
+                            <p>Fusce vulputate bibendum rhoncus. Sed posuere odio sem, fermentum aliquet metus vulputate ut. Mauris tempor metus at pretium sodales. Etiam tristique ipsum eu dui varius, ac hendrerit arcu pharetra. Etiam lacus diam, ultrices eu feugiat quis, bibendum sit amet nibh. Mauris venenatis blandit neque, at dapibus purus facilisis vel. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum non accumsan metus. Nullam efficitur neque leo. Suspendisse semper, felis sed iaculis sagittis, mauris est tempus ex, sed gravida purus erat sed turpis. Integer elementum lobortis augue quis suscipit. Proin fermentum nunc et porta suscipit. In felis nisi, egestas vel ante a, iaculis auctor ex.</p>
+                            <a href="#"><img src="../images/img-left-qa.png"></a>
+                        </div>
+                        <div class="bottom-ctg">
+                            <span>Category</span><span><a href="#">Applications</a>,<a href="#">Financial Aid</a></span>
+                        </div>
+                   </div>
+                   <div class="col-md-6 right-answer clearfix">
+                        <div class="top-title clearfix">
+                            <h5 class="pull-left"><span><img src="../images/icon-h5-r-qa.png" alt=""></span>Answer</h5>
+                            <p class="pull-right">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true" data-icon="&#x51;"></span>
+                                </button>
+                            </p>
+                        </div>
+                        <div class="top-user clearfix">
+                            <div class="col-md-2 img-avarta">
+                               <img src="../images/user.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Student name</h6>
+                                <span class="time">asked 5 mins ago</span>
+                                <p class="list-view">
+                                    6 <span class="like-h" data-icon=""></span>
+                                </p>
+                            </div>
+                            <div class="col-md-4 box-btn-qa">
+                                <span data-icon="&#x6c;"></span>
+                                <span data-icon="&#xe019;"></span>
+                            </div>
+                        </div>
+                        <div class="dt-txt-question">
+                            <p>Pellentesque efficitur eget diam a aliquet. Donec efficitur, odio eu auctor porta, ligula dolor hendrerit ex, quis pharetra turpis felis ac mauris. Phasellus finibus ultrices nulla, ac semper erat pharetra in. Fusce vulputate bibendum rhoncus. Sed posuere odio sem, fermentum aliquet metus vulputate ut. </p>
+                            <p>Mauris tempor metus at pretium sodales. Etiam tristique ipsum eu dui varius, ac hendrerit arcu pharetra. Etiam lacus diam, ultrices eu feugiat quis, bibendum sit amet nibh. Mauris venenatis blandit neque, at dapibus purus facilisis vel. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum non accumsan metus. Nullam efficitur neque leo. Suspendisse semper, felis sed iaculis sagittis, mauris est tempus ex, sed gravida purus erat sed turpis. Integer elementum lobortis augue quis suscipit. Proin fermentum nunc et porta suscipit. In felis nisi, egestas vel ante a, iaculis auctor ex.</p>
+                             <a href="#"><img src="../images/img-rigth-qa.png"></a>
+                        </div>
+                        <div class="pgt-right-ans clearfix">
+                            <p class="pull-right"><span data-icon="&#xe045;"></span><span class="num-pgt">2/3</span><span data-icon="&#xe046;"></span></p>
+                        </div>
+                   </div>
                 </div>
             </div>
         </div>

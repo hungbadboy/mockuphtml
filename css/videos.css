@@ -1114,6 +1114,10 @@ li.video-list-item.active .thumb-video {
     height: auto;
     overflow: hidden;
 }
+.article .video-header-infor {
+    height: 70px;
+    margin-bottom: 20px;
+}
 .videos-title {
     width: 100%;
     float: left;

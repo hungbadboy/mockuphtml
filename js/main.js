@@ -102,12 +102,12 @@ jQuery(document).ready(function($) {
     //   });
     // })
     $(window).on("load",function(){
-      $(".series-video-list").mCustomScrollbar({
+      $(".series-video-list, .answer-detail-right-content").mCustomScrollbar({
           theme:"light"
       });
     })
     $(window).on("load",function(){
-      $(".essay-detail-right-content-wrapper, .article-detail-right-content-wrapper").mCustomScrollbar({
+      $(".essay-detail-right-content-wrapper, .article-detail-right-content-wrapper, .tab-answered-tab, .dt-txt-question").mCustomScrollbar({
           theme:"dark",
           autoHideScrollbar: "boolean",
       });
@@ -159,6 +159,19 @@ jQuery(document).ready(function($) {
     $(".navbar-header button").on( "click",function(){
         $(".mentor-left-header, #sidebar-menu, .mentor-center-header, .center-content").toggleClass("in");
     })
+
+    $(window).scroll(function(){    
+      var qa_scroll = $(window).scrollTop();
+      console.log(qa_scroll);
+      if (qa_scroll > 90) {
+        $(".mentor-manage-qa-content .left-qa").css({"top":"112px", "height":"90%"});
+        $(".mentor-manage-qa-content .left-qa .tab-answered .tab-content").css({"height":"80vh"});
+      }
+      else {
+        $(".mentor-manage-qa-content .left-qa").css("top","auto");
+        $(".mentor-manage-qa-content .left-qa .tab-answered .tab-content").css({"height":"70vh"});
+      }
+  })
 
 
 
