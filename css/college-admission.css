@@ -681,3 +681,19 @@ button.share:hover {
     border-bottom: 10px solid #edf1f2;
     background: #edf1f2;
 }
+.modal-article.modal-add-video .right-answer:after {
+    background: none;
+}
+.modal-article.modal-add-video {
+    width: 1107px !important;
+}
+.modal-article.modal-add-video .right-answer {
+    padding-top: 47px;
+}
+.modal-article.modal-essay.modal-add-video .right-answer {
+    padding-top: 25px;
+}
+.modal-article.modal-essay.modal-add-video .right-answer h4 {
+    font-size: 24px;
+    position: relative;
+}
