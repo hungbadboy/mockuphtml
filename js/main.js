@@ -66,6 +66,9 @@ jQuery(document).ready(function($) {
     $(".edit-details-question").click(function(){  //
         $(this).find(".edit-question").toggle();
     })
+    $(".edit-answer").click(function(){  //
+        $(this).find(".edit-answer-detail").toggle();
+    })
     $(".sort").click(function(){        //show sort answer
         $(".sort-answer").toggle();
     })
@@ -165,7 +168,7 @@ jQuery(document).ready(function($) {
       console.log(qa_scroll);
       if (qa_scroll > 90) {
         $(".mentor-manage-qa-content .left-qa").css({"top":"112px", "height":"90%"});
-        $(".mentor-manage-qa-content .left-qa .tab-answered .tab-content").css({"height":"80vh"});
+        $(".mentor-manage-qa-content .left-qa .tab-answered .tab-content").css({"height":"75vh"});
       }
       else {
         $(".mentor-manage-qa-content .left-qa").css("top","auto");

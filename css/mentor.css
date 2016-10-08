@@ -395,20 +395,6 @@ ul.nav.nav-tabs li a {
   opacity: 0;
   transition: visibility 1s linear 1s, opacity 0.5s;
 }
-/*.navbar-default:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 1px;
-    z-index: 1;
-    background: #2b2b2b;
-    height: 450px;
-    overflow: hidden;
-    transition: width 1s;
-}
-.mentor-left-header.in .navbar-default:before {
-    width: 180px;
-}*/
 
 
 /*Dashboard page*/
@@ -847,7 +833,6 @@ span.icon-play-video {
     width: 100%;
     border-radius: 0;
     height: 42px;
-    /* border-right: none; */
 }
 .manager-video .top-mag .search .input-group .input-group-btn button:hover{
     background-color: #fff;
@@ -857,7 +842,6 @@ span.icon-play-video {
     width: 100%;
     border-radius: 0;
     height: 42px;
-    /* border-left: none; */
     outline: none;
 }
 .manager-video .top-mag .sl-newwest,
@@ -2006,6 +1990,7 @@ span.img-tb{
     padding-right: 0;
     text-align: left;
     padding-left: 0;
+    width: 100px;
 }
 .box-main-replied .slider-rpl .group-item-sl .item-sl-rpl .bx-detail-rpl .top-rpl .bx-dt-qa{
     padding-left: 0;
@@ -2228,6 +2213,54 @@ span.img-tb{
 .mentor-manage-qa-content .left-qa .tab-answered .tab-content .mCSB_scrollTools {
     width: 5px;
 }
+.mentor-manage-qa-content .col-md-4.bt-item {
+    width: calc(50% - 100px);
+}
+.mentor-manage-qa-content .edit-details-question {
+    top: -20px;
+}
+.edit-answer:hover:before {
+    color: #505050;
+}
+.edit-answer:before {
+    color: #909090;
+    cursor: pointer;
+}
+.edit-answe {
+    position: relative;
+}
+.edit-answer-detail.inactive {
+    position: absolute;
+    left: 300px;
+    background: #fff;
+    border: 1px solid #ededec;
+    box-shadow: 5px 5px 12px #ccc;
+}
+.edit-answer-detail.inactive li:hover a,
+.edit-answer-detail.inactive li:hover span:before {
+    color: #505050;
+}
+.edit-answer-detail.inactive li {
+    margin-bottom: 0;
+    width: 100%;
+    padding-right: 0;
+}
+.edit-answer-detail.inactive li.delete {
+    border-top: 1px solid #ececed
+}
+
+.edit-answer-detail.inactive li a {
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    color: #909090;
+}
+
+.edit-answer-detail.inactive li a span:before {
+    margin-right: 5px;
+    color: #909090;
+}
 
 /*========//CSS MANAGER mentor-manageQ&A=============*/
 
@@ -2236,14 +2269,15 @@ span.img-tb{
     border:1px solid #edf1f5;
     height: 100%;
     overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
 
 .manager-profile .box-avatar{
     text-align: center;
-    padding-top: 34px;
-    padding-bottom: 30px;
     background-color: #ffcc00;
     position: relative;
+    padding: 30px 20px;
 }
 .manager-profile .box-avatar .img-avt{
     position: relative;
@@ -2279,6 +2313,7 @@ span.img-tb{
 .manager-profile .box-avatar span{
     color: #fff;
     font-size: 14px;
+    top: 20px;
 }
 .manager-profile .col-md-3{
     padding: 0;
@@ -3627,5 +3662,8 @@ section.ask-mentors h3{
     width: 96px;
     height: 96px;
     opacity: 0.5;
+}
+#mentor .notification-content {
+    right: 109px;
 }
 /*===============//MOdal Q&A==========*/
