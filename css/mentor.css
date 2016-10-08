@@ -1289,17 +1289,20 @@ span.icon-play-video {
     padding: 20px;
     background-color: #fff;
 }
-.box-l-comment:before{
+.box-l-comment .item-cm:before{
     content: "";
     position: absolute;
-    top: 89px;
+    top: 43px;
     bottom: 0;
-    left: 60px;
+    left: 23px;
     width: 1px;
-    margin-left: -1.5px;
     background-color: #eef0f0;
-    height: 320px;
+    height: 90px;
     z-index: 1;
+    overflow: hidden;
+}
+.box-l-comment .item-cm:nth-last-child(2):before {
+    height: 0;
 }
 span.img-tb{
     position: relative;z-index: 2;
@@ -1340,6 +1343,9 @@ span.img-tb{
 }
 .box-l-comment .item-cm{
     padding-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
 }
 .box-l-comment .btn-load{
     text-align: center;
@@ -3594,10 +3600,10 @@ section.ask-mentors h3{
     color: #ff6363;
 }
 .modal-add-video .left-question .dt-txt-question{
-    height: 70%;
+    height: 400px;
 }
 .modal-add-video .right-answer .dt-txt-question{
-    height: 70%;
+    height: 400px;
     position: relative;
     z-index: 2;
 }
