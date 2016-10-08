@@ -3500,7 +3500,7 @@ section.ask-mentors h3{
 }
 .modal-add-video .left-question{
     background-color: #fff;
-    padding-top: 20px;
+    padding-top: 50px;
     padding-left: 20px;
     padding-bottom: 20px;
     border-top-left-radius: 6px;
@@ -3671,5 +3671,14 @@ section.ask-mentors h3{
 }
 #mentor .notification-content {
     right: 109px;
+}
+.article-detail-top a {
+    width: 100%;
+    float: left;
+}
+
+span.article-detail-img {
+    width: 55px;
+    float: left;
 }
 /*===============//MOdal Q&A==========*/
