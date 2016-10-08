@@ -509,6 +509,10 @@
     .modal-qa .modal-content {
         height: 80vh;
     }
+    .modal-add-video .left-question .dt-txt-question,
+    .modal-add-video .right-answer .dt-txt-question{
+        height: 55%;
+    }
 
 }
 /***For max screen 1281***/

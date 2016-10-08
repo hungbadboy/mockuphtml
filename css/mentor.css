@@ -3594,10 +3594,10 @@ section.ask-mentors h3{
     color: #ff6363;
 }
 .modal-add-video .left-question .dt-txt-question{
-    height: 400px;
+    height: 70%;
 }
 .modal-add-video .right-answer .dt-txt-question{
-    height: 400px;
+    height: 70%;
     position: relative;
     z-index: 2;
 }
